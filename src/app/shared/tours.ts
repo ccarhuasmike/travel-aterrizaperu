@@ -380,9 +380,12 @@ export const TOURS: Tour[] = [
     "id": "aruba-eagle-aruba-resort",
     "titulo": "Aruba - Eagle Aruba Resort",
     "lugar": "Oranjestad, Aruba",
-    "imagen": "assets/images/listing/Aruba/eagle-aruba.webp",
+    "imagen": "assets/images/listing/Aruba - Eagle Aruba Resort/0000794_aruba-eagle-aruba-resort_550.webp",
     "galeriaImagen": [
-      "assets/images/listing/Aruba/eagle-aruba.webp"
+      "assets/images/listing/Aruba - Eagle Aruba Resort/0000791_aruba-eagle-aruba-resort_550.webp",
+      "assets/images/listing/Aruba - Eagle Aruba Resort/0000792_aruba-eagle-aruba-resort_550.webp",
+      "assets/images/listing/Aruba - Eagle Aruba Resort/0000793_aruba-eagle-aruba-resort_550.webp",
+      "assets/images/listing/Aruba - Eagle Aruba Resort/0000794_aruba-eagle-aruba-resort_550.webp"
     ],
     "precio": 2298.00,
     "rating": "4.9 (10)",
@@ -408,9 +411,12 @@ export const TOURS: Tour[] = [
     "id": "aruba-embassy-suites-by-hilton",
     "titulo": "Aruba - Embassy Suites By Hilton",
     "lugar": "Oranjestad, Aruba",
-    "imagen": "assets/images/listing/Aruba/embassy-suites.webp",
+    "imagen": "assets/images/listing/Aruba - Embassy Suites By Hilton/0000796_aruba-embassy-suites-by-hilton_550.webp",
     "galeriaImagen": [
-      "assets/images/listing/Aruba/embassy-suites.webp"
+      "assets/images/listing/Aruba - Embassy Suites By Hilton/0000796_aruba-embassy-suites-by-hilton_550.webp",
+      "assets/images/listing/Aruba - Embassy Suites By Hilton/0000797_aruba-embassy-suites-by-hilton_550.webp",
+      "assets/images/listing/Aruba - Embassy Suites By Hilton/0000795_aruba-embassy-suites-by-hilton_550.webp",
+      "assets/images/listing/Aruba - Embassy Suites By Hilton/0000798_aruba-embassy-suites-by-hilton_550.webp",
     ],
     "precio": 1970.00,
     "rating": "4.8 (14)",
@@ -436,10 +442,12 @@ export const TOURS: Tour[] = [
     "id": "aruba-secrets-baby-beach",
     "titulo": "Aruba - Secrets Baby Beach",
     "lugar": "Sint Nicolaas, Aruba",
-    "imagen": "assets/images/listing/Aruba/secrets-baby-beach.webp",
+    "imagen": "assets/images/listing/Aruba - Embassy Suites By Hilton/0000795_aruba-embassy-suites-by-hilton_550.webp",
     "galeriaImagen": [
-      "assets/images/listing/Aruba/secrets-baby-beach.webp"
-    ],
+      "assets/images/listing/Aruba - Embassy Suites By Hilton/0000795_aruba-embassy-suites-by-hilton_550.webp",
+      "assets/images/listing/Aruba - Embassy Suites By Hilton/0000796_aruba-embassy-suites-by-hilton_550.webp",
+      "assets/images/listing/Aruba - Embassy Suites By Hilton/0000797_aruba-embassy-suites-by-hilton_550.webp",
+      "assets/images/listing/Aruba - Embassy Suites By Hilton/0000798_aruba-embassy-suites-by-hilton_550.webp"    ],
     "precio": 2844.00,
     "rating": "5.0 (8)",
     "descuento": "",
@@ -464,9 +472,12 @@ export const TOURS: Tour[] = [
     "id": "panama",
     "titulo": "Panamá",
     "lugar": "Ciudad de Panamá, Panamá",
-    "imagen": "assets/images/listing/Panama/panama.webp",
+    "imagen": "assets/images/listing/panamá/0000799_panama_550.webp",
     "galeriaImagen": [
-      "assets/images/listing/Panama/panama.webp"
+      "assets/images/listing/panamá/0000799_panama_550.webp",
+      "assets/images/listing/panamá/0000800_panama_550.webp",
+      "assets/images/listing/panamá/0000801_panama_550.webp",
+      "assets/images/listing/panamá/0000803_panama_550.png"
     ],
     "precio": 559.00,
     "rating": "4.5 (35)",
