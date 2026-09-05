@@ -282,70 +282,22 @@
             <p class="text-slate-400 max-w-xl mx-auto">Explora destinos increíbles y encuentra la mejor opción ideal
                 para ti.</p>
         </div><!--end grid-->
-
-        <div class="grid grid-cols-1 relative mt-3">
-            <div class="tiny-five-item" [appTinySlider]="proximaAventuraSliderOptions">
-                @for (destino of proximaAventura; track $index) {
-                <div class="tiny-slide">
-                    <div class="group relative overflow-hidden rounded-md shadow-sm dark:shadow-gray-800 m-2">
-                        <img [src]="destino.imagen"
-                            class="size-72 object-cover scale-125 group-hover:scale-100 duration-500" alt="">
-                        <div
-                            class="absolute inset-0 bg-linear-to-b to-slate-900 from-transparent opacity-0 group-hover:opacity-100 duration-500">
-                        </div>
-                        <div class="absolute p-4 bottom-0 inset-s-0">
-                            <a href="#!"
-                                class="text-lg font-medium text-white hover:text-primary duration-500 ease-in-out">{{
-                                destino.nombre }}</a>
-                            <p class="text-white/70 group-hover:text-white text-sm duration-500">{{ destino.hoteles }}
-                                Hoteles</p>
-                        </div>
-                    </div>
-                </div><!--end content-->
-                }
-            </div>
-        </div><!--end grid-->
-    </div><!--end container-->
-
-    <div class="container relative md:mt-24 mt-16">
-        <div class="grid grid-cols-1 pb-6 text-center">
-            <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Blog de viajes</h3>
-            <p class="text-slate-400 max-w-xl mx-auto">Este es un texto simple hecho para esta plantilla única y
-                llamativa, puedes reemplazarlo con cualquier texto.</p>
-        </div><!--end grid-->
-
         <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-6 gap-6">
-            @for (blog of blogs; track $index) {
+            @for (destino of proximaAventura; track $index) {
             <div class="group relative overflow-hidden">
-                <div class="relative overflow-hidden rounded-md shadow-sm dark:shadow-gray-800">
-                    <img [src]="blog.imagen" class="group-hover:scale-110 group-hover:rotate-3 duration-500" alt="">
-                    <div class="absolute top-0 inset-s-0 p-4 opacity-0 group-hover:opacity-100 duration-500">
-                        <span class="bg-primary text-white text-[12px] px-2.5 py-1 font-medium rounded-md h-5">{{
-                            blog.categoria }}</span>
-                    </div>
-                </div>
+                <a [routerLink]="['/paquete', destino.routelink]"
+                    class="relative overflow-hidden rounded-md shadow-sm dark:shadow-gray-800">
+                    <img [src]="destino.imagen" class="group-hover:scale-110 group-hover:rotate-3 duration-500" alt="">
 
-                <div class="mt-6">
-                    <div class="flex mb-4">
-                        <span class="flex items-center text-slate-400 text-sm"><i
-                                class="ri-time-line text-slate-900 dark:text-white me-1.5"></i>5 min de lectura</span>
-                        <span class="text-slate-400 text-sm ms-3">por <a href="#!"
-                                class="text-slate-900 dark:text-white hover:text-primary dark:hover:text-primary font-medium">Aterriza
-                                Perú</a></span>
-                    </div>
+                </a>
+            </div>
 
-                    <a href="#!" class="text-lg font-medium hover:text-primary duration-500 ease-in-out">{{ blog.titulo
-                        }}</a>
-                    <p class="text-slate-400 mt-2">{{ blog.resumen }}</p>
-
-                    <div class="mt-3">
-                        <a href="#!" class="hover:text-primary inline-flex items-center">Leer más <i
-                                class="ri-arrow-right-s-line ms-1"></i></a>
-                    </div>
-                </div>
-            </div><!--end content-->
             }
-        </div><!--end grid-->
-    </div><!--end container-->
+        </div><!--end content-->
+
+    </div><!--end grid-->
+
+  
+    
 </section><!--end section-->
 <!-- End -->

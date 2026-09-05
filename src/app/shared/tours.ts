@@ -447,7 +447,7 @@ export const TOURS: Tour[] = [
       "assets/images/listing/Aruba - Embassy Suites By Hilton/0000795_aruba-embassy-suites-by-hilton_550.webp",
       "assets/images/listing/Aruba - Embassy Suites By Hilton/0000796_aruba-embassy-suites-by-hilton_550.webp",
       "assets/images/listing/Aruba - Embassy Suites By Hilton/0000797_aruba-embassy-suites-by-hilton_550.webp",
-      "assets/images/listing/Aruba - Embassy Suites By Hilton/0000798_aruba-embassy-suites-by-hilton_550.webp"    ],
+      "assets/images/listing/Aruba - Embassy Suites By Hilton/0000798_aruba-embassy-suites-by-hilton_550.webp"],
     "precio": 2844.00,
     "rating": "5.0 (8)",
     "descuento": "",
@@ -496,6 +496,283 @@ export const TOURS: Tour[] = [
       "Vuelo",
       "Hotel",
       "Traslado"
+    ]
+  },
+  // paquetes-nacionales
+
+
+  {
+    id: 'cusco-casa-andina-standard-catedral',
+    titulo: 'Cusco - Casa Andina Standard Catedral',
+    lugar: 'Cusco, Perú',
+    imagen: 'assets/images/listing/Cusco - Casa Andina Standard Catedral/0000814_cusco-casa-andina-standard-catedral_550.webp',
+    galeriaImagen: [
+      'assets/images/listing/Cusco - Casa Andina Standard Catedral/0000814_cusco-casa-andina-standard-catedral_550.webp',
+      'assets/images/listing/Cusco - Casa Andina Standard Catedral/0000815_cusco-casa-andina-standard-catedral_550.webp',
+      'assets/images/listing/Cusco - Casa Andina Standard Catedral/0000816_cusco-casa-andina-standard-catedral_550.webp',
+      'assets/images/listing/Cusco - Casa Andina Standard Catedral/0000817_cusco-casa-andina-standard-catedral_550.webp',
+
+    ],
+    precio: 529.00,
+    rating: '5.0 (20)',
+    descuento: '',
+    duracion: '3 Noches',
+    tipo: 'Cultura / Historia',
+    grupo: 'Año Nuevo',
+    idioma: 'Español',
+    descripcion: [
+      'Disfruta de la mística ciudad del Cusco y la magia de Machu Picchu hospedándote en el acogedor Casa Andina Standard Catedral durante Año Nuevo.'
+    ],
+    noches: '3 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'paquetes-nacionales',
+    incluye: [
+      'Boleto aéreo Lima/Cusco/Lima Con LATAM Airlines - Permite bolso o mochila + equipaje de mano (12kg)',
+      'Traslados incluidos Aeropuerto – hotel – aeropuerto (Servicio Privado)',
+      '3 noches de alojamiento Casa Andina Standard Catedral - Habitación Tradicional',
+      'Desayuno diario',
+      'City Tour con entradas Servicio regular',
+      'Boleto Turístico del Cusco Parcial 1 día de vigencia',
+      'Impuestos'
+    ]
+  },
+  {
+    id: 'cusco-casa-andina-standard-cusco-plaza',
+    titulo: 'Cusco - Casa Andina Standard Cusco Plaza',
+    lugar: 'Cusco, Perú',
+    imagen: 'assets/images/listing/cusco-casa-andina-standard-cusco-plaza/0000819_cusco-casa-andina-standard-cusco-plaza_550.webp',
+    galeriaImagen: [
+      'assets/images/listing/cusco-casa-andina-standard-cusco-plaza/0000819_cusco-casa-andina-standard-cusco-plaza_550.webp',
+      'assets/images/listing/cusco-casa-andina-standard-cusco-plaza/0000820_cusco-casa-andina-standard-cusco-plaza_550.webp',
+      'assets/images/listing/cusco-casa-andina-standard-cusco-plaza/0000821_cusco-casa-andina-standard-cusco-plaza_550.webp',
+      'assets/images/listing/cusco-casa-andina-standard-cusco-plaza/0000946_cusco-casa-andina-standard-cusco-plaza_550.webp',
+
+    ],
+    precio: 569.00,
+    rating: '4.9 (28)',
+    descuento: '12% Off',
+    duracion: '3 Noches',
+    tipo: 'Cultura / Historia',
+    grupo: 'Año Nuevo',
+    idioma: 'Español',
+    descripcion: [
+      'Ubicado a pasos de la Plaza de Armas del Cusco, perfecto para vivir la festividad de Año Nuevo en el corazón de la ciudad imperial.'
+    ],
+    noches: '3 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'paquetes-nacionales',
+    incluye: [
+      'Vuelo',
+      'Hotel',
+      'Traslado',
+      'Seguro'
+    ]
+  },
+  {
+    id: 'cusco-tierra-viva-cusco-habitacion-estandar',
+    titulo: 'Cusco - Tierra Viva Cusco (Habitación Estándar)',
+    lugar: 'Cusco, Perú',
+    imagen: 'assets/images/listing/cusco-tierra-viva-cusco-estandar/0000919_cusco-tierra-viva-cusco-habitacion-estandar_550.webp',
+    galeriaImagen: [
+      'assets/images/listing/cusco-tierra-viva-cusco-estandar/0000919_cusco-tierra-viva-cusco-habitacion-estandar_550.webp',
+      'assets/images/listing/cusco-tierra-viva-cusco-estandar/0000920_cusco-tierra-viva-cusco-habitacion-estandar_550.webp',
+      'assets/images/listing/cusco-tierra-viva-cusco-estandar/0000921_cusco-tierra-viva-cusco-habitacion-estandar_550.webp',
+      'assets/images/listing/cusco-tierra-viva-cusco-estandar/0000952_cusco-tierra-viva-cusco-habitacion-estandar_550.webp',
+    ],
+    precio: 455.00,
+    rating: '4.8 (15)',
+    descuento: '',
+    duracion: '3 Noches',
+    tipo: 'Cultura / Historia',
+    grupo: 'Año Nuevo',
+    idioma: 'Español',
+    descripcion: [
+      'Cusco con todo listo para que solo disfrutes.',
+      'Ubicado en el centro de Cusco, el punto perfecto para descubrir la esencia de la ciudad imperial. Conecta con su historia, cultura y los principales atractivos turísticos de la región.',
+      'Fechas de viaje 31 de diciembre – 03 de enero, 2027 4 días · 3 noches'
+    ],
+    noches: '3 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'paquetes-nacionales',
+    incluye: [
+      'Boleto aéreo Lima/Cusco/Lima Con LATAM Airlines - Permite bolso o mochila + equipaje de mano (12kg)',
+      'Traslados incluidos Aeropuerto – hotel – aeropuerto (Servicio Privado)',
+      '3 noches de alojamiento Tierra Viva Cusco - Habitación Estándar',
+      'Desayuno diario',
+      'City Tour con entradas Servicio regular',
+      'Boleto Turístico del Cusco Parcial 1 día de vigencia',
+      'Impuestos'
+    ]
+  },
+  {
+    id: 'tarapoto-tucan-suites',
+    titulo: 'Tarapoto - Tucan Suites',
+    lugar: 'Tarapoto, San Martín, Perú',
+    imagen: 'assets/images/listing/tarapoto-tucan-suites/0000914_tarapoto-tucan-suites_550.webp',
+    galeriaImagen: [
+      'assets/images/listing/tarapoto-tucan-suites/0000914_tarapoto-tucan-suites_550.webp',
+      'assets/images/listing/tarapoto-tucan-suites/0000915_tarapoto-tucan-suites_550.webp',
+      'assets/images/listing/tarapoto-tucan-suites/0000951_tarapoto-tucan-suites_550.webp',
+      'assets/images/listing/tarapoto-tucan-suites/0000916_tarapoto-tucan-suites_550.webp',
+    ],
+    precio: 615.00,
+    rating: '4.9 (18)',
+    descuento: '',
+    duracion: '3 Noches',
+    tipo: 'Naturaleza / Selva',
+    grupo: 'Año Nuevo',
+    idioma: 'Español',
+    descripcion: [
+      'Tarapoto con todo listo para que solo disfrutes.',
+      'Disfruta una ubicación privilegiada en Tarapoto, la puerta de entrada a la Amazonía peruana. Explora naturaleza, aventura y experiencias únicas entre paisajes tropicales inolvidables.',
+      'Fechas de viaje 31 de diciembre – 03 de enero, 2027 4 días · 3 noches'
+    ],
+    noches: '3 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'paquetes-nacionales',
+    incluye: [
+      'Boleto aéreo Lima/Tarapoto/Lima Con LATAM Airlines - Permite bolso o mochila + equipaje de mano (12kg)',
+      'Traslados incluidos Aeropuerto – hotel – aeropuerto (Servicio Privado)',
+      '3 noches de alojamiento Tucan Suites - Habitación Deluxe',
+      'Desayuno diario',
+      'Tour Cascada de Ahuashiyacu y Lamas',
+      'Impuestos'
+    ]
+  },
+  {
+    id: 'arequipa',
+    titulo: 'Arequipa',
+    lugar: 'Arequipa, Perú',
+    imagen: 'assets/images/listing/arequipa/0000822_arequipa_550.webp',
+    galeriaImagen: [
+      'assets/images/listing/arequipa/0000822_arequipa_550.webp',
+      'assets/images/listing/arequipa/0000823_arequipa_550.webp',
+      'assets/images/listing/arequipa/0000824_arequipa_550.webp',
+      'assets/images/listing/arequipa/0000825_arequipa_550.webp',
+    ],
+    precio: 215.00,
+    rating: '4.7 (32)',
+    descuento: '',
+    duracion: '2 Noches',
+    tipo: 'Ciudad / Gastronomía',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Arequipa con todo listo para que solo disfrutes.',
+      'Ubicado a pocos minutos de la Plaza de Armas y de los lugares más emblemáticos de Arequipa. El punto de partida ideal para descubrir su historia, cultura y paisajes únicos',
+      'Fechas de viaje 01 de setiembre – 30 de noviembre, 2026 3 días · 2 noches'
+    ],
+    noches: '2 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'paquetes-nacionales',
+    incluye: [
+      'Boleto aéreo Lima/Arequipa/Lima',
+      'Traslados incluidos Aeropuerto – hotel – aeropuerto',
+      '2 noches de alojamiento Terramística Centro / Terramística Monasterio / Terramística de Vallecito - Habitación doble',
+      'Desayunos incluidos'
+    ]
+  },
+  {
+    id: 'vichayito',
+    titulo: 'Vichayito',
+    lugar: 'Piura, Perú',
+    imagen: 'assets/images/listing/vichayito_1/0000885_vichayito_550.png',
+    galeriaImagen: [
+      'assets/images/listing/vichayito_1/0000885_vichayito_550.png',
+      'assets/images/listing/vichayito_1/0000884_vichayito_550.png',
+      'assets/images/listing/vichayito_1/0000886_vichayito_550.png',
+      'assets/images/listing/vichayito_1/0000887_vichayito_550.png',
+    ],
+    precio: 209.00,
+    rating: '4.8 (25)',
+    descuento: '13% Off',
+    duracion: '2 Noches',
+    tipo: 'Playa / Relax',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Relájate en las cálidas playas del norte peruano en Vichayito, ideal para desconectarse y disfrutar del mar.',
+      'Vichayito con todo listo para que solo disfrutes.',
+      'Ubicado en una zona privilegiada de Vichayito, ideal para disfrutar de sus playas, el clima cálido y la tranquilidad del norte peruano.',
+      'Fechas de viaje 01 de noviembre – 15 de diciembre, 2026 3 días · 2 noches'
+    ],
+    noches: '2 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'paquetes-nacionales',
+    incluye: [
+      'Boleto aéreo Lima/Talara/Lima',
+      '2 noches de alojamiento Hotel Categoría 3 - Habitación doble',
+      'Desayunos incluidos'
+    ]
+  },
+  {
+    id: 'cusco',
+    titulo: 'Cusco',
+    lugar: 'Cusco, Perú',
+    imagen: 'assets/images/listing/cusco_1/0000876_cusco_550.webp',
+    galeriaImagen: [
+      'assets/images/listing/cusco_1/0000876_cusco_550.webp',
+      'assets/images/listing/cusco_1/0000877_cusco_550.webp',
+      'assets/images/listing/cusco_1/0000878_cusco_550.webp',
+      'assets/images/listing/cusco_1/0000879_cusco_550.webp',
+    ],
+    precio: 209.00,
+    rating: '4.9 (45)',
+    descuento: '16% Off',
+    duracion: '2 Noches',
+    tipo: 'Cultura / Aventura',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Visita la capital del Imperio Inca por 2 noches saliendo desde Lima con tarifa de descuento especial.',
+      'Cusco con todo listo para que solo disfrutes.',
+      'Ubicado en una zona estratégica de Cusco, con fácil acceso a sus principales atractivos, restaurantes y calles llenas de historia y tradición.',
+      'Fechas de viaje 19 de octubre – 15 de diciembre, 2026 3 días · 2 noches'
+    ],
+    noches: '2 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'paquetes-nacionales',
+    incluye: [
+      'Boleto aéreo Lima/Cusco/Lima',
+      'Traslados incluidos Aeropuerto – hotel – aeropuerto',
+      '2 noches de alojamiento Hotel Categoría 3 - Habitación doble',
+      'Desayunos incluidos'
+    ]
+  },
+  {
+    id: 'tarapoto',
+    titulo: 'Tarapoto',
+    lugar: 'Tarapoto, San Martín, Perú',
+    imagen: 'assets/images/listing/tarapoto_1/0000880_tarapoto_550.png',
+    galeriaImagen: [
+      'assets/images/listing/tarapoto_1/0000880_tarapoto_550.png',
+      'assets/images/listing/tarapoto_1/0000881_tarapoto_550.png',
+      'assets/images/listing/tarapoto_1/0000882_tarapoto_550.png',
+      'assets/images/listing/tarapoto_1/0000883_tarapoto_550.png',
+    ],
+    precio: 209.00,
+    rating: '4.7 (20)',
+    descuento: '16% Off',
+    duracion: '2 Noches',
+    tipo: 'Naturaleza / Aventura',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Disfruta del clima tropical y los hermosos paisajes naturales de la selva de Tarapoto a un precio de oferta.',
+      'Tarapoto con todo listo para que solo disfrutes.',
+      'Ubicado en una zona estratégica de Tarapoto, con fácil acceso a sus principales atractivos y rodeado del encanto natural de la selva peruana.',
+      'Fechas de viaje 19 de octubre - 15 de diciembre, 2026 3 días · 2 noches',
+
+    ],
+    noches: '2 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'paquetes-nacionales',
+    incluye: [
+      'Boleto aéreo Lima/Tarapoto/Lima',
+      'Traslados incluidos Aeropuerto – hotel – aeropuerto',
+      '2 noches de alojamiento Hotel Categoría 3 - Habitación doble',
+      'Desayunos incluidos',
+      'Cataratas Ahuashiyacu'
     ]
   }
 
