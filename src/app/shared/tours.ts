@@ -141,18 +141,18 @@ export const TOURS: Tour[] = [
 
 
 
-  
+
   {
     id: 'punta-cana-caribe-deluxe-Princess',
     titulo: 'Punta Cana - Caribe Deluxe Princess',
     lugar: 'Punta Cana, Republica Dominicana ',
     imagen: 'assets/images/listing/PuntaCana/0000758_punta-cana-caribe-deluxe-princess_320.webp',
-    galeriaImagen:[
+    galeriaImagen: [
       'assets/images/listing/PuntaCana/0000758_punta-cana-caribe-deluxe-princess_320.webp',
       'assets/images/listing/PuntaCana/0000759_punta-cana-caribe-deluxe-princess_550.webp',
       'assets/images/listing/PuntaCana/0000760_punta-cana-caribe-deluxe-princess_550.webp',
-      'assets/images/listing/PuntaCana/0000761_punta-cana-caribe-deluxe-princess_550.webp',     
-    ],  
+      'assets/images/listing/PuntaCana/0000761_punta-cana-caribe-deluxe-princess_550.webp',
+    ],
     precio: 1655.00,
     rating: '5.0 (30)',
     descuento: '10% Off',
@@ -182,12 +182,12 @@ export const TOURS: Tour[] = [
     titulo: 'Punta Cana - Grand Sirenis',
     lugar: 'Punta Cana, Republica Dominicana ',
     imagen: 'assets/images/listing/punta-cana-grand-sirenis/0000762_punta-cana-grand-sirenis_550.webp',
-    galeriaImagen:[
+    galeriaImagen: [
       'assets/images/listing/punta-cana-grand-sirenis/0000762_punta-cana-grand-sirenis_550.webp',
       'assets/images/listing/punta-cana-grand-sirenis/0000763_punta-cana-grand-sirenis_550.webp',
       'assets/images/listing/punta-cana-grand-sirenis/0000764_punta-cana-grand-sirenis_550.webp',
-      'assets/images/listing/punta-cana-grand-sirenis/0000765_punta-cana-grand-sirenis_550.webp',     
-    ],  
+      'assets/images/listing/punta-cana-grand-sirenis/0000765_punta-cana-grand-sirenis_550.webp',
+    ],
     precio: 1579.00,
     rating: '5.0 (30)',
     descuento: '',
@@ -215,7 +215,7 @@ export const TOURS: Tour[] = [
 
 
 
-   {
+  {
     "id": "punta-cana-vista-sol",
     "titulo": "Punta Cana - Vista Sol",
     "lugar": "Punta Cana, República Dominicana",
@@ -225,7 +225,7 @@ export const TOURS: Tour[] = [
       "assets/images/listing/Punta Cana - Vista Sol/0000769_punta-cana-vista-sol_550.webp",
       "assets/images/listing/Punta Cana - Vista Sol/0000948_punta-cana-vista-sol_550.webp",
       "assets/images/listing/Punta Cana - Vista Sol/0000768_punta-cana-vista-sol_550.webp"
-      
+
     ],
     "precio": 1629.00,
     "rating": "4.8 (18)",
@@ -285,9 +285,12 @@ export const TOURS: Tour[] = [
     "id": "cartagena-cartagena-plaza-hotel",
     "titulo": "Cartagena - Cartagena Plaza Hotel",
     "lugar": "Cartagena, Colombia",
-    "imagen": "assets/images/listing/Cartagena/cartagena-plaza.webp",
+    "imagen": "assets/images/listing/Cartagena - Cartagena Plaza Hotel/0000775_cartagena-cartagena-plaza-hotel_550.webp",
     "galeriaImagen": [
-      "assets/images/listing/Cartagena/cartagena-plaza.webp"
+      "assets/images/listing/Cartagena - Cartagena Plaza Hotel/0000775_cartagena-cartagena-plaza-hotel_550.webp",
+      "assets/images/listing/Cartagena - Cartagena Plaza Hotel/0000776_cartagena-cartagena-plaza-hotel_550.webp",
+      "assets/images/listing/Cartagena - Cartagena Plaza Hotel/0000777_cartagena-cartagena-plaza-hotel_550.webp",
+      "assets/images/listing/Cartagena - Cartagena Plaza Hotel/0000778_cartagena-cartagena-plaza-hotel_550.webp"
     ],
     "precio": 935.00,
     "rating": "4.6 (15)",
@@ -303,10 +306,11 @@ export const TOURS: Tour[] = [
     "saliendo": "Saliendo de Lima",
     "paquete": "paquete-playa-caribe",
     "incluye": [
-      "Vuelo",
-      "Hotel",
-      "Traslado",
-      "Seguro"
+      "Boleto aéreo Lima/Punta Cana/Lima con LATAM Airlines - Permite mochila + Carry-On (12 kg)",
+      "Traslados incluidos Aeropuerto – hotel – aeropuerto (Servicio Compartido)",
+      "4 noches de alojamiento Whalá!Bávaro - Habitación Doble",
+      "Sistema de alimentación Todo Incluido Desayuno y almuerzo buffet, cena buffet o a la carta, piqueos y bebidas ilimitadas",
+      'Seguro de viajes',
     ]
   },
   {
@@ -484,7 +488,7 @@ export const TOURS: Tour[] = [
 export function getTourById(id: string): Tour | undefined {
   return TOURS.find((tour) => tour.id === id);
 }
-export function getPaqueteById(id: string): Tour[]{
+export function getPaqueteById(id: string): Tour[] {
   return TOURS.filter((tour) => tour.paquete === id);
 }
 
