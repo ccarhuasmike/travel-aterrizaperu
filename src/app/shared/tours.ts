@@ -317,9 +317,12 @@ export const TOURS: Tour[] = [
     "id": "cartagena-decameron",
     "titulo": "Cartagena - Decameron",
     "lugar": "Cartagena, Colombia",
-    "imagen": "assets/images/listing/Cartagena/decameron.webp",
+    "imagen": "assets/images/listing/cartagena-decameron/0000779_cartagena-decameron_550.webp",
     "galeriaImagen": [
-      "assets/images/listing/Cartagena/decameron.webp"
+      "assets/images/listing/cartagena-decameron/0000779_cartagena-decameron_550.webp",
+      "assets/images/listing/cartagena-decameron/0000780_cartagena-decameron_550.webp",
+      "assets/images/listing/cartagena-decameron/0000781_cartagena-decameron_550.webp",
+      "assets/images/listing/cartagena-decameron/0000782_cartagena-decameron_550.webp"
     ],
     "precio": 1295.00,
     "rating": "4.9 (40)",
@@ -335,10 +338,11 @@ export const TOURS: Tour[] = [
     "saliendo": "Saliendo de Lima",
     "paquete": "paquete-playa-caribe",
     "incluye": [
-      "Vuelo",
-      "Hotel",
-      "Traslado",
-      "Seguro"
+      "Boleto aéreo Lima/Punta Cana/Lima con LATAM Airlines - Permite mochila + Carry-On (12 kg)",
+      "Traslados incluidos Aeropuerto – hotel – aeropuerto (Servicio Compartido)",
+      "4 noches de alojamiento Whalá!Bávaro - Habitación Doble",
+      "Sistema de alimentación Todo Incluido Desayuno y almuerzo buffet, cena buffet o a la carta, piqueos y bebidas ilimitadas",
+      'Seguro de viajes',
     ]
   },
   {
