@@ -1,0 +1,263 @@
+<!-- Hero Start -->
+<section class="relative md:pt-72 md:pb-60 py-36 w-full items-center bg-[url('../../assets/images/bg/1.jpg')] bg-top bg-no-repeat bg-cover">
+    <div class="absolute inset-0 bg-slate-900/40"></div>
+    <div class="container relative">
+        <div class="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-7.5">
+            <div class="lg:col-span-8 md:col-span-7 md:order-1 order-2">
+                <h5 class="text-3xl font-dancing! text-white">Descubre la Belleza</h5>
+                <h4 class="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-6xl mb-6 mt-5">Deja el camino atrás, <br> y vive Aterriza Perú</h4>
+                <p class="text-white/70 text-xl max-w-xl">¿Planificando un viaje? ¡Organizamos tu viaje con los mejores lugares y el mejor presupuesto!</p>
+            </div>
+
+            <div class="lg:col-span-4 md:col-span-5 md:text-center md:order-2 order-1">
+                <a href="#!" data-type="youtube" data-id="S_CGed6E610" class="lightbox lg:size-24 size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white hover:bg-primary text-primary hover:text-white duration-500 ease-in-out mx-auto">
+                    <i class="ri-play-fill inline-flex items-center justify-center text-3xl"></i>
+                </a>
+            </div>
+        </div><!--end grid-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- Hero End -->
+
+<div class="container relative -mt-16 z-1">
+    <div class="grid grid-cols-1">
+        <form class="p-6 bg-white dark:bg-slate-900 rounded-xl shadow-sm dark:shadow-gray-700">
+            <div class="registration-form text-slate-900 text-start">
+                <div class="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-4">
+                    <div>
+                        <label for="search-keyword" class="form-label font-medium text-slate-900 dark:text-white">Buscar:</label>
+                        <div class="relative mt-2">
+                            <i class="ri-search-line text-lg absolute top-1.75 inset-s-3 text-slate-400"></i>
+                            <input name="name" type="text" id="search-keyword" class="w-full py-2 px-3 ps-10 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded-md outline-none border border-gray-100 dark:border-gray-800 focus:ring-0" placeholder="Buscar">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="search-start-date" class="form-label font-medium text-slate-900 dark:text-white">Fecha de inicio:</label>
+                        <div class="relative mt-2">
+                            <i class="ri-calendar-2-line text-lg absolute top-1.75 inset-s-3 text-slate-400"></i>
+                            <input name="name" type="text" id="search-start-date" class="w-full py-2 px-3 ps-10 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded-md outline-none border border-gray-100 dark:border-gray-800 focus:ring-0 start" placeholder="Fecha de inicio">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="search-end-date" class="form-label font-medium text-slate-900 dark:text-white">Fecha de fin:</label>
+                        <div class="relative mt-2">
+                            <i class="ri-calendar-2-line text-lg absolute top-1.75 inset-s-3 text-slate-400"></i>
+                            <input name="name" type="text" id="search-end-date" class="w-full py-2 px-3 ps-10 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded-md outline-none border border-gray-100 dark:border-gray-800 focus:ring-0 end" placeholder="Fecha de fin">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="search-persons" class="form-label font-medium text-slate-900 dark:text-white">N.° de personas:</label>
+                        <div class="relative mt-2">
+                            <i class="ri-group-line text-lg absolute top-1.75 inset-s-3 text-slate-400"></i>
+                            <select id="search-persons" class="form-select w-full py-2 px-3 ps-10 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded-md outline-none border border-gray-100 dark:border-gray-800 focus:ring-0">
+                                <option disabled selected>N.° de personas</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="lg:mt-8.75">
+                        <input type="submit" id="search-buy" name="search" class="py-1 px-5 h-10 inline-block tracking-wide align-middle duration-500 text-base text-center bg-primary text-white rounded-md w-full cursor-pointer" value="Buscar">
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+        </form><!--end form-->
+    </div><!--end grid-->
+</div><!--end container-->
+
+<!-- Start -->
+<section class="relative md:py-24 py-16 overflow-hidden">
+    <div class="container relative">
+        <div class="grid grid-cols-1 pb-8 text-center">
+            <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Destinos Principales</h3>
+            <p class="text-slate-400 max-w-xl mx-auto">¿Planificando un viaje? ¡Organizamos tu viaje con los mejores lugares y el mejor presupuesto!</p>
+        </div><!--end grid-->
+
+        <div class="grid grid-cols-1 relative mt-6">
+            <div class="tiny-five-item" [appTinySlider]="destinosSliderOptions">
+                @for (destino of destinos; track $index) {
+                    <div class="tiny-slide">
+                        <div class="group relative overflow-hidden rounded-md shadow-sm dark:shadow-gray-800 m-2">
+                            <img [src]="destino.imagen" class="size-72 object-cover scale-125 group-hover:scale-100 duration-500" alt="">
+                            <div class="absolute inset-0 bg-linear-to-b to-slate-900 from-transparent opacity-0 group-hover:opacity-100 duration-500"></div>
+                            <div class="absolute p-4 bottom-0 inset-s-0">
+                                <a href="#!" class="text-lg font-medium text-white hover:text-primary duration-500 ease-in-out">{{ destino.nombre }}</a>
+                                <p class="text-white/70 group-hover:text-white text-sm duration-500">{{ destino.hoteles }} Hoteles</p>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+                }
+            </div>
+        </div><!--end grid-->
+    </div><!--end container-->
+
+    <div class="container relative md:mt-24 mt-16">
+        <div class="grid grid-cols-1 pb-8 text-center">
+            <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Paquetes de Tours</h3>
+            <p class="text-slate-400 max-w-xl mx-auto">¿Planificando un viaje? ¡Organizamos tu viaje con los mejores lugares y el mejor presupuesto!</p>
+        </div><!--end grid-->
+
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-6 gap-6">
+            @for (tour of tours; track $index) {
+                <div class="group rounded-md shadow-sm dark:shadow-gray-700">
+                    <div class="relative overflow-hidden rounded-t-md shadow-sm dark:shadow-gray-700 mx-3 mt-3">
+                        <img [src]="tour.imagen" class="scale-125 group-hover:scale-100 duration-500" alt="">
+                        @if (tour.descuento) {
+                            <div class="absolute top-0 inset-s-0 p-4">
+                                <span class="bg-primary text-white text-[12px] px-2.5 py-1 font-medium rounded-md h-5">{{ tour.descuento }}</span>
+                            </div>
+                        }
+                        <div class="absolute top-0 inset-e-0 p-4">
+                            <a href="javascript:void(0)" class="size-8 inline-flex justify-center items-center bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 rounded-full text-slate-100 dark:text-slate-700 focus:text-primary dark:focus:text-primary hover:text-primary dark:hover:text-primary"><i class="ri-heart-fill text-[20px] align-middle"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="p-4">
+                        <p class="flex items-center text-slate-400 font-medium mb-2"><i class="ri-map-pin-line text-primary me-1"></i> {{ tour.lugar }}</p>
+                        <a [routerLink]="['/tours', tour.id]" class="text-lg font-medium hover:text-primary duration-500 ease-in-out">{{ tour.titulo }}</a>
+
+                        <div class="flex items-center mt-2">
+                            <span class="text-slate-400">Calificación:</span>
+                            <ul class="text-lg font-medium text-amber-400 list-none ms-2">
+                                <li class="inline"><i class="ri-star-s-fill align-middle"></i></li>
+                                <li class="inline"><i class="ri-star-s-fill align-middle"></i></li>
+                                <li class="inline"><i class="ri-star-s-fill align-middle"></i></li>
+                                <li class="inline"><i class="ri-star-s-fill align-middle"></i></li>
+                                <li class="inline"><i class="ri-star-s-fill align-middle"></i></li>
+                                <li class="inline text-slate-900 dark:text-white text-sm">{{ tour.rating }}</li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-4 pt-4 flex justify-between items-center border-t border-slate-100 dark:border-gray-800">
+                            <h5 class="text-lg font-medium text-primary">$ {{ tour.precio }} / Día</h5>
+                            <a [routerLink]="['/tours', tour.id]" class="text-slate-400 hover:text-primary">Explorar <i class="ri-arrow-right-s-line"></i></a>
+                        </div>
+                    </div>
+                </div><!--end content-->
+            }
+        </div><!--end grid-->
+
+        <div class="mt-6 text-center">
+            <a href="#!" class="text-slate-400 hover:text-primary inline-block">Ver más tours <i class="ri-arrow-right-s-line"></i></a>
+        </div>
+    </div><!--end container-->
+
+    <div class="container relative md:mt-24 mt-16">
+        <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-6 relative">
+            <div class="md:col-span-5">
+                <div class="relative">
+                    <img src="assets/images/about.jpg" class="mx-auto rounded-3xl shadow-sm dark:shadow-gray-700 w-[90%]" alt="">
+
+                    <div class="absolute flex items-center bottom-16 md:-inset-s-10 -inset-s-5 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-56 m-3">
+                        <div class="flex items-center justify-center h-16.25 min-w-16.25 bg-primary/5 text-primary text-center rounded-xl me-3">
+                            <i class="ri-group-line text-2xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <span class="text-slate-400">Visitantes</span>
+                            <p class="text-xl font-bold"><span class="counter-value" data-target="4589">2100</span></p>
+                        </div>
+                    </div>
+
+                    <div class="absolute flex items-center top-16 md:-inset-e-10 -inset-e-5 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-60 m-3">
+                        <div class="flex items-center justify-center h-16.25 min-w-16.25 bg-primary/5 text-primary text-center rounded-xl me-3">
+                            <i class="ri-global-line text-2xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <span class="text-slate-400">Paquetes de viaje</span>
+                            <p class="text-xl font-bold"><span class="counter-value" data-target="50">1</span>+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-7">
+                <div class="lg:ms-8">
+                    <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">La mejor agencia de <br> viajes: Aterriza Perú</h3>
+                    <p class="text-slate-400 max-w-xl mb-6">Obtén recursos útiles al instante, implementa soluciones seguras de transferencia de dinero, aumenta tu eficiencia diaria y conéctate con otros viajeros para crear tu propia red Aterriza Perú.</p>
+                    <a href="#!" class="py-2 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-primary text-white rounded-md">Leer más <i class="ri-arrow-right-s-line ms-0.5"></i></a>
+                </div>
+            </div>
+
+            <div class="absolute bottom-0 inset-s-1/3 -z-1">
+                <img src="assets/images/map-plane-big.png" class="lg:w-150 w-96" alt="">
+            </div>
+        </div>
+    </div><!--end container-->
+
+    <div class="container relative md:mt-24 mt-16">
+        <div class="grid grid-cols-1 pb-6 text-center">
+            <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Lo que dicen nuestros usuarios</h3>
+            <p class="text-slate-400 max-w-xl mx-auto">Este es un texto simple hecho para esta plantilla única y llamativa, puedes reemplazarlo con cualquier texto.</p>
+        </div><!--end grid-->
+
+        <div class="grid grid-cols-1 mt-6">
+            <div class="tiny-three-item" [appTinySlider]="testimoniosSliderOptions">
+                @for (testimonio of testimonios; track $index) {
+                    <div class="tiny-slide text-center">
+                        <div class="cursor-e-resize">
+                            <div class="content relative rounded-sm shadow-sm dark:shadow-gray-700 m-2 p-6 bg-white dark:bg-slate-900 before:content-[''] before:absolute before:inset-s-1/2 before:-bottom-1 before:box-border before:border-8 before:rotate-45 before:border-t-transparent before:border-e-white dark:before:border-e-slate-900 before:border-b-white dark:before:border-b-slate-900 before:border-s-transparent before:shadow-testi dark:before:shadow-gray-700 before:origin-top-left">
+                                <i class="ri-double-quotes-l text-5xl text-primary"></i>
+                                <p class="text-slate-400">" {{ testimonio.texto }} "</p>
+                                <ul class="list-none mb-0 text-amber-400 mt-3">
+                                    <li class="inline"><i class="ri-star-s-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-s-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-s-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-s-fill"></i></li>
+                                    <li class="inline"><i class="ri-star-s-fill"></i></li>
+                                </ul>
+                            </div>
+
+                            <div class="text-center mt-5">
+                                <img [src]="testimonio.imagen" class="size-14 rounded-full shadow-md dark:shadow-gray-700 mx-auto" alt="">
+                                <h6 class="mt-2 font-semibold">{{ testimonio.nombre }}</h6>
+                                <span class="text-slate-400 text-sm">{{ testimonio.cargo }}</span>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div><!--end grid-->
+    </div><!--end container-->
+
+    <div class="container relative md:mt-24 mt-16">
+        <div class="grid grid-cols-1 pb-6 text-center">
+            <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Blog de viajes</h3>
+            <p class="text-slate-400 max-w-xl mx-auto">Este es un texto simple hecho para esta plantilla única y llamativa, puedes reemplazarlo con cualquier texto.</p>
+        </div><!--end grid-->
+
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-6 gap-6">
+            @for (blog of blogs; track $index) {
+                <div class="group relative overflow-hidden">
+                    <div class="relative overflow-hidden rounded-md shadow-sm dark:shadow-gray-800">
+                        <img [src]="blog.imagen" class="group-hover:scale-110 group-hover:rotate-3 duration-500" alt="">
+                        <div class="absolute top-0 inset-s-0 p-4 opacity-0 group-hover:opacity-100 duration-500">
+                            <span class="bg-primary text-white text-[12px] px-2.5 py-1 font-medium rounded-md h-5">{{ blog.categoria }}</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <div class="flex mb-4">
+                            <span class="flex items-center text-slate-400 text-sm"><i class="ri-time-line text-slate-900 dark:text-white me-1.5"></i>5 min de lectura</span>
+                            <span class="text-slate-400 text-sm ms-3">por <a href="#!" class="text-slate-900 dark:text-white hover:text-primary dark:hover:text-primary font-medium">Aterriza Perú</a></span>
+                        </div>
+
+                        <a href="#!" class="text-lg font-medium hover:text-primary duration-500 ease-in-out">{{ blog.titulo }}</a>
+                        <p class="text-slate-400 mt-2">{{ blog.resumen }}</p>
+
+                        <div class="mt-3">
+                            <a href="#!" class="hover:text-primary inline-flex items-center">Leer más <i class="ri-arrow-right-s-line ms-1"></i></a>
+                        </div>
+                    </div>
+                </div><!--end content-->
+            }
+        </div><!--end grid-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- End -->

@@ -1,0 +1,132 @@
+<!-- TAGLINE inset-s-->
+<div class="tagline bg-slate-900">
+    <div class="container relative">
+        <div class="grid grid-cols-1">
+            <div class="flex items-center justify-between">
+                <ul class="list-none">
+                    <li class="inline-flex items-center">
+                        <i class="ri-time-line text-primary"></i>
+                        <span class="ms-2 text-slate-300">Lun-Sáb: 9am a 6pm</span>
+                    </li>
+                    <li class="inline-flex items-center ms-2">
+                        <i class="ri-map-pin-line text-primary"></i>
+                        <span class="ms-2 text-slate-300">Lima, Perú</span>
+                    </li>
+                </ul>
+
+                <ul class="list-none">
+                    <li class="inline-flex items-center">
+                        <i class="ri-mail-line text-primary"></i>
+                        <a href="mailto:reservas@aterrizaperu.com" class="ms-2 text-slate-300 hover:text-slate-200">reservas@aterrizaperu.com</a>
+                    </li>
+                    <li class="inline-flex items-center ms-2">
+                        <ul class="list-none">
+                            <li class="inline-flex mb-0"><a href="#!" class="text-slate-300 hover:text-primary"><i class="ri-facebook-line align-middle" title="facebook"></i></a></li>
+                            <li class="inline-flex ms-2 mb-0"><a href="#!" class="text-slate-300 hover:text-primary"><i class="ri-instagram-line align-middle" title="instagram"></i></a></li>
+                            <li class="inline-flex ms-2 mb-0"><a href="#!" class="text-slate-300 hover:text-primary"><i class="ri-twitter-x-line align-middle" title="twitter"></i></a></li>
+                            <li class="inline-flex ms-2 mb-0"><a href="tel:+51999999999" class="text-slate-300 hover:text-primary"><i class="ri-phone-line align-middle" title="phone"></i></a></li>
+                        </ul><!--end icon-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><!--end container-->
+</div><!--end tagline-->
+<!-- TAGLINE inset-e-->
+<!-- Start Navbar -->
+<nav id="topnav" class="defaultscroll is-sticky tagline-height">
+    <div class="container relative">
+        <!-- Logo container-->
+        <a class="logo" routerLink="/">
+            <span class="inline-block dark:hidden">
+                <img src="assets/images/logo-dark.png" class="h-7 l-dark" alt="">
+                <img src="assets/images/logo-light.png" class="h-7 l-light" alt="">
+            </span>
+            <img src="assets/images/logo-white.png" class="hidden dark:inline-block" alt="">
+        </a>
+        <!-- End Logo container-->
+
+        <!-- Start Mobile Toggle -->
+        <div class="menu-extras">
+            <div class="menu-item">
+                <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- End Mobile Toggle -->
+
+        <!--Login button inset-s-->
+        <ul class="buy-button list-none mb-0">
+            <li class="dropdown inline-block relative pe-1">
+                <button data-dropdown-toggle="dropdown" class="dropdown-toggle align-middle inline-flex search-dropdown" type="button">
+                    <i class="ri-search-line text-xl dark-icon"></i>
+                    <i class="ri-search-line text-xl white-icon text-white"></i>
+                </button>
+                <!-- Dropdown menu -->
+                <div class="dropdown-menu absolute overflow-hidden inset-e-0 m-0 mt-5 z-10 md:w-52 w-48 rounded-md bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 hidden">
+                    <div class="relative">
+                        <i class="ri-search-line absolute top-2.25 inset-e-3"></i>
+                        <input type="text" class="h-9 px-3 pe-10 w-full border-0 focus:ring-0 outline-none" name="s" id="searchItem" placeholder="Buscar...">
+                    </div>
+                </div>
+            </li>
+
+            <li class="dropdown inline-block relative ps-0.5">
+                <button data-dropdown-toggle="dropdown" class="dropdown-toggle items-center" type="button">
+                    <span class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-md border border-primary bg-primary text-white"><img src="assets/images/client/16.jpg" class="rounded-md" alt=""></span>
+                </button>
+                <!-- Dropdown menu -->
+                <div class="dropdown-menu absolute inset-e-0 m-0 mt-4 z-10 w-48 rounded-md overflow-hidden bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 hidden">
+                    <ul class="py-2 text-start">
+                        <li>
+                            <a href="#!" class="flex items-center font-medium py-2 px-4 dark:text-white/70 hover:text-primary dark:hover:text-white"><i class="ri-user-line me-2"></i>Perfil</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="flex items-center font-medium py-2 px-4 dark:text-white/70 hover:text-primary dark:hover:text-white"><i class="ri-customer-service-line me-2"></i>Ayuda</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="flex items-center font-medium py-2 px-4 dark:text-white/70 hover:text-primary dark:hover:text-white"><i class="ri-settings-line me-2"></i>Configuración</a>
+                        </li>
+                        <li class="border-t border-gray-100 dark:border-gray-800 my-2"></li>
+                        <li>
+                            <a href="#!" class="flex items-center font-medium py-2 px-4 dark:text-white/70 hover:text-primary dark:hover:text-white"><i class="ri-logout-circle-r-line me-2"></i>Salir</a>
+                        </li>
+                    </ul>
+                </div>
+            </li><!--end dropdown-->
+        </ul>
+        <!--Login button inset-e-->
+
+        <div id="navigation">
+            <!-- Navigation Menu-->
+            <ul class="navigation-menu nav-right justify-end! nav-light">
+                <li><a routerLink="/" class="sub-menu-item">Inicio</a></li>
+
+                <li class="has-submenu parent-parent-menu-item"><a href="javascript:void(0)"> Tours </a><span class="menu-arrow"></span>
+                    <ul class="submenu">
+                        <li><a href="#!" class="sub-menu-item">Grid</a></li>
+                        <li><a href="#!" class="sub-menu-item">Lista</a></li>
+                        <li><a href="#!" class="sub-menu-item">Detalle de Tour</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu parent-parent-menu-item">
+                    <a href="javascript:void(0)">Páginas</a><span class="menu-arrow"></span>
+                    <ul class="submenu">
+                        <li><a href="#!" class="sub-menu-item">Sobre Nosotros</a></li>
+                        <li><a href="#!" class="sub-menu-item">Blog</a></li>
+                        <li><a href="#!" class="sub-menu-item">Contacto</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#!" class="sub-menu-item">Contáctanos</a></li>
+            </ul><!--end navigation menu-->
+        </div><!--end navigation-->
+    </div><!--end container-->
+</nav><!--end header-->
+<!-- End Navbar -->
