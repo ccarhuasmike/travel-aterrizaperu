@@ -24,31 +24,14 @@
             <div class="grid md:grid-cols-12 grid-cols-1 gap-6">
                 <div class="lg:col-span-8 md:col-span-7">
                     <div class="grid grid-cols-12 gap-4">
-                        <div class="md:col-span-8 col-span-7">
-                            <div class="group relative overflow-hidden rounded-sm shadow-sm dark:shadow-gray-800">
-                                <img [src]="t.imagen" class="w-full lg:h-60 md:h-44 h-48 object-cover" alt="">
-                            </div>
+                        @for (image of (t.galeriaImagen ?? [t.imagen, t.imagen, t.imagen, t.imagen]); track $index) {
+                        <div [class]="$index % 3 === 0 ? 'md:col-span-8 col-span-7' : 'md:col-span-4 col-span-5'">
+                            <a [href]="image" class="lightbox group relative overflow-hidden rounded-sm shadow-sm dark:shadow-gray-800 block" data-group="tour-gallery">
+                                <img [src]="image" class="w-full lg:h-60 md:h-44 h-48 object-cover scale-125 group-hover:scale-100 duration-500" alt="">
+                            </a>
                         </div>
-
-                        <div class="md:col-span-4 col-span-5">
-                            <div class="group relative overflow-hidden rounded-sm shadow-sm dark:shadow-gray-800">
-                                <img [src]="t.imagen" class="w-full lg:h-60 md:h-44 h-48 object-cover" alt="">
-                            </div>
-                        </div>
-
-                        <div class="md:col-span-4 col-span-5">
-                            <div class="group relative overflow-hidden rounded-sm shadow-sm dark:shadow-gray-800">
-                                <img [src]="t.imagen" class="w-full lg:h-60 md:h-44 h-48 object-cover" alt="">
-                            </div>
-                        </div>
-
-                        <div class="md:col-span-8 col-span-7">
-                            <div class="group relative overflow-hidden rounded-sm shadow-sm dark:shadow-gray-800">
-                                <img [src]="t.imagen" class="w-full lg:h-60 md:h-44 h-48 object-cover" alt="">
-                            </div>
-                        </div>
+                        }
                     </div>
-
                     <h5 class="text-2xl font-semibold mt-5">{{ t.titulo }}</h5>
                     <p class="flex items-center text-slate-400 font-medium mt-2"><i class="ri-map-pin-line font-normal me-1"></i> {{ t.lugar }}</p>
 
@@ -100,6 +83,20 @@
                             <p class="text-slate-400 mt-3">{{ parrafo }}</p>
                         }
                     </div>
+
+                    @if (t.incluye) {
+                    <div class="mt-6">
+                        <h5 class="text-lg font-semibold">¿Qué incluye?</h5>
+                        <ul class="list-none mt-3">
+                            @for (item of t.incluye; track $index) {
+                            <li class="flex items-start mt-2">
+                                <i class="ri-checkbox-circle-fill text-primary text-lg me-2 mt-0.5"></i>
+                                <span class="text-slate-400">{{ item }}</span>
+                            </li>
+                            }
+                        </ul>
+                    </div>
+                    }
 
                     <div class="mt-6">
                         <h5 class="text-lg font-semibold">Preguntas y Respuestas:</h5>

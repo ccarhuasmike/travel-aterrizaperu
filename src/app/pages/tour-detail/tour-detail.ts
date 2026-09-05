@@ -1,6 +1,9 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, effect, inject, PLATFORM_ID, signal } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { RouterLink, ActivatedRoute } from '@angular/router';
 import { getTourById } from '../../shared/tours';
+
+declare const Tobii: new (options?: unknown) => { destroy: () => void };
 
 interface Faq {
   pregunta: string;
@@ -15,6 +18,8 @@ interface Faq {
 })
 export class TourDetail {
   private readonly route = inject(ActivatedRoute);
+  private readonly platformId = inject(PLATFORM_ID);
+  private tobiiInstance?: { destroy: () => void };
 
   protected readonly tour = signal(getTourById(this.route.snapshot.paramMap.get('id') ?? ''));
 
@@ -22,6 +27,18 @@ export class TourDetail {
     this.route.paramMap.subscribe((params) => {
       this.tour.set(getTourById(params.get('id') ?? ''));
     });
+
+    if (isPlatformBrowser(this.platformId)) {
+      effect(() => {
+        this.tour();
+        setTimeout(() => this.reloadLightbox());
+      });
+    }
+  }
+
+  private reloadLightbox(): void {
+    this.tobiiInstance?.destroy();
+    this.tobiiInstance = new Tobii();
   }
 
   protected readonly faqs: Faq[] = [

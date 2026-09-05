@@ -11,15 +11,23 @@ export interface Tour {
   grupo: string;
   idioma: string;
   descripcion: string[];
+  noches?: string;
+  saliendo?: string;
+  descripcionbreve?: string;
+  paquete?: string;
+  galeriaImagen?: string[];
+  incluye?: string[];
 }
 
 export const TOURS: Tour[] = [
+
+
   {
     id: 'aventura-en-vela-por-cuba',
     titulo: 'Eco Europa Clasica con Air Europa +equipaje 23abr al 07may',
     lugar: 'Eco Europa Clasica',
     imagen: 'assets/images/listing/EcoEuropa/EUROPA.jpg.webp',
-    precio:  3.274 ,
+    precio: 3.274,
     rating: '5.0 (30)',
     descuento: '10% Off',
     duracion: '2 días',
@@ -52,7 +60,7 @@ export const TOURS: Tour[] = [
     titulo: 'Vichayito - Hotel El Refugio de Vichayito con vuelo incluido',
     lugar: 'Vichayito - Perú',
     imagen: 'assets/images/listing/Vichayito/VACHAYITO.jpg.webp',
-    precio: 305 ,
+    precio: 305,
     rating: '5.0 (30)',
     duracion: '5 días',
     tipo: 'Playa',
@@ -84,7 +92,7 @@ export const TOURS: Tour[] = [
     titulo: 'Escapada Ica',
     lugar: 'Ica - Perú',
     imagen: 'assets/images/listing/EscapadaIca/ICA.webp',
-    precio: 69 ,
+    precio: 69,
     rating: '5.0 (30)',
     duracion: '4 días',
     tipo: 'Montaña',
@@ -112,8 +120,371 @@ export const TOURS: Tour[] = [
       'La ventaja de su origen latino y el relativo sinsentido del Lorum Ipsum es que el texto no atrae la atención sobre sí mismo ni distrae la atención del espectador del diseño.',
     ],
   },
+
+  {
+    id: 'viaje-en-globo-aerostatico',
+    titulo: 'Cartagena con vuelo incluido',
+    lugar: 'Cartagena - Colombia',
+    imagen: 'assets/images/listing/Cartagena/cartagena.webp',
+    precio: 2942,
+    rating: '5.0 (30)',
+    descuento: '25% Off',
+    duracion: '1 día',
+    tipo: 'Aventura',
+    grupo: '10 personas',
+    idioma: 'Español, Inglés',
+    descripcion: [
+      "El texto de relleno más conocido es el 'Lorem Ipsum', que se dice se originó en el siglo XVI. Se compone en un pseudo-latín que corresponde más o menos al latín 'propio'. Contiene una serie de palabras latinas reales. Este antiguo texto de relleno también es incomprensible, pero imita el ritmo de la mayoría de los idiomas europeos en escritura latina.",
+      'La ventaja de su origen latino y el relativo sinsentido del Lorum Ipsum es que el texto no atrae la atención sobre sí mismo ni distrae la atención del espectador del diseño.',
+    ],
+  },
+
+
+
+  
+  {
+    id: 'punta-cana-caribe-deluxe-Princess',
+    titulo: 'Punta Cana - Caribe Deluxe Princess',
+    lugar: 'Punta Cana, Republica Dominicana ',
+    imagen: 'assets/images/listing/PuntaCana/0000758_punta-cana-caribe-deluxe-princess_320.webp',
+    galeriaImagen:[
+      'assets/images/listing/PuntaCana/0000758_punta-cana-caribe-deluxe-princess_320.webp',
+      'assets/images/listing/PuntaCana/0000759_punta-cana-caribe-deluxe-princess_550.webp',
+      'assets/images/listing/PuntaCana/0000760_punta-cana-caribe-deluxe-princess_550.webp',
+      'assets/images/listing/PuntaCana/0000761_punta-cana-caribe-deluxe-princess_550.webp',     
+    ],  
+    precio: 1655.00,
+    rating: '5.0 (30)',
+    descuento: '10% Off',
+    duracion: '2 días',
+    tipo: 'Aventura',
+    grupo: '50 personas',
+    idioma: 'Español',
+    descripcion: [
+      "Punta Cana con todo listo para que solo disfrutes.",
+      'Ubicado frente a las paradisíacas playas de Punta Cana, rodeado de palmeras y aguas turquesas. Disfruta del Caribe, actividades acuáticas y una experiencia todo incluido inolvidable.',
+      'Fechas de viaje 30 de diciembre – 03 de enero, 2027 5 días · 4 noches',
+    ],
+    noches: '4 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'paquete-playa-caribe',
+    incluye: [
+      'Boleto aéreo Lima/Punta Cana/Lima con LATAM Airlines - Permite mochila + Carry-On (12 kg)',
+      'Traslados incluidos: Aeropuerto – hotel – aeropuerto (Servicio Compartido)',
+      '4 noches de alojamiento en Grand Sirenis Punta Cana - Habitación Doble',
+      'Sistema de alimentación Todo Incluido: Desayuno y almuerzo buffet, cena buffet o a la carta, piqueos y bebidas ilimitadas',
+      'Seguro de viajes',
+    ],
+  },
+
+  {
+    id: 'punta-cana-grand-sirenis',
+    titulo: 'Punta Cana - Grand Sirenis',
+    lugar: 'Punta Cana, Republica Dominicana ',
+    imagen: 'assets/images/listing/punta-cana-grand-sirenis/0000762_punta-cana-grand-sirenis_550.webp',
+    galeriaImagen:[
+      'assets/images/listing/punta-cana-grand-sirenis/0000762_punta-cana-grand-sirenis_550.webp',
+      'assets/images/listing/punta-cana-grand-sirenis/0000763_punta-cana-grand-sirenis_550.webp',
+      'assets/images/listing/punta-cana-grand-sirenis/0000764_punta-cana-grand-sirenis_550.webp',
+      'assets/images/listing/punta-cana-grand-sirenis/0000765_punta-cana-grand-sirenis_550.webp',     
+    ],  
+    precio: 1579.00,
+    rating: '5.0 (30)',
+    descuento: '',
+    duracion: '2 días',
+    tipo: 'Aventura',
+    grupo: '50 personas',
+    idioma: 'Español',
+    descripcion: [
+      "Punta Cana con todo listo para que solo disfrutes.",
+      'En el corazón del Caribe, con acceso a playas paradisíacas y paisajes tropicales únicos. Relájate, disfruta actividades frente al mar y descubre la magia de Punta Cana.',
+      'Fechas de viaje 30 de diciembre – 03 de enero, 2027 5 días · 4 noches',
+    ],
+    noches: '4 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'paquete-playa-caribe',
+    incluye: [
+      'Boleto aéreo Lima/Punta Cana/Limacon LATAM Airlines - Permite mochila + Carry-On (12 kg)',
+      'Traslados incluidos: Aeropuerto – hotel – aeropuerto (Servicio Compartido)',
+      '4 noches de alojamiento en Grand Sirenis Punta Cana - Habitación Doble',
+      'Sistema de alimentación Todo Incluido: Desayuno y almuerzo buffet, cena buffet o a la carta, piqueos y bebidas ilimitadas',
+      'Seguro de viajes',
+    ],
+  },
+
+
+
+
+   {
+    "id": "punta-cana-vista-sol",
+    "titulo": "Punta Cana - Vista Sol",
+    "lugar": "Punta Cana, República Dominicana",
+    "imagen": "assets/images/listing/Punta Cana - Vista Sol/0000769_punta-cana-vista-sol_550.webp",
+    "galeriaImagen": [
+      "assets/images/listing/Punta Cana - Vista Sol/0000285_punta-cana-vista-sol_550.webp",
+      "assets/images/listing/Punta Cana - Vista Sol/0000769_punta-cana-vista-sol_550.webp",
+      "assets/images/listing/Punta Cana - Vista Sol/0000948_punta-cana-vista-sol_550.webp",
+      "assets/images/listing/Punta Cana - Vista Sol/0000768_punta-cana-vista-sol_550.webp"
+      
+    ],
+    "precio": 1629.00,
+    "rating": "4.8 (18)",
+    "descuento": "",
+    "duracion": "4 Noches",
+    "tipo": "Todo Incluido",
+    "grupo": "Año Nuevo",
+    "idioma": "Español",
+    "descripcion": [
+      "Celebra el Año Nuevo en Vista Sol Punta Cana con la mejor atención y sistema todo incluido."
+    ],
+    "noches": "4 Noches",
+    "saliendo": "Saliendo de Lima",
+    "paquete": "paquete-playa-caribe",
+    "incluye": [
+      "Vuelo",
+      "Hotel",
+      "Traslado",
+      "Seguro"
+    ]
+  },
+  {
+    "id": "punta-cana-whala-bavaro",
+    "titulo": "Punta Cana - Whala!Bávaro",
+    "lugar": "Punta Cana, República Dominicana",
+    "imagen": "assets/images/listing/Punta Cana - Whala!Bávaro/0000771_punta-cana-whalabavaro_550.webp",
+    "galeriaImagen": [
+      "assets/images/listing/Punta Cana - Whala!Bávaro/0000771_punta-cana-whalabavaro_550.webp",
+      "assets/images/listing/Punta Cana - Whala!Bávaro/0000772_punta-cana-whalabavaro_550.webp",
+      "assets/images/listing/Punta Cana - Whala!Bávaro/0000947_punta-cana-whalabavaro_550.webp",
+      "assets/images/listing/Punta Cana - Whala!Bávaro/0000773_punta-cana-whalabavaro_550.webp",
+    ],
+    "precio": 1359.00,
+    "rating": "4.7 (22)",
+    "descuento": "12% Off",
+    "duracion": "4 Noches",
+    "tipo": "Todo Incluido",
+    "grupo": "Año Nuevo",
+    "idioma": "Español",
+    "descripcion": [
+      "Punta Cana con todo listo para que solo disfrutes.",
+      "A pocos pasos de Playa Bávaro, una de las zonas más emblemáticas de Punta Cana. Vive una experiencia tropical rodeada de sol, mar y la esencia del Caribe dominicano.",
+      "Fechas de viaje 30 de diciembre – 03 de enero, 2027 5 días · 4 noches"
+    ],
+    "noches": "4 Noches",
+    "saliendo": "Saliendo de Lima",
+    "paquete": "paquete-playa-caribe",
+    "incluye": [
+      "Boleto aéreo Lima/Punta Cana/Lima con LATAM Airlines - Permite mochila + Carry-On (12 kg)",
+      "Traslados incluidos Aeropuerto – hotel – aeropuerto (Servicio Compartido)",
+      "4 noches de alojamiento Whalá!Bávaro - Habitación Doble",
+      "Sistema de alimentación Todo Incluido Desayuno y almuerzo buffet, cena buffet o a la carta, piqueos y bebidas ilimitadas",
+      'Seguro de viajes',
+    ]
+  },
+  {
+    "id": "cartagena-cartagena-plaza-hotel",
+    "titulo": "Cartagena - Cartagena Plaza Hotel",
+    "lugar": "Cartagena, Colombia",
+    "imagen": "assets/images/listing/Cartagena/cartagena-plaza.webp",
+    "galeriaImagen": [
+      "assets/images/listing/Cartagena/cartagena-plaza.webp"
+    ],
+    "precio": 935.00,
+    "rating": "4.6 (15)",
+    "descuento": "",
+    "duracion": "3 Noches",
+    "tipo": "Playa / Ciudad",
+    "grupo": "Año Nuevo",
+    "idioma": "Español",
+    "descripcion": [
+      "Escapada de Año Nuevo a Cartagena de Indias alojándote en el Cartagena Plaza Hotel."
+    ],
+    "noches": "3 Noches",
+    "saliendo": "Saliendo de Lima",
+    "paquete": "paquete-playa-caribe",
+    "incluye": [
+      "Vuelo",
+      "Hotel",
+      "Traslado",
+      "Seguro"
+    ]
+  },
+  {
+    "id": "cartagena-decameron",
+    "titulo": "Cartagena - Decameron",
+    "lugar": "Cartagena, Colombia",
+    "imagen": "assets/images/listing/Cartagena/decameron.webp",
+    "galeriaImagen": [
+      "assets/images/listing/Cartagena/decameron.webp"
+    ],
+    "precio": 1295.00,
+    "rating": "4.9 (40)",
+    "descuento": "",
+    "duracion": "3 Noches",
+    "tipo": "Todo Incluido",
+    "grupo": "Año Nuevo",
+    "idioma": "Español",
+    "descripcion": [
+      "Vive el Año Nuevo caribeño en el Hotel Decameron Cartagena con todo incluido."
+    ],
+    "noches": "3 Noches",
+    "saliendo": "Saliendo de Lima",
+    "paquete": "paquete-playa-caribe",
+    "incluye": [
+      "Vuelo",
+      "Hotel",
+      "Traslado",
+      "Seguro"
+    ]
+  },
+  {
+    "id": "cartagena-dreams-karibana",
+    "titulo": "Cartagena - Dreams Karibana",
+    "lugar": "Cartagena, Colombia",
+    "imagen": "assets/images/listing/Cartagena/dreams-karibana.webp",
+    "galeriaImagen": [
+      "assets/images/listing/Cartagena/dreams-karibana.webp"
+    ],
+    "precio": 1785.00,
+    "rating": "5.0 (12)",
+    "descuento": "",
+    "duracion": "3 Noches",
+    "tipo": "Todo Incluido",
+    "grupo": "Año Nuevo",
+    "idioma": "Español",
+    "descripcion": [
+      "Experiencia de lujo para Año Nuevo en Dreams Karibana Cartagena."
+    ],
+    "noches": "3 Noches",
+    "saliendo": "Saliendo de Lima",
+    "paquete": "paquete-playa-caribe",
+    "incluye": [
+      "Vuelo",
+      "Hotel",
+      "Traslado",
+      "Seguro"
+    ]
+  },
+  {
+    "id": "aruba-eagle-aruba-resort",
+    "titulo": "Aruba - Eagle Aruba Resort",
+    "lugar": "Oranjestad, Aruba",
+    "imagen": "assets/images/listing/Aruba/eagle-aruba.webp",
+    "galeriaImagen": [
+      "assets/images/listing/Aruba/eagle-aruba.webp"
+    ],
+    "precio": 2298.00,
+    "rating": "4.9 (10)",
+    "descuento": "",
+    "duracion": "4 Noches",
+    "tipo": "Playa",
+    "grupo": "Año Nuevo",
+    "idioma": "Español",
+    "descripcion": [
+      "Pasa el Año Nuevo en las arenas blancas de Eagle Beach hospedándote en Eagle Aruba Resort."
+    ],
+    "noches": "4 Noches",
+    "saliendo": "Saliendo de Lima",
+    "paquete": "paquete-playa-caribe",
+    "incluye": [
+      "Vuelo",
+      "Hotel",
+      "Traslado",
+      "Seguro"
+    ]
+  },
+  {
+    "id": "aruba-embassy-suites-by-hilton",
+    "titulo": "Aruba - Embassy Suites By Hilton",
+    "lugar": "Oranjestad, Aruba",
+    "imagen": "assets/images/listing/Aruba/embassy-suites.webp",
+    "galeriaImagen": [
+      "assets/images/listing/Aruba/embassy-suites.webp"
+    ],
+    "precio": 1970.00,
+    "rating": "4.8 (14)",
+    "descuento": "",
+    "duracion": "4 Noches",
+    "tipo": "Playa / Relax",
+    "grupo": "Año Nuevo",
+    "idioma": "Español",
+    "descripcion": [
+      "Alojamiento en Embassy Suites By Hilton en Aruba saliendo desde Lima para Año Nuevo."
+    ],
+    "noches": "4 Noches",
+    "saliendo": "Saliendo de Lima",
+    "paquete": "paquete-playa-caribe",
+    "incluye": [
+      "Vuelo",
+      "Hotel",
+      "Traslado",
+      "Seguro"
+    ]
+  },
+  {
+    "id": "aruba-secrets-baby-beach",
+    "titulo": "Aruba - Secrets Baby Beach",
+    "lugar": "Sint Nicolaas, Aruba",
+    "imagen": "assets/images/listing/Aruba/secrets-baby-beach.webp",
+    "galeriaImagen": [
+      "assets/images/listing/Aruba/secrets-baby-beach.webp"
+    ],
+    "precio": 2844.00,
+    "rating": "5.0 (8)",
+    "descuento": "",
+    "duracion": "4 Noches",
+    "tipo": "Todo Incluido",
+    "grupo": "Año Nuevo",
+    "idioma": "Español",
+    "descripcion": [
+      "Experiencia exclusivo todo incluido de Año Nuevo en Secrets Baby Beach Aruba."
+    ],
+    "noches": "4 Noches",
+    "saliendo": "Saliendo de Lima",
+    "paquete": "paquete-playa-caribe",
+    "incluye": [
+      "Vuelo",
+      "Hotel",
+      "Traslado",
+      "Seguro"
+    ]
+  },
+  {
+    "id": "panama",
+    "titulo": "Panamá",
+    "lugar": "Ciudad de Panamá, Panamá",
+    "imagen": "assets/images/listing/Panama/panama.webp",
+    "galeriaImagen": [
+      "assets/images/listing/Panama/panama.webp"
+    ],
+    "precio": 559.00,
+    "rating": "4.5 (35)",
+    "descuento": "",
+    "duracion": "3 Noches",
+    "tipo": "Ciudad / Compras",
+    "grupo": "General",
+    "idioma": "Español",
+    "descripcion": [
+      "Paquete de viaje a Panamá por 3 noches saliendo desde Lima con vuelo, hotel y traslados."
+    ],
+    "noches": "3 Noches",
+    "saliendo": "Saliendo de Lima",
+    "paquete": "paquete-playa-caribe",
+    "incluye": [
+      "Vuelo",
+      "Hotel",
+      "Traslado"
+    ]
+  }
+
+
+
 ];
 
 export function getTourById(id: string): Tour | undefined {
   return TOURS.find((tour) => tour.id === id);
 }
+export function getPaqueteById(id: string): Tour[]{
+  return TOURS.filter((tour) => tour.paquete === id);
+}
+

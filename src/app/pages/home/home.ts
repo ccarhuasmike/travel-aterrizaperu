@@ -51,6 +51,28 @@ export class Home {
     },
   };
 
+  protected readonly proximaAventuraSliderOptions = {
+    controls: true,
+    mouseDrag: true,
+    loop: true,
+    rewind: true,
+    autoplay: true,
+    autoplayButtonOutput: false,
+    autoplayTimeout: 3000,
+    navPosition: 'bottom',
+    controlsText: ['<i class="ri-arrow-left-s-line "></i>', '<i class="ri-arrow-right-s-line"></i>'],
+    nav: false,
+    speed: 400,
+    gutter: 0,
+    responsive: {
+      1025: { items: 3 },
+      992: { items: 3 },
+      767: { items: 2 },
+      425: { items: 1 },
+    },
+  };
+
+
   protected readonly testimoniosSliderOptions = {
     controls: false,
     mouseDrag: true,
@@ -78,6 +100,18 @@ export class Home {
     // { nombre: 'Kuala Lumpur, Malasia', hoteles: 3, imagen: 'assets/images/listing/6.jpg' },
     // { nombre: 'Sídney, Australia', hoteles: 3, imagen: 'assets/images/listing/7.jpg' },
   ];
+    protected readonly proximaAventura: Destino[] = [
+    { nombre: 'Medellín, Colombia', hoteles: 3, imagen: 'assets/images/listing/proxima_aventura/0000868_playas-del-caribe_350.webp' },
+    { nombre: 'Cartagena, Colombia', hoteles: 3, imagen: 'assets/images/listing/proxima_aventura/0000869_paquetes-con-descuento_350.webp' },
+    { nombre: 'Medellín, Plaza Botero', hoteles: 3, imagen: 'assets/images/listing/proxima_aventura/0000870_paquetes-nacionales_350.webp' },
+    { nombre: 'Barranquilla, Colombia', hoteles: 3, imagen: 'assets/images/listing/proxima_aventura/0000872_europa_350.webp' },
+       { nombre: 'Medellín, Plaza Botero', hoteles: 3, imagen: 'assets/images/listing/proxima_aventura/0000873_destinos-sudamerica_350.webp' },
+    { nombre: 'Barranquilla, Colombia', hoteles: 3, imagen: 'assets/images/listing/proxima_aventura/0000874_ano-nuevo_350.webp' },
+    // { nombre: 'Whistler, Canadá', hoteles: 3, imagen: 'assets/images/listing/5.jpg' },
+    // { nombre: 'Kuala Lumpur, Malasia', hoteles: 3, imagen: 'assets/images/listing/6.jpg' },
+    // { nombre: 'Sídney, Australia', hoteles: 3, imagen: 'assets/images/listing/7.jpg' },
+  ];
+
 
   protected readonly tours = TOURS;
 

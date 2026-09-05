@@ -1,0 +1,110 @@
+@if (tours(); as t) {
+<!-- Start Hero -->
+<section
+    class="relative w-full items-center py-36 bg-[url('../../assets/images/bg/cta.jpg')] bg-top bg-no-repeat bg-cover">
+    <div class="absolute inset-0 bg-linear-to-b from-slate-900/60 via-slate-900/80 to-slate-900"></div>
+    <div class="container relative">
+        <div class="grid grid-cols-1 pb-8 text-center mt-10">
+            <h3 class="text-3xl leading-normal tracking-wider font-semibold text-white">
+                datos de pruebas
+                <!-- {{ t.titulo }} -->
+
+            </h3>
+        </div><!--end grid-->
+    </div><!--end container-->
+
+    <div class="absolute text-center z-10 bottom-5 inset-s-0 inset-e-0 mx-3">
+        <ul class="tracking-[0.5px] mb-0 inline-block">
+            <li
+                class="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white">
+                <a routerLink="/">Inicio</a>
+            </li>
+            <li class="inline-block text-base text-white/50 mx-0.5 ltr:rotate-0 rtl:rotate-180"><i
+                    class="ri-arrow-right-s-line"></i></li>
+            <li class="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white"
+                aria-current="page">Tour</li>
+        </ul>
+    </div>
+</section><!--end section-->
+<!-- End Hero -->
+
+<div class="container relative md:mt-24 mt-16">
+    <div class="grid grid-cols-1 pb-8 text-center">
+        <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Paquetes de Tours</h3>
+        <p class="text-slate-400 max-w-xl mx-auto">¿Planificando un viaje? ¡Organizamos tu viaje con los mejores
+            lugares y el mejor presupuesto!</p>
+    </div><!--end grid-->
+
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-6 gap-6">
+        @for (tour of tours(); track $index) {
+        <div class="group rounded-md shadow-sm dark:shadow-gray-700">
+            <div class="relative overflow-hidden rounded-t-md shadow-sm dark:shadow-gray-700 mx-3 mt-3">
+                <img [src]="tour.imagen" class="scale-125 group-hover:scale-100 duration-500" alt="">
+                @if (tour.descuento) {
+                <div class="absolute top-0 inset-s-0 p-4">
+                    <span class="bg-primary text-white text-[12px] px-2.5 py-1 font-medium rounded-md h-5">{{
+                        tour.descuento }}</span>
+                </div>
+                }
+                <div class="absolute top-0 inset-e-0 p-4">
+                    <a href="javascript:void(0)"
+                        class="size-8 inline-flex justify-center items-center bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 rounded-full text-slate-100 dark:text-slate-700 focus:text-primary dark:focus:text-primary hover:text-primary dark:hover:text-primary"><i
+                            class="ri-heart-fill text-[20px] align-middle"></i></a>
+                </div>
+            </div>
+
+            <div class="p-4">
+                <p class="flex items-center text-slate-400 font-medium mb-2"><i
+                        class="ri-map-pin-line text-primary me-1"></i> {{ tour.lugar }}</p>
+                <a [routerLink]="['/tours', tour.id]"
+                    class="text-lg font-medium hover:text-primary duration-500 ease-in-out">{{ tour.titulo }}</a>
+
+                <div class="flex items-center mt-1">
+                    <span class="text-slate-400">{{ tour.noches }}</span> 
+                </div>
+                <div class="flex items-center mt-1">
+                    <span class="text-slate-400">{{ tour.saliendo }}</span> 
+                </div>
+
+                <!-- <div class="flex items-center mt-2">
+                    <span class="text-slate-400">Calificación:</span>
+                    <ul class="text-lg font-medium text-amber-400 list-none ms-2">
+                        <li class="inline"><i class="ri-star-s-fill align-middle"></i></li>
+                        <li class="inline"><i class="ri-star-s-fill align-middle"></i></li>
+                        <li class="inline"><i class="ri-star-s-fill align-middle"></i></li>
+                        <li class="inline"><i class="ri-star-s-fill align-middle"></i></li>
+                        <li class="inline"><i class="ri-star-s-fill align-middle"></i></li>
+                        <li class="inline text-slate-900 dark:text-white text-sm">{{ tour.rating }}</li>
+                    </ul>
+                </div> -->
+
+                <div class="mt-4 pt-4 flex justify-between items-center border-t border-slate-100 dark:border-gray-800">
+                    <h5 class="text-lg font-medium text-primary">$ {{ tour.precio }} / Día</h5>
+                    <a [routerLink]="['/tours', tour.id]" class="text-slate-400 hover:text-primary">Comprar <i
+                            class="ri-arrow-right-s-line"></i></a>
+                </div>
+            </div>
+        </div>
+        }
+    </div><!--end grid-->
+
+    <div class="mt-6 text-center">
+        <a href="#!" class="text-slate-400 hover:text-primary inline-block">Ver más tours <i
+                class="ri-arrow-right-s-line"></i></a>
+    </div>
+</div><!--end container-->
+
+
+
+
+} @else {
+<section class="relative md:py-24 py-16 text-center">
+    <div class="container relative">
+        <h3 class="mb-6 md:text-3xl text-2xl font-semibold">Tour no encontrado</h3>
+        <p class="text-slate-400 mb-6">El paquete que buscas no existe o fue removido.</p>
+        <a routerLink="/"
+            class="py-2 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-primary text-white rounded-md">Volver
+            al inicio</a>
+    </div>
+</section>
+}
