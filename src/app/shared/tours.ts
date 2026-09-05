@@ -349,9 +349,12 @@ export const TOURS: Tour[] = [
     "id": "cartagena-dreams-karibana",
     "titulo": "Cartagena - Dreams Karibana",
     "lugar": "Cartagena, Colombia",
-    "imagen": "assets/images/listing/Cartagena/dreams-karibana.webp",
+    "imagen": "assets/images/listing/Cartagena - Dreams Karibana/0000783_cartagena-dreams-karibana_550.webp",
     "galeriaImagen": [
-      "assets/images/listing/Cartagena/dreams-karibana.webp"
+      "assets/images/listing/Cartagena - Dreams Karibana/0000783_cartagena-dreams-karibana_550.webp",
+      "assets/images/listing/Cartagena - Dreams Karibana/0000784_cartagena-dreams-karibana_550.webp",
+      "assets/images/listing/Cartagena - Dreams Karibana/0000785_cartagena-dreams-karibana_550.webp",
+      "assets/images/listing/Cartagena - Dreams Karibana/0000786_cartagena-dreams-karibana_550.webp"
     ],
     "precio": 1785.00,
     "rating": "5.0 (12)",
