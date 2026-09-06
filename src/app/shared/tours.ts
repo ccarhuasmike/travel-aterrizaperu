@@ -774,7 +774,824 @@ export const TOURS: Tour[] = [
       'Desayunos incluidos',
       'Cataratas Ahuashiyacu'
     ]
+  },
+
+
+
+
+
+
+  {
+    id: 'joyas-de-europa',
+    titulo: 'Joyas de Europa',
+    lugar: 'Europa',
+    imagen: 'assets/images/listing/joyas-de-europa/0000930_joyas-de-europa_550.webp',
+    galeriaImagen: [
+      'assets/images/listing/joyas-de-europa/0000930_joyas-de-europa_550.webp',
+      'assets/images/listing/joyas-de-europa/0000931_joyas-de-europa_550.webp',
+      'assets/images/listing/joyas-de-europa/0000932_joyas-de-europa_550.webp',
+      'assets/images/listing/joyas-de-europa/0000933_joyas-de-europa_550.webp'
+    ],
+    precio: 3249.00,
+    rating: '4.8 (15)',
+    descuento: '6% Off',
+    duracion: '14 Noches',
+    tipo: 'Internacional / Cultural',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Descubre las principales ciudades e íconos de Europa en un recorrido inolvidable de 14 noches.',
+      'Paquete completo con vuelos, alojamientos y traslados gestionados para tu comodidad.',
+      'Recorre paisajes icónicos y disfruta de la riqueza cultural del continente europeo.',
+      'Descubre Europa recorriendo ciudades emblemáticas como Madrid, Barcelona, Roma, Venecia y París. Un viaje diseñado para vivir su historia, cultura y los paisajes más fascinantes del continente.'
+    ],
+    noches: '14 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'destino-europa',
+    incluye: [
+      'Boleto aéreo Lima - Madrid - Lima Con Air Europa',
+      'Traslados llegada y salida Aeropuerto de Barajas (MAD) – Hotel',
+      '14 noches de alojamiento Según itinerario',
+      'Desayuno buffet',
+      'Visita con guía local Barcelona, Roma, Florencia, Venecia, París y Madrid',
+      'Guía acompañante de habla hispana Durante todo el viaje',
+      'Tarjeta de asistencia desde Lima'
+    ]
+  },
+  {
+    id: 'eco-europa-clasica',
+    titulo: 'Eco Europa Clásica',
+    lugar: 'Europa',
+    imagen: 'assets/images/listing/eco-europa-clasica/0000937_eco-europa-clasica_550.webp',
+    galeriaImagen: [
+      'assets/images/listing/eco-europa-clasica/0000937_eco-europa-clasica_550.webp',
+      'assets/images/listing/eco-europa-clasica/0000934_eco-europa-clasica_550.webp',
+      'assets/images/listing/eco-europa-clasica/0000935_eco-europa-clasica_550.webp',
+      'assets/images/listing/eco-europa-clasica/0000936_eco-europa-clasica_550.webp'
+    ],
+    precio: 2209.00,
+    rating: '4.6 (12)',
+    duracion: '14 Noches',
+    tipo: 'Internacional / Económico',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Una alternativa ideal para conocer Europa a tu propio ritmo con servicios esenciales incluidos.',
+      'Alojamiento, traslados y seguro cubiertos para una experiencia tranquila y económica.',
+      'Vive la magia de Europa recorriendo destinos icónicos, calles llenas de historia y paisajes inolvidables. Una experiencia que reúne lo mejor de España, Francia e Italia en un solo viaje.'
+    ],
+    noches: '14 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'destino-europa',
+    incluye: [
+      'Traslados llegada y salida Aeropuerto de Barajas (MAD) – Hotel',
+      '14 noches de alojamiento Según itinerario',
+      'Desayuno buffet',
+      'Visita con guía local Barcelona, Roma, Florencia, Venecia, París y Madrid',
+      'Guía acompañante de habla hispana Durante todo el viaje',
+      'Seguro de viaje MAPFRE Aplica desde llegada del pasajero a territorio europeo'
+    ]
+  },
+  {
+    id: 'eco-europa-magica',
+    titulo: 'Eco Europa Mágica',
+    lugar: 'Europa',
+    imagen: 'assets/images/listing/eco-europa-magica/0000938_eco-europa-magica_550.webp',
+    galeriaImagen: [
+      'assets/images/listing/eco-europa-magica/0000938_eco-europa-magica_550.webp',
+      'assets/images/listing/eco-europa-magica/0000939_eco-europa-magica_550.webp',
+      'assets/images/listing/eco-europa-magica/0000940_eco-europa-magica_550.webp',
+      'assets/images/listing/eco-europa-magica/0000941_eco-europa-magica_550.webp'
+    ],
+    precio: 2465.00,
+    rating: '4.7 (18)',
+
+    duracion: '16 Noches',
+    tipo: 'Internacional / Cultural',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Disfruta de 16 noches mágicas recorriendo los destinos más deslumbrantes de Europa.',
+      'Un itinerario extendido diseñado para aprovechar al máximo tu estancia en el continente.',
+      'Explora la magia de Europa visitando ciudades icónicas, pueblos con encanto y paisajes de postal. Una experiencia inolvidable desde Madrid, París y Zúrich hasta Venecia, Florencia y Roma.'
+    ],
+    noches: '16 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'destino-europa',
+    incluye: [
+      'Traslados llegada y salida  Aeropuerto de Barajas (MAD) – Hotel',
+      '16 noches de alojamiento Según itinerario',
+      'Desayuno buffet',
+      'Visita con guía local Madrid, París, Venecia, Florencia, Roma y Barcelona',
+      'Guía acompañante de habla hispana Durante todo el viaje',
+      'Seguro de viaje MAPFRE Aplica desde llegada del pasajero a territorio europeo'
+    ]
+  },
+  {
+    id: 'leyendas-de-europa',
+    titulo: 'Leyendas de Europa',
+    lugar: 'Europa',
+    imagen: 'assets/images/listing/leyendas-de-europa/0000942_leyendas-de-europa_550.webp',
+    galeriaImagen: [
+      'assets/images/listing/leyendas-de-europa/0000942_leyendas-de-europa_550.webp',
+      'assets/images/listing/leyendas-de-europa/0000943_leyendas-de-europa_550.webp',
+      'assets/images/listing/leyendas-de-europa/0000944_leyendas-de-europa_550.webp',
+      'assets/images/listing/leyendas-de-europa/0000945_leyendas-de-europa_550.webp'
+    ],
+    precio: 2955.00,
+    rating: '4.9 (22)',
+
+    duracion: '20 Noches',
+    tipo: 'Internacional / Gran Tour',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'El viaje más completo: 20 noches para sumergirte en la historia, arquitectura y leyendas de Europa.',
+      'Ideal para quienes buscan una experiencia profunda e inolvidable con todo el respaldo necesario.',
+      'Recorre Europa visitando ciudades icónicas, pueblos con encanto y destinos llenos de historia. Desde Madrid hasta Roma, pasando por París, Ámsterdam, Viena y Venecia, descubre lo mejor del continente en un solo viaje.'
+    ],
+    noches: '20 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'destino-europa',
+    incluye: [
+      'Traslados llegada y salida Aeropuerto de Barajas (MAD) – Hotel',
+      '20 noches de alojamiento Según itinerario',
+      'Desayuno buffet',
+      'Visita con guía local Madrid, París, Ámsterdam, Praga, Viena, Venecia, Florencia, Roma y Barcelona',
+      'Crucero por el Rin',
+      'Guía acompañante de habla hispana Durante todo el viaje',
+      'Seguro de viaje MAPFRE Aplica desde llegada del pasajero a territorio europeo'
+    ]
+  },
+
+
+
+
+
+
+
+
+  {
+    id: 'arequipa',
+    titulo: 'Arequipa',
+    lugar: 'Arequipa, Perú',
+    imagen: 'assets/images/listing/arequipa/01.png',
+    galeriaImagen: [
+      'assets/images/listing/arequipa/01.png',
+      'assets/images/listing/arequipa/02.png',
+      'assets/images/listing/arequipa/03.png',
+      'assets/images/listing/arequipa/04.png'
+    ],
+    precio: 215.00,
+    rating: '4.7 (18)',
+
+    duracion: '2 Noches',
+    tipo: 'Nacional / Cultural',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Descubre la majestuosa Ciudad Blanca de Arequipa y disfruta de su impresionante arquitectura e historia.',
+      'Aprovecha una escapada perfecta con vuelo, hotel y traslados incluidos.'
+    ],
+    noches: '2 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'destinos-sudamerica',
+    incluye: [
+      'Vuelo',
+      'Hotel',
+      'Traslado'
+    ]
+  },
+  {
+    id: 'buenos-aires',
+    titulo: 'Buenos Aires',
+    lugar: 'Buenos Aires, Argentina',
+    imagen: 'assets/images/listing/buenos_aires/01.png',
+    galeriaImagen: [
+      'assets/images/listing/buenos_aires/01.png',
+      'assets/images/listing/buenos_aires/02.png',
+      'assets/images/listing/buenos_aires/03.png',
+      'assets/images/listing/buenos_aires/04.png'
+    ],
+    precio: 619.00,
+    rating: '4.8 (25)',
+    descuento: '11% Off',
+    duracion: '3 Noches',
+    tipo: 'Internacional / Ciudad',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Disfruta del tango, la gastronomía y el encanto urbano de Buenos Aires a precio de oferta.',
+      'Un paquete ideal de 3 noches para recorrer sus barrios más emblemáticos.'
+    ],
+    noches: '3 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'destinos-sudamerica',
+    incluye: [
+      'Vuelo',
+      'Hotel',
+      'Traslado'
+    ]
+  },
+  {
+    id: 'buenos-aires-dora-hotel',
+    titulo: 'Buenos Aires - Dora Hotel',
+    lugar: 'Buenos Aires, Argentina',
+    imagen: 'assets/images/listing/buenos_aires_dora/01.png',
+    galeriaImagen: [
+      'assets/images/listing/buenos_aires_dora/01.png',
+      'assets/images/listing/buenos_aires_dora/02.png',
+      'assets/images/listing/buenos_aires_dora/03.png',
+      'assets/images/listing/buenos_aires_dora/04.png'
+    ],
+    precio: 645.00,
+    rating: '4.6 (14)',
+    descuento: '17% Off',
+    duracion: '3 Noches',
+    tipo: 'Internacional / Año Nuevo',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Celebra el Año Nuevo en Buenos Aires hospedándote en el céntrico Dora Hotel.',
+      'Incluye seguro de viaje para mayor tranquilidad durante tus vacaciones.'
+    ],
+    noches: '3 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'destinos-sudamerica',
+    incluye: [
+      'Vuelo',
+      'Hotel',
+      'Traslado',
+      'Seguro'
+    ]
+  },
+  {
+    id: 'buenos-aires-grand-brizo',
+    titulo: 'Buenos Aires - Grand Brizo',
+    lugar: 'Buenos Aires, Argentina',
+    imagen: 'assets/images/listing/buenos-aires-grand-brizo/0000949_buenos-aires-grand-brizo_550.webp',
+    galeriaImagen: [
+      'assets/images/listing/buenos-aires-grand-brizo/0000949_buenos-aires-grand-brizo_550.webp',
+      'assets/images/listing/buenos-aires-grand-brizo/0000830_buenos-aires-grand-brizo_550.webp',
+      'assets/images/listing/buenos-aires-grand-brizo/0000831_buenos-aires-grand-brizo_550.webp',
+      'assets/images/listing/buenos-aires-grand-brizo/0000832_buenos-aires-grand-brizo_550.webp'
+    ],
+    precio: 785.00,
+    rating: '4.9 (20)',
+
+    duracion: '3 Noches',
+    tipo: 'Internacional / Año Nuevo',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Vive una experiencia superior de Año Nuevo en Buenos Aires alojándote en Grand Brizo.',
+      'Ubicación privilegiada con todas las comodidades y traslados garantizados.',
+      'Ubicado en el centro de Buenos Aires, a pocos pasos del Obelisco y la Avenida 9 de Julio. Disfruta de los principales atractivos turísticos, restaurantes y la vibrante vida porteña.',
+      'Fechas de viaje 31 de diciembre – 03 de enero, 2027 4 días · 3 noches'
+    ],
+    noches: '3 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'destinos-sudamerica',
+    incluye: [
+      'Boleto aéreo Lima/Buenos Aires/Limacon LATAM Airlines - Permite bolso o mochila + Carry On (12 kg)',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto (Servicio Semi-privado)',
+      '3 noches de alojamientoGrand Brizo - Habitación Comfort',
+      'Desayunos incluidos',
+      'Excursión de medio día City tour en servicio regularRegreso al hotel por cuenta propia',
+      'Tax FreeGuía para recuperar el impuesto',
+      'Tour de Compras en fábricas de cuero, ropa, etc.Cortesía',
+      'Casino Puerto MaderoEntrada y traslado gratis brindado por el Casino para mayores de 18 años - Cortesía',
+      '10% de descuento por consumo a la cartaRestaurant Puerto Cristal en Puerto Madero - Cortesía',
+      'Seguro de viajes',
+
+    ]
+  },
+  {
+    id: 'buenos-aires-hotel-madero',
+    titulo: 'Buenos Aires - Hotel Madero',
+    lugar: 'Buenos Aires, Argentina',
+    imagen: 'assets/images/listing/buenos-aires-hotel-madero/0000834_buenos-aires-hotel-madero_550.webp',
+    galeriaImagen: [
+      'assets/images/listing/buenos-aires-hotel-madero/0000834_buenos-aires-hotel-madero_550.webp',
+      'assets/images/listing/buenos-aires-hotel-madero/0000835_buenos-aires-hotel-madero_550.webp',
+      'assets/images/listing/buenos-aires-hotel-madero/0000836_buenos-aires-hotel-madero_550.webp',
+      'assets/images/listing/buenos-aires-hotel-madero/0000837_buenos-aires-hotel-madero_550.webp'
+    ],
+    precio: 945.00,
+    rating: '4.9 (15)',
+
+    duracion: '3 Noches',
+    tipo: 'Internacional / Año Nuevo',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Pasa el Año Nuevo en Puerto Madero con alojamiento exclusivo en el Hotel Madero.',
+      'Servicios de primer nivel con traslados y seguro de viaje incluidos.',
+      'Hospédate en el elegante Puerto Madero, uno de los sectores más exclusivos de la ciudad. Disfruta de gastronomía, paseos junto al río y fácil acceso a los principales atractivos turísticos.',
+      'Fechas de viaje 31 de diciembre – 03 de enero, 2027 4 días · 3 noches'
+    ],
+    noches: '3 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'destinos-sudamerica',
+    incluye: [
+      'Boleto aéreo Lima/Buenos Aires/LimaCon LATAM Airlines - Permite bolso o mochila + Carry On (12 kg)',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto (Servicio Semi-privado)',
+      '3 noches de alojamientoHotel Madero - Habitación Superior',
+      'Desayunos incluidos',
+      'Excursión de medio día City tour en servicio regularRegreso al hotel por cuenta propia',
+      'Tax FreeGuía para recuperar el impuesto',
+      'Tour de Compras en fábricas de cuero, ropa, etc.Cortesía',
+      'Casino Puerto MaderoEntrada y traslado gratis brindado por el Casino para mayores de 18 años - Cortesía',
+      '10% de descuento por consumo a la cartaRestaurant Puerto Cristal en Puerto Madero - Cortesía',
+      'Seguro de viajes',
+
+    ]
+  },
+  {
+    id: 'buenos-aires-ker-san-telmo',
+    titulo: 'Buenos Aires - Ker San Telmo',
+    lugar: 'Buenos Aires, Argentina',
+    imagen: 'assets/images/listing/buenos-aires-ker-san-telmo/0000950_buenos-aires-ker-san-telmo_550.webp',
+    galeriaImagen: [
+      'assets/images/listing/buenos-aires-ker-san-telmo/0000950_buenos-aires-ker-san-telmo_550.webp',
+      'assets/images/listing/buenos-aires-ker-san-telmo/0000841_buenos-aires-ker-san-telmo_550.webp',
+      'assets/images/listing/buenos-aires-ker-san-telmo/0000839_buenos-aires-ker-san-telmo_550.webp',
+      'assets/images/listing/buenos-aires-ker-san-telmo/0000840_buenos-aires-ker-san-telmo_550.webp'
+    ],
+    precio: 675.00,
+    rating: '4.7 (16)',
+
+    duracion: '3 Noches',
+    tipo: 'Internacional / Año Nuevo',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Año Nuevo en el pintoresco barrio de San Telmo con estancia en Ker San Telmo Hotel.',
+      'Combinación perfecta entre tradición urbana y confort total.',
+      'Ubicado en el corazón de San Telmo, cerca de Plaza de Mayo y Puerto Madero. Descubre calles llenas de historia, cafés tradicionales y los principales atractivos de Buenos Aires.',
+      'Fechas de viaje 31 de diciembre – 03 de enero, 2027 4 días · 3 noches'
+    ],
+    noches: '3 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'destinos-sudamerica',
+    incluye: [
+      'Boleto aéreo Lima/Buenos Aires/Lima\nCon LATAM Airlines - Permite bolso o mochila + Carry On (12 kg)',
+      'Traslados incluidos\nAeropuerto – hotel – aeropuerto (Servicio Semi-privado)',
+      '3 noches de alojamiento\nKer San Telmo - Habitación Classic',
+      'Desayunos incluidos',
+      'Excursión de medio día City tour en servicio regular Regreso al hotel por cuenta propia',
+      'Tax Free Guía para recuperar el impuesto',
+      'Tour de Compras en fábricas de cuero, ropa, etc. Cortesía',
+      'Casino Puerto Madero Entrada y traslado gratis brindado por el Casino para mayores de 18 años - Cortesía',
+      '10% de descuento por consumo a la carta Restaurant Puerto Cristal en Puerto Madero - Cortesía',
+      'Seguro de viajes'
+    ]
+  },
+  {
+    id: 'buenos-aires-sheraton',
+    titulo: 'Buenos Aires - Sheraton',
+    lugar: 'Buenos Aires, Argentina',
+    imagen: 'assets/images/listing/buenos_aires_sheraton/01.png',
+    galeriaImagen: [
+      'assets/images/listing/buenos_aires_sheraton/01.png',
+      'assets/images/listing/buenos_aires_sheraton/02.png',
+      'assets/images/listing/buenos_aires_sheraton/03.png',
+      'assets/images/listing/buenos_aires_sheraton/04.png'
+    ],
+    precio: 1019.00,
+    rating: '5.0 (30)',
+
+    duracion: '3 Noches',
+    tipo: 'Internacional / Año Nuevo',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Una estadía de lujo para celebrar Año Nuevo en el Sheraton Buenos Aires.',
+      'Máximo confort con vuelo, hotel, traslados y seguro integrados.'
+    ],
+    noches: '3 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'destinos-sudamerica',
+    incluye: [
+      'Vuelo',
+      'Hotel',
+      'Traslado',
+      'Seguro'
+    ]
+  },
+  {
+    id: 'cartagena',
+    titulo: 'Cartagena',
+    lugar: 'Cartagena de Indias, Colombia',
+    imagen: 'assets/images/listing/cartagena/01.png',
+    galeriaImagen: [
+      'assets/images/listing/cartagena/01.png',
+      'assets/images/listing/cartagena/02.png',
+      'assets/images/listing/cartagena/03.png',
+      'assets/images/listing/cartagena/04.png'
+    ],
+    precio: 529.00,
+    rating: '4.8 (28)',
+    descuento: '10% Off',
+    duracion: '3 Noches',
+    tipo: 'Internacional / Playa',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Disfruta de las playas y la histórica Ciudad Amurallada de Cartagena.',
+      'Paquete con vuelo, alojamiento y traslados a precio promocional.'
+    ],
+    noches: '3 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'destinos-sudamerica',
+    incluye: [
+      'Vuelo',
+      'Hotel',
+      'Traslado'
+    ]
+  },
+  {
+    id: 'cartagena-cartagena-plaza-hotel',
+    titulo: 'Cartagena - Cartagena Plaza Hotel',
+    lugar: 'Cartagena de Indias, Colombia',
+    imagen: 'assets/images/listing/cartagena_plaza/01.png',
+    galeriaImagen: [
+      'assets/images/listing/cartagena_plaza/01.png',
+      'assets/images/listing/cartagena_plaza/02.png',
+      'assets/images/listing/cartagena_plaza/03.png',
+      'assets/images/listing/cartagena_plaza/04.png'
+    ],
+    precio: 935.00,
+    rating: '4.7 (19)',
+
+    duracion: '3 Noches',
+    tipo: 'Internacional / Año Nuevo',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Recibe el Año Nuevo frente al mar en el Cartagena Plaza Hotel.',
+      'Incluye seguro médico de viaje, pasajes aéreos y traslados.'
+    ],
+    noches: '3 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'destinos-sudamerica',
+    incluye: [
+      'Vuelo',
+      'Hotel',
+      'Traslado',
+      'Seguro'
+    ]
+  },
+  {
+    id: 'cartagena-decameron',
+    titulo: 'Cartagena - Decameron',
+    lugar: 'Cartagena de Indias, Colombia',
+    imagen: 'assets/images/listing/cartagena_decameron/01.png',
+    galeriaImagen: [
+      'assets/images/listing/cartagena_decameron/01.png',
+      'assets/images/listing/cartagena_decameron/02.png',
+      'assets/images/listing/cartagena_decameron/03.png',
+      'assets/images/listing/cartagena_decameron/04.png'
+    ],
+    precio: 1295.00,
+    rating: '4.8 (32)',
+
+    duracion: '3 Noches',
+    tipo: 'Internacional / Todo Incluido',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Experiencia Todo Incluido para celebrar Año Nuevo en Decameron Cartagena.',
+      'Comidas, bebidas, entretenimiento y traslados garantizados.'
+    ],
+    noches: '3 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'destinos-sudamerica',
+    incluye: [
+      'Vuelo',
+      'Hotel',
+      'Traslado',
+      'Seguro'
+    ]
+  },
+  {
+    id: 'cartagena-dreams-karibana',
+    titulo: 'Cartagena - Dreams Karibana',
+    lugar: 'Cartagena de Indias, Colombia',
+    imagen: 'assets/images/listing/cartagena_karibana/01.png',
+    galeriaImagen: [
+      'assets/images/listing/cartagena_karibana/01.png',
+      'assets/images/listing/cartagena_karibana/02.png',
+      'assets/images/listing/cartagena_karibana/03.png',
+      'assets/images/listing/cartagena_karibana/04.png'
+    ],
+    precio: 1785.00,
+    rating: '4.9 (21)',
+
+    duracion: '3 Noches',
+    tipo: 'Internacional / Todo Incluido',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Año Nuevo de lujo resort Todo Incluido en Dreams Karibana Cartagena.',
+      'Servicios exclusivos en un entorno paradisíaco.'
+    ],
+    noches: '3 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'destinos-sudamerica',
+    incluye: [
+      'Vuelo',
+      'Hotel',
+      'Traslado',
+      'Seguro'
+    ]
+  },
+  {
+    id: 'cartagena-plaza-hotel-superior',
+    titulo: 'Cartagena Plaza Hotel - Habitación Superior',
+    lugar: 'Cartagena de Indias, Colombia',
+    imagen: 'assets/images/listing/cartagena_superior/01.png',
+    galeriaImagen: [
+      'assets/images/listing/cartagena_superior/01.png',
+      'assets/images/listing/cartagena_superior/02.png',
+      'assets/images/listing/cartagena_superior/03.png',
+      'assets/images/listing/cartagena_superior/04.png'
+    ],
+    precio: 965.00,
+    rating: '4.7 (11)',
+
+    duracion: '3 Noches',
+    tipo: 'Internacional / Año Nuevo',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Disfruta de Año Nuevo en Habitación Superior en el Cartagena Plaza Hotel.',
+      'Mayor confort con vista y servicios preferenciales incluidos.'
+    ],
+    noches: '3 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'destinos-sudamerica',
+    incluye: [
+      'Vuelo',
+      'Hotel',
+      'Traslado',
+      'Seguro'
+    ]
+  },
+  {
+    id: 'cusco',
+    titulo: 'Cusco',
+    lugar: 'Cusco, Perú',
+    imagen: 'assets/images/listing/cusco/01.png',
+    galeriaImagen: [
+      'assets/images/listing/cusco/01.png',
+      'assets/images/listing/cusco/02.png',
+      'assets/images/listing/cusco/03.png',
+      'assets/images/listing/cusco/04.png'
+    ],
+    precio: 209.00,
+    rating: '4.9 (45)',
+    descuento: '16% Off',
+    duracion: '2 Noches',
+    tipo: 'Nacional / Historia',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Siente la magia de la capital del Imperio Inca con este paquete económico a Cusco.',
+      'Incluye boletos aéreos desde Lima, alojamiento y traslados.'
+    ],
+    noches: '2 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'destinos-sudamerica',
+    incluye: [
+      'Vuelo',
+      'Hotel',
+      'Traslado'
+    ]
+  },
+  {
+    id: 'medellin',
+    titulo: 'Medellín',
+    lugar: 'Medellín, Colombia',
+    imagen: 'assets/images/listing/medellin/01.png',
+    galeriaImagen: [
+      'assets/images/listing/medellin/01.png',
+      'assets/images/listing/medellin/02.png',
+      'assets/images/listing/medellin/03.png',
+      'assets/images/listing/medellin/04.png'
+    ],
+    precio: 509.00,
+    rating: '4.8 (22)',
+    descuento: '7% Off',
+    duracion: '3 Noches',
+    tipo: 'Internacional / Ciudad',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Conoce la Ciudad de la Eterna Primavera a un precio promocional.',
+      'Explora el dinamismo cultural, gastronomía y paisajes de Medellín.'
+    ],
+    noches: '3 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'destinos-sudamerica',
+    incluye: [
+      'Vuelo',
+      'Hotel',
+      'Traslado'
+    ]
+  },
+  {
+    id: 'santiago-de-chile',
+    titulo: 'Santiago de Chile',
+    lugar: 'Santiago, Chile',
+    imagen: 'assets/images/listing/santiago/01.png',
+    galeriaImagen: [
+      'assets/images/listing/santiago/01.png',
+      'assets/images/listing/santiago/02.png',
+      'assets/images/listing/santiago/03.png',
+      'assets/images/listing/santiago/04.png'
+    ],
+    precio: 489.00,
+    rating: '4.6 (17)',
+    descuento: '11% Off',
+    duracion: '3 Noches',
+    tipo: 'Internacional / Ciudad',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Descubre la moderna capital chilena a los pies de la Cordillera de los Andes.',
+      'Viaje de 3 noches con traslados y vuelos incluidos desde Lima.'
+    ],
+    noches: '3 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'destinos-sudamerica',
+    incluye: [
+      'Vuelo',
+      'Hotel',
+      'Traslado'
+    ]
+  },
+  {
+    id: 'tarapoto',
+    titulo: 'Tarapoto',
+    lugar: 'Tarapoto, San Martín, Perú',
+    imagen: 'assets/images/listing/tarapoto_1/0000880_tarapoto_550.png',
+    galeriaImagen: [
+      'assets/images/listing/tarapoto_1/0000880_tarapoto_550.png',
+      'assets/images/listing/tarapoto_1/0000881_tarapoto_550.png',
+      'assets/images/listing/tarapoto_1/0000882_tarapoto_550.png',
+      'assets/images/listing/tarapoto_1/0000883_tarapoto_550.png'
+    ],
+    precio: 209.00,
+    rating: '4.7 (20)',
+    descuento: '16% Off',
+    duracion: '2 Noches',
+    tipo: 'Naturaleza / Aventura',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Disfruta del clima tropical y los hermosos paisajes naturales de la selva de Tarapoto a un precio de oferta.',
+      'Tarapoto con todo listo para que solo disfrutes.',
+      'Ubicado en una zona estratégica de Tarapoto, con fácil acceso a sus principales atractivos y rodeado del encanto natural de la selva peruana.'
+    ],
+    noches: '2 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'destinos-sudamerica',
+    incluye: [
+      'Vuelo',
+      'Hotel',
+      'Traslado'
+    ]
+  },
+  {
+    id: 'vichayito',
+    titulo: 'Vichayito',
+    lugar: 'Vichayito, Piura, Perú',
+    imagen: 'assets/images/listing/vichayito/01.png',
+    galeriaImagen: [
+      'assets/images/listing/vichayito/01.png',
+      'assets/images/listing/vichayito/02.png',
+      'assets/images/listing/vichayito/03.png',
+      'assets/images/listing/vichayito/04.png'
+    ],
+    precio: 209.00,
+    rating: '4.8 (24)',
+    descuento: '13% Off',
+    duracion: '2 Noches',
+    tipo: 'Nacional / Playa',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Relájate en el cálido mar del norte peruano con esta promo especial a Vichayito.',
+      'Alojamiento cómodo a pasos de la playa y traslados incluidos.'
+    ],
+    noches: '2 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'destinos-sudamerica',
+    incluye: [
+      'Vuelo',
+      'Hotel',
+      'Traslado'
+    ]
+  },
+  {
+    id: 'cartagena-plaza-hotel-diciembre',
+    titulo: 'Cartagena - Plaza Hotel',
+    lugar: 'Cartagena de Indias, Colombia',
+    imagen: 'assets/images/listing/cartagena_diciembre/01.png',
+    galeriaImagen: [
+      'assets/images/listing/cartagena_diciembre/01.png',
+      'assets/images/listing/cartagena_diciembre/02.png',
+      'assets/images/listing/cartagena_diciembre/03.png',
+      'assets/images/listing/cartagena_diciembre/04.png'
+    ],
+    precio: 869.00,
+    rating: '4.7 (10)',
+
+    duracion: '3 Noches',
+    tipo: 'Internacional / Playa',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Escapada especial a Cartagena viajando del 06 al 09 de diciembre.',
+      'Disfruta del sol del Caribe en Plaza Hotel con pasajes y seguro garantizados.'
+    ],
+    noches: '3 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'paquetes-internacionales',
+    incluye: [
+      'Vuelo',
+      'Hotel',
+      'Traslado',
+      'Seguro'
+    ]
+  },
+  {
+    id: 'cartagena-holiday-inn-express-bocagrande',
+    titulo: 'Cartagena - Holiday Inn Express Bocagrande',
+    lugar: 'Cartagena de Indias, Colombia',
+    imagen: 'assets/images/listing/cartagena_holiday/01.png',
+    galeriaImagen: [
+      'assets/images/listing/cartagena_holiday/01.png',
+      'assets/images/listing/cartagena_holiday/02.png',
+      'assets/images/listing/cartagena_holiday/03.png',
+      'assets/images/listing/cartagena_holiday/04.png'
+    ],
+    precio: 879.00,
+    rating: '4.8 (13)',
+    descuento: '32% Off',
+    duracion: '3 Noches',
+    tipo: 'Internacional / Playa',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Oferta exclusiva del 06 al 09 de diciembre en Holiday Inn Express Bocagrande.',
+      'Excelente ubicación con seguro y traslados incluidos.'
+    ],
+    noches: '3 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'paquetes-internacionales',
+    incluye: [
+      'Hotel',
+      'Traslado',
+      'Seguro'
+    ]
+  },
+  {
+    id: 'cartagena-plaza-hotel-todo-incluido',
+    titulo: 'Cartagena Plaza Hotel - Todo Incluido',
+    lugar: 'Cartagena de Indias, Colombia',
+    imagen: 'assets/images/listing/cartagena_plaza_ti/01.png',
+    galeriaImagen: [
+      'assets/images/listing/cartagena_plaza_ti/01.png',
+      'assets/images/listing/cartagena_plaza_ti/02.png',
+      'assets/images/listing/cartagena_plaza_ti/03.png',
+      'assets/images/listing/cartagena_plaza_ti/04.png'
+    ],
+    precio: 979.00,
+    rating: '4.8 (15)',
+
+    duracion: '3 Noches',
+    tipo: 'Internacional / Todo Incluido',
+    grupo: 'General',
+    idioma: 'Español',
+    descripcion: [
+      'Viaja del 06 al 09 de diciembre con todo resuelto en sistema Todo Incluido.',
+      'Sin preocupaciones adicionales en el Cartagena Plaza Hotel.'
+    ],
+    noches: '3 Noches',
+    saliendo: 'Saliendo de Lima',
+    paquete: 'paquetes-internacionales',
+    incluye: [
+      'Vuelo',
+      'Hotel',
+      'Traslado',
+      'Seguro'
+    ]
   }
+
+
+
 
 
 
