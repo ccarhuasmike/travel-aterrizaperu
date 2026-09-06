@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:travel-aterrizaperu": "node dist/travel-aterrizaperu/server/server.mjs"
+    "serve:ssr:travel-aterrizaperu": "node dist/travel-aterrizaperu/server/server.mjs",
+    "deploy": "ng build --base-href=/travel-aterrizaperu/ && ngh --dir=dist/travel-aterrizaperu/browser"
   },
   "prettier": {
     "printWidth": 100,
@@ -42,6 +43,7 @@
     "@types/express": "^5.0.1",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^20.17.19",
+    "angular-cli-ghpages": "^3.1.0",
     "jasmine-core": "~5.9.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
