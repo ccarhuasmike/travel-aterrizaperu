@@ -1,6 +1,6 @@
 <!-- Hero Start -->
 <section
-    class="relative md:pt-72 md:pb-60 py-36 w-full items-center bg-[url('../../assets/images/bg/1.jpg')] bg-top bg-no-repeat bg-cover">
+    class="relative md:pt-72 md:pb-60 py-36 w-full items-center bg-[url('../../assets/images/bg/cta.jpg')] bg-top bg-no-repeat bg-cover">
     <div class="absolute inset-0 bg-slate-900/40"></div>
     <div class="container relative">
         <div class="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-7.5">
@@ -90,7 +90,7 @@
     </div>
 </div> -->
 <!-- Start -->
-<section class="relative md:py-24 py-16 overflow-hidden">
+<section class="relative md:py-12 py-16 overflow-hidden">
     <!-- <div class="container relative">
         <div class="grid grid-cols-1 pb-8 text-center">
             <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Destinos Principales
@@ -123,8 +123,8 @@
         </div>
     </div>  -->
 
-    <div class="container relative md:mt-24 mt-16">
-        <div class="grid grid-cols-1 pb-8 text-center">
+    <div class="container relative md:mt-2 mt-2">
+        <div class="grid grid-cols-1 pb-2 text-center">
             <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Paquetes de Tours</h3>
             <p class="text-slate-400 max-w-xl mx-auto">¿Planificando un viaje? ¡Organizamos tu viaje con los mejores
                 lugares y el mejor presupuesto!</p>
@@ -166,10 +166,10 @@
                         </ul>
                     </div>
 
-                    <div
+                    <div style="background: red;    padding: 7px;"
                         class="mt-4 pt-4 flex justify-between items-center border-t border-slate-100 dark:border-gray-800">
-                        <h5 class="text-lg font-medium text-primary">$ {{ tour.precio }} / Día</h5>
-                        <a [routerLink]="['/tours', tour.id]" class="text-slate-400 hover:text-primary">Explorar <i
+                        <h5 style="color: white;" class="text-lg font-medium text-primary">$ {{ tour.precio }} / Día</h5>
+                        <a style="color:white" [routerLink]="['/tours', tour.id]" class="text-slate-400 hover:text-primary">Explorar <i
                                 class="ri-arrow-right-s-line"></i></a>
                     </div>
                 </div>
@@ -235,13 +235,13 @@
         </div>
     </div><!--end container-->
 
-    <div class="container relative md:mt-24 mt-16">
+    <!-- <div class="container relative md:mt-24 mt-16">
         <div class="grid grid-cols-1 pb-6 text-center">
             <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Lo que dicen nuestros
                 usuarios</h3>
             <p class="text-slate-400 max-w-xl mx-auto">Este es un texto simple hecho para esta plantilla única y
                 llamativa, puedes reemplazarlo con cualquier texto.</p>
-        </div><!--end grid-->
+        </div>
 
         <div class="grid grid-cols-1 mt-6">
             <div class="tiny-three-item" [appTinySlider]="testimoniosSliderOptions">
@@ -271,11 +271,11 @@
                 </div>
                 }
             </div>
-        </div><!--end grid-->
-    </div><!--end container-->
+        </div>
+    </div> -->
 
 
-    <div class="container relative md:mt-24 mt-16">
+    <div id="proxima-aventura" class="container relative md:mt-24 mt-16">
         <div class="grid grid-cols-1 pb-6 text-center">
             <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Empieza tu próxima
                 aventura</h3>
