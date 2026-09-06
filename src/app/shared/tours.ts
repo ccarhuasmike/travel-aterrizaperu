@@ -1151,12 +1151,12 @@ export const TOURS: Tour[] = [
     id: 'buenos-aires-sheraton',
     titulo: 'Buenos Aires - Sheraton',
     lugar: 'Buenos Aires, Argentina',
-    imagen: 'assets/images/listing/buenos_aires_sheraton/01.png',
+    imagen: 'assets/images/listing/buenos-aires-sheraton/0000842_buenos-aires-sheraton_550.webp',
     galeriaImagen: [
-      'assets/images/listing/buenos_aires_sheraton/01.png',
-      'assets/images/listing/buenos_aires_sheraton/02.png',
-      'assets/images/listing/buenos_aires_sheraton/03.png',
-      'assets/images/listing/buenos_aires_sheraton/04.png'
+      'assets/images/listing/buenos-aires-sheraton/0000842_buenos-aires-sheraton_550.webp',
+      'assets/images/listing/buenos-aires-sheraton/0000843_buenos-aires-sheraton_550.webp',
+      'assets/images/listing/buenos-aires-sheraton/0000844_buenos-aires-sheraton_550.webp',
+      'assets/images/listing/buenos-aires-sheraton/0000845_buenos-aires-sheraton_550.webp'
     ],
     precio: 1019.00,
     rating: '5.0 (30)',
@@ -1167,28 +1167,37 @@ export const TOURS: Tour[] = [
     idioma: 'Español',
     descripcion: [
       'Una estadía de lujo para celebrar Año Nuevo en el Sheraton Buenos Aires.',
-      'Máximo confort con vuelo, hotel, traslados y seguro integrados.'
+      'Máximo confort con vuelo, hotel, traslados y seguro integrados.',
+      'Hospédate en el corazón de Retiro, cerca de los íconos más importantes de la ciudad. Recorre Puerto Madero, el Obelisco y exclusivos restaurantes a solo unos minutos.',
+      'Fechas de viaje 31 de diciembre – 03 de enero, 2027 4 días · 3 noches'
     ],
     noches: '3 Noches',
     saliendo: 'Saliendo de Lima',
     paquete: 'destinos-sudamerica',
     incluye: [
-      'Vuelo',
-      'Hotel',
-      'Traslado',
-      'Seguro'
+      'Boleto aéreo Lima/Buenos Aires/Limacon LATAM Airlines - Permite bolso o mochila + Carry On (12 kg)',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto (Servicio Semi-privado)',
+      '3 noches de alojamientoSheraton Buenos Aires - Habitación Clásica',
+      'Desayunos incluidos',
+      'Excursión de medio día City tour en servicio regularRegreso al hotel por cuenta propia',
+      'Tax FreeGuía para recuperar el impuesto',
+      'Tour de Compras en fábricas de cuero, ropa, etc.Cortesía',
+      'Casino Puerto MaderoEntrada y traslado gratis brindado por el Casino para mayores de 18 años - Cortesía',
+      '10% de descuento por consumo a la cartaRestaurant Puerto Cristal en Puerto Madero - Cortesía',
+      'Seguro de viajes',
+
     ]
   },
   {
     id: 'cartagena',
     titulo: 'Cartagena',
     lugar: 'Cartagena de Indias, Colombia',
-    imagen: 'assets/images/listing/cartagena/01.png',
+    imagen: 'assets/images/listing/Cartagena/0000888_cartagena_550.webp',
     galeriaImagen: [
-      'assets/images/listing/cartagena/01.png',
-      'assets/images/listing/cartagena/02.png',
-      'assets/images/listing/cartagena/03.png',
-      'assets/images/listing/cartagena/04.png'
+      'assets/images/listing/Cartagena/0000888_cartagena_550.webp',
+      'assets/images/listing/Cartagena/0000889_cartagena_550.webp',
+      'assets/images/listing/Cartagena/0000890_cartagena_550.webp',
+      'assets/images/listing/Cartagena/0000891_cartagena_550.webp'
     ],
     precio: 529.00,
     rating: '4.8 (28)',
@@ -1199,27 +1208,32 @@ export const TOURS: Tour[] = [
     idioma: 'Español',
     descripcion: [
       'Disfruta de las playas y la histórica Ciudad Amurallada de Cartagena.',
-      'Paquete con vuelo, alojamiento y traslados a precio promocional.'
+      'Paquete con vuelo, alojamiento y traslados a precio promocional.',
+      'Ubicado en una excelente zona para descubrir lo mejor de Cartagena y sus playas. Disfruta de una ciudad llena de historia, sabores caribeños y paisajes inolvidables.',
+      'Fechas de viaje 19 de octubre – 15 de diciembre, 2026 4 días · 3 noches'
     ],
     noches: '3 Noches',
     saliendo: 'Saliendo de Lima',
     paquete: 'destinos-sudamerica',
     incluye: [
-      'Vuelo',
-      'Hotel',
-      'Traslado'
+      'Boleto aéreoLima/Cartagena/Lima',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto',
+      '3 noches de alojamientoHotel Categoría 3 - Habitación doble',
+      'Desayunos incluidos',
+      'Seguro de viajes',
+
     ]
   },
   {
     id: 'cartagena-cartagena-plaza-hotel',
     titulo: 'Cartagena - Cartagena Plaza Hotel',
     lugar: 'Cartagena de Indias, Colombia',
-    imagen: 'assets/images/listing/cartagena_plaza/01.png',
+    imagen: "assets/images/listing/Cartagena - Cartagena Plaza Hotel/0000775_cartagena-cartagena-plaza-hotel_550.webp",
     galeriaImagen: [
-      'assets/images/listing/cartagena_plaza/01.png',
-      'assets/images/listing/cartagena_plaza/02.png',
-      'assets/images/listing/cartagena_plaza/03.png',
-      'assets/images/listing/cartagena_plaza/04.png'
+      "assets/images/listing/Cartagena - Cartagena Plaza Hotel/0000775_cartagena-cartagena-plaza-hotel_550.webp",
+      "assets/images/listing/Cartagena - Cartagena Plaza Hotel/0000776_cartagena-cartagena-plaza-hotel_550.webp",
+      "assets/images/listing/Cartagena - Cartagena Plaza Hotel/0000777_cartagena-cartagena-plaza-hotel_550.webp",
+      "assets/images/listing/Cartagena - Cartagena Plaza Hotel/0000778_cartagena-cartagena-plaza-hotel_550.webp"
     ],
     precio: 935.00,
     rating: '4.7 (19)',
@@ -1230,16 +1244,20 @@ export const TOURS: Tour[] = [
     idioma: 'Español',
     descripcion: [
       'Recibe el Año Nuevo frente al mar en el Cartagena Plaza Hotel.',
-      'Incluye seguro médico de viaje, pasajes aéreos y traslados.'
+      'Incluye seguro médico de viaje, pasajes aéreos y traslados.',
+      'Hospédate cerca del Centro Histórico y de las playas más populares de Cartagena. Explora calles llenas de historia, sabores caribeños y paisajes inolvidables.',
+      'Fechas de viaje 31 de diciembre – 03 de enero, 2027 4 días · 3 noches'
     ],
     noches: '3 Noches',
     saliendo: 'Saliendo de Lima',
     paquete: 'destinos-sudamerica',
     incluye: [
-      'Vuelo',
-      'Hotel',
-      'Traslado',
-      'Seguro'
+      'Boleto aéreo Lima/Cartagena/Limacon LATAM Airlines - Permite bolso o mochila + Carry On (12 kg)',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto (Servicio Compartido)',
+      '3 noches de alojamientoCartagena Plaza - Habitación Estándar',
+      'Sistema alimentaciónDesayunos incluidos',
+      'Seguro de viajes',
+
     ]
   },
   {
