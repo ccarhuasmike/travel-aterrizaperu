@@ -23,23 +23,6 @@ export const TOURS: Tour[] = [
 
 
   {
-    id: 'aventura-en-vela-por-cuba',
-    titulo: 'Eco Europa Clasica con Air Europa +equipaje 23abr al 07may',
-    lugar: 'Eco Europa Clasica',
-    imagen: 'assets/images/listing/EcoEuropa/EUROPA.jpg.webp',
-    precio: 3.274,
-    rating: '5.0 (30)',
-    descuento: '10% Off',
-    duracion: '2 días',
-    tipo: 'Aventura',
-    grupo: '50 personas',
-    idioma: 'Español',
-    descripcion: [
-      "El texto de relleno más conocido es el 'Lorem Ipsum', que se dice se originó en el siglo XVI. Se compone en un pseudo-latín que corresponde más o menos al latín 'propio'. Contiene una serie de palabras latinas reales. Este antiguo texto de relleno también es incomprensible, pero imita el ritmo de la mayoría de los idiomas europeos en escritura latina.",
-      'La ventaja de su origen latino y el relativo sinsentido del Lorum Ipsum es que el texto no atrae la atención sobre sí mismo ni distrae la atención del espectador del diseño.',
-    ],
-  },
-  {
     id: 'tour-por-nueva-york',
     titulo: 'Turquía & Grecia con Air Europa + equipaje "05may al 17set"',
     lugar: 'Turquía & Grecia',
@@ -98,41 +81,6 @@ export const TOURS: Tour[] = [
     tipo: 'Montaña',
     grupo: '25 personas',
     idioma: 'Español',
-    descripcion: [
-      "El texto de relleno más conocido es el 'Lorem Ipsum', que se dice se originó en el siglo XVI. Se compone en un pseudo-latín que corresponde más o menos al latín 'propio'. Contiene una serie de palabras latinas reales. Este antiguo texto de relleno también es incomprensible, pero imita el ritmo de la mayoría de los idiomas europeos en escritura latina.",
-      'La ventaja de su origen latino y el relativo sinsentido del Lorum Ipsum es que el texto no atrae la atención sobre sí mismo ni distrae la atención del espectador del diseño.',
-    ],
-  },
-  {
-    id: 'viaje-en-globo-aerostatico',
-    titulo: 'Riviera Maya - Hotel Nickelodeon con vuelo incluido',
-    lugar: 'Riviera Maya - México',
-    imagen: 'assets/images/listing/RIVIERA/RIVIERA.webp',
-    precio: 2942,
-    rating: '5.0 (30)',
-    descuento: '25% Off',
-    duracion: '1 día',
-    tipo: 'Aventura',
-    grupo: '10 personas',
-    idioma: 'Español, Inglés',
-    descripcion: [
-      "El texto de relleno más conocido es el 'Lorem Ipsum', que se dice se originó en el siglo XVI. Se compone en un pseudo-latín que corresponde más o menos al latín 'propio'. Contiene una serie de palabras latinas reales. Este antiguo texto de relleno también es incomprensible, pero imita el ritmo de la mayoría de los idiomas europeos en escritura latina.",
-      'La ventaja de su origen latino y el relativo sinsentido del Lorum Ipsum es que el texto no atrae la atención sobre sí mismo ni distrae la atención del espectador del diseño.',
-    ],
-  },
-
-  {
-    id: 'viaje-en-globo-aerostatico',
-    titulo: 'Cartagena con vuelo incluido',
-    lugar: 'Cartagena - Colombia',
-    imagen: 'assets/images/listing/Cartagena/cartagena.webp',
-    precio: 2942,
-    rating: '5.0 (30)',
-    descuento: '25% Off',
-    duracion: '1 día',
-    tipo: 'Aventura',
-    grupo: '10 personas',
-    idioma: 'Español, Inglés',
     descripcion: [
       "El texto de relleno más conocido es el 'Lorem Ipsum', que se dice se originó en el siglo XVI. Se compone en un pseudo-latín que corresponde más o menos al latín 'propio'. Contiene una serie de palabras latinas reales. Este antiguo texto de relleno también es incomprensible, pero imita el ritmo de la mayoría de los idiomas europeos en escritura latina.",
       'La ventaja de su origen latino y el relativo sinsentido del Lorum Ipsum es que el texto no atrae la atención sobre sí mismo ni distrae la atención del espectador del diseño.',
@@ -698,7 +646,7 @@ export const TOURS: Tour[] = [
     ],
     noches: '2 Noches',
     saliendo: 'Saliendo de Lima',
-    paquete: 'paquetes-nacionales',
+    paquete: 'destinos-sudamerica',
     incluye: [
       'Boleto aéreo Lima/Talara/Lima',
       '2 noches de alojamiento Hotel Categoría 3 - Habitación doble',
@@ -931,47 +879,17 @@ export const TOURS: Tour[] = [
 
 
 
-  {
-    id: 'arequipa',
-    titulo: 'Arequipa',
-    lugar: 'Arequipa, Perú',
-    imagen: 'assets/images/listing/arequipa/01.png',
-    galeriaImagen: [
-      'assets/images/listing/arequipa/01.png',
-      'assets/images/listing/arequipa/02.png',
-      'assets/images/listing/arequipa/03.png',
-      'assets/images/listing/arequipa/04.png'
-    ],
-    precio: 215.00,
-    rating: '4.7 (18)',
 
-    duracion: '2 Noches',
-    tipo: 'Nacional / Cultural',
-    grupo: 'General',
-    idioma: 'Español',
-    descripcion: [
-      'Descubre la majestuosa Ciudad Blanca de Arequipa y disfruta de su impresionante arquitectura e historia.',
-      'Aprovecha una escapada perfecta con vuelo, hotel y traslados incluidos.'
-    ],
-    noches: '2 Noches',
-    saliendo: 'Saliendo de Lima',
-    paquete: 'destinos-sudamerica',
-    incluye: [
-      'Vuelo',
-      'Hotel',
-      'Traslado'
-    ]
-  },
   {
     id: 'buenos-aires',
     titulo: 'Buenos Aires',
     lugar: 'Buenos Aires, Argentina',
-    imagen: 'assets/images/listing/buenos_aires/01.png',
+    imagen: 'assets/images/listing/buenos-aires/0000897_buenos-aires_550.webp',
     galeriaImagen: [
-      'assets/images/listing/buenos_aires/01.png',
-      'assets/images/listing/buenos_aires/02.png',
-      'assets/images/listing/buenos_aires/03.png',
-      'assets/images/listing/buenos_aires/04.png'
+      'assets/images/listing/buenos-aires/0000897_buenos-aires_550.webp',
+      'assets/images/listing/buenos-aires/0000898_buenos-aires_550.webp',
+      'assets/images/listing/buenos-aires/0000899_buenos-aires_550.webp',
+      'assets/images/listing/buenos-aires/0000896_buenos-aires_550.webp'
     ],
     precio: 619.00,
     rating: '4.8 (25)',
@@ -982,27 +900,33 @@ export const TOURS: Tour[] = [
     idioma: 'Español',
     descripcion: [
       'Disfruta del tango, la gastronomía y el encanto urbano de Buenos Aires a precio de oferta.',
-      'Un paquete ideal de 3 noches para recorrer sus barrios más emblemáticos.'
+      'Un paquete ideal de 3 noches para recorrer sus barrios más emblemáticos.',
+      'Con una ubicación conveniente en Buenos Aires, ideal para moverte con facilidad y conocer distintos puntos de la ciudad.',
+      'Fechas de viaje 19 de octubre – 15 de diciembre, 2026 4 días · 3 noches'
     ],
     noches: '3 Noches',
     saliendo: 'Saliendo de Lima',
     paquete: 'destinos-sudamerica',
     incluye: [
-      'Vuelo',
-      'Hotel',
-      'Traslado'
+      'Boleto aéreoLima/Buenos Aires/Lima',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto',
+      '3 noches de alojamientoHotel Categoría 3 - Habitación doble',
+      'Desayunos incluidos',
+      'City Tour',
+      'Seguro de viajes',
+
     ]
   },
   {
     id: 'buenos-aires-dora-hotel',
     titulo: 'Buenos Aires - Dora Hotel',
     lugar: 'Buenos Aires, Argentina',
-    imagen: 'assets/images/listing/buenos_aires_dora/01.png',
+    imagen: 'assets/images/listing/buenos-aires-dora-hotel/0000904_buenos-aires-dora-hotel_550.webp',
     galeriaImagen: [
-      'assets/images/listing/buenos_aires_dora/01.png',
-      'assets/images/listing/buenos_aires_dora/02.png',
-      'assets/images/listing/buenos_aires_dora/03.png',
-      'assets/images/listing/buenos_aires_dora/04.png'
+      'assets/images/listing/buenos-aires-dora-hotel/0000904_buenos-aires-dora-hotel_550.webp',
+      'assets/images/listing/buenos-aires-dora-hotel/0000826_buenos-aires-dora-hotel_550.webp',
+      'assets/images/listing/buenos-aires-dora-hotel/0000827_buenos-aires-dora-hotel_550.webp',
+      'assets/images/listing/buenos-aires-dora-hotel/0000829_buenos-aires-dora-hotel_550.webp'
     ],
     precio: 645.00,
     rating: '4.6 (14)',
@@ -1013,16 +937,25 @@ export const TOURS: Tour[] = [
     idioma: 'Español',
     descripcion: [
       'Celebra el Año Nuevo en Buenos Aires hospedándote en el céntrico Dora Hotel.',
-      'Incluye seguro de viaje para mayor tranquilidad durante tus vacaciones.'
+      'Incluye seguro de viaje para mayor tranquilidad durante tus vacaciones.',
+      'Ubicado en el corazón de Buenos Aires, a pocos minutos de Puerto Madero y la calle Florida. Disfruta de restaurantes, tiendas, atractivos turísticos y la esencia de la ciudad a tu alcance.',
+      'Fechas de viaje 31 de diciembre – 03 de enero, 2027 4 días · 3 noches'
     ],
     noches: '3 Noches',
     saliendo: 'Saliendo de Lima',
     paquete: 'destinos-sudamerica',
     incluye: [
-      'Vuelo',
-      'Hotel',
-      'Traslado',
-      'Seguro'
+      'Boleto aéreo Lima/Buenos Aires/Limacon LATAM Airlines - Permite bolso o mochila + Carry On (12 kg)',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto (Servicio Semi-privado)',
+      '3 noches de alojamientoDora Hotel - Habitación Superior',
+      'Desayunos incluidos',
+      'Excursión de medio día City tour en servicio regularRegreso al hotel por cuenta propia',
+      'Tax FreeGuía para recuperar el impuesto',
+      'Tour de Compras en fábricas de cuero, ropa, etc.Cortesía',
+      'Casino Puerto MaderoEntrada y traslado gratis brindado por el Casino para mayores de 18 años (Cortesía)',
+      '10% de descuento por consumo a la cartaRestaurant Puerto Cristal en Puerto Madero (Cortesía)',
+      'Seguro de viajes',
+
     ]
   },
   {
@@ -1264,12 +1197,12 @@ export const TOURS: Tour[] = [
     id: 'cartagena-decameron',
     titulo: 'Cartagena - Decameron',
     lugar: 'Cartagena de Indias, Colombia',
-    imagen: 'assets/images/listing/cartagena_decameron/01.png',
+    imagen: 'assets/images/listing/cartagena-decameron-1/0000779_cartagena-decameron_550.webp',
     galeriaImagen: [
-      'assets/images/listing/cartagena_decameron/01.png',
-      'assets/images/listing/cartagena_decameron/02.png',
-      'assets/images/listing/cartagena_decameron/03.png',
-      'assets/images/listing/cartagena_decameron/04.png'
+      'assets/images/listing/cartagena-decameron-1/0000779_cartagena-decameron_550.webp',
+      'assets/images/listing/cartagena-decameron-1/0000780_cartagena-decameron_550.webp',
+      'assets/images/listing/cartagena-decameron-1/0000781_cartagena-decameron_550.webp',
+      'assets/images/listing/cartagena-decameron-1/0000782_cartagena-decameron_550.webp'
     ],
     precio: 1295.00,
     rating: '4.8 (32)',
@@ -1280,28 +1213,32 @@ export const TOURS: Tour[] = [
     idioma: 'Español',
     descripcion: [
       'Experiencia Todo Incluido para celebrar Año Nuevo en Decameron Cartagena.',
-      'Comidas, bebidas, entretenimiento y traslados garantizados.'
+      'Comidas, bebidas, entretenimiento y traslados garantizados.',
+      'Ubicado frente a la playa de Bocagrande, una de las zonas más exclusivas de Cartagena. Disfruta del mar Caribe, restaurantes, tiendas y el Centro Histórico a pocos minutos.',
+      'Fechas de viaje 31 de diciembre – 03 de enero, 2027 4 días · 3 noches'
     ],
     noches: '3 Noches',
     saliendo: 'Saliendo de Lima',
     paquete: 'destinos-sudamerica',
     incluye: [
-      'Vuelo',
-      'Hotel',
-      'Traslado',
-      'Seguro'
+      'Boleto aéreo Lima/Cartagena/Limacon LATAM Airlines - Permite bolso o mochila + Carry On (12 kg)',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto (Servicio Compartido)',
+      '3 noches de alojamientoDecameron Cartagena - Habitación Estándar',
+      'Sistema alimentación Todo IncluidoDesayuno y almuerzo buffet, cena buffet o a la carta, snacks y bebidas ilimitadas',
+      'Seguro de viajes',
+
     ]
   },
   {
     id: 'cartagena-dreams-karibana',
     titulo: 'Cartagena - Dreams Karibana',
     lugar: 'Cartagena de Indias, Colombia',
-    imagen: 'assets/images/listing/cartagena_karibana/01.png',
-    galeriaImagen: [
-      'assets/images/listing/cartagena_karibana/01.png',
-      'assets/images/listing/cartagena_karibana/02.png',
-      'assets/images/listing/cartagena_karibana/03.png',
-      'assets/images/listing/cartagena_karibana/04.png'
+    "imagen": "assets/images/listing/cartagena-dreams-karibana/0000783_cartagena-dreams-karibana_550.webp",
+    "galeriaImagen": [
+      "assets/images/listing/cartagena-dreams-karibana/0000783_cartagena-dreams-karibana_550.webp",
+      "assets/images/listing/cartagena-dreams-karibana/0000784_cartagena-dreams-karibana_550.webp",
+      "assets/images/listing/cartagena-dreams-karibana/0000785_cartagena-dreams-karibana_550.webp",
+      "assets/images/listing/cartagena-dreams-karibana/0000786_cartagena-dreams-karibana_550.webp"
     ],
     precio: 1785.00,
     rating: '4.9 (21)',
@@ -1312,28 +1249,32 @@ export const TOURS: Tour[] = [
     idioma: 'Español',
     descripcion: [
       'Año Nuevo de lujo resort Todo Incluido en Dreams Karibana Cartagena.',
-      'Servicios exclusivos en un entorno paradisíaco.'
+      'Servicios exclusivos en un entorno paradisíaco.',
+      'Hospédate en un entorno exclusivo frente al Caribe, rodeado de naturaleza y tranquilidad. Relájate en playas paradisíacas y descubre el encanto de Cartagena a corta distancia.',
+      'Fechas de viaje 31 de diciembre – 03 de enero, 2027 4 días · 3 noches'
     ],
     noches: '3 Noches',
     saliendo: 'Saliendo de Lima',
     paquete: 'destinos-sudamerica',
     incluye: [
-      'Vuelo',
-      'Hotel',
-      'Traslado',
-      'Seguro'
+      'Boleto aéreo Lima/Cartagena/Limacon LATAM Airlines - Permite bolso o mochila + Carry On (12 kg)',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto (Servicio Compartido)',
+      '3 noches de alojamientoDreams Karibana 5 - Junior Suite Tropical View King',
+      'Sistema de alimentación Todo IncluidoDesayuno y almuerzo buffet, cena buffet o a la carta, snacks y bebidas ilimitadas',
+      'Seguro de viajes',
+
     ]
   },
   {
     id: 'cartagena-plaza-hotel-superior',
     titulo: 'Cartagena Plaza Hotel - Habitación Superior',
     lugar: 'Cartagena de Indias, Colombia',
-    imagen: 'assets/images/listing/cartagena_superior/01.png',
+    imagen: 'assets/images/listing/cartagena-plaza-hotel-habitacion-superior/0000788_cartagena-plaza-hotel-habitacion-superior_550.webp',
     galeriaImagen: [
-      'assets/images/listing/cartagena_superior/01.png',
-      'assets/images/listing/cartagena_superior/02.png',
-      'assets/images/listing/cartagena_superior/03.png',
-      'assets/images/listing/cartagena_superior/04.png'
+      'assets/images/listing/cartagena-plaza-hotel-habitacion-superior/0000788_cartagena-plaza-hotel-habitacion-superior_550.webp',
+      'assets/images/listing/cartagena-plaza-hotel-habitacion-superior/0000787_cartagena-plaza-hotel-habitacion-superior_550.webp',
+      'assets/images/listing/cartagena-plaza-hotel-habitacion-superior/0000789_cartagena-plaza-hotel-habitacion-superior_550.webp',
+      'assets/images/listing/cartagena-plaza-hotel-habitacion-superior/0000790_cartagena-plaza-hotel-habitacion-superior_550.webp'
     ],
     precio: 965.00,
     rating: '4.7 (11)',
@@ -1344,28 +1285,32 @@ export const TOURS: Tour[] = [
     idioma: 'Español',
     descripcion: [
       'Disfruta de Año Nuevo en Habitación Superior en el Cartagena Plaza Hotel.',
-      'Mayor confort con vista y servicios preferenciales incluidos.'
+      'Mayor confort con vista y servicios preferenciales incluidos.',
+      'A minutos de la Ciudad Amurallada, el principal atractivo turístico de Cartagena. Combina descanso, vistas al Caribe y una ubicación ideal para explorar la ciudad.',
+      'Fechas de viaje 31 de diciembre – 03 de enero, 2027 4 días · 3 noches'
     ],
     noches: '3 Noches',
     saliendo: 'Saliendo de Lima',
     paquete: 'destinos-sudamerica',
     incluye: [
-      'Vuelo',
-      'Hotel',
-      'Traslado',
-      'Seguro'
+      'Boleto aéreo Lima/Cartagena/Limacon LATAM Airlines - Permite bolso o mochila + Carry On (12 kg)',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto (Servicio Compartido)',
+      '3 noches de alojamientoCartagena Plaza Hotel - Habitación Superior',
+      'Sistema alimentaciónDesayunos incluidos',
+      'Seguro de viajes',
+
     ]
   },
   {
-    id: 'cusco',
+    id: 'cusco-',
     titulo: 'Cusco',
     lugar: 'Cusco, Perú',
-    imagen: 'assets/images/listing/cusco/01.png',
+    imagen: 'assets/images/listing/cusco-/0000876_cusco_550.webp',
     galeriaImagen: [
-      'assets/images/listing/cusco/01.png',
-      'assets/images/listing/cusco/02.png',
-      'assets/images/listing/cusco/03.png',
-      'assets/images/listing/cusco/04.png'
+      'assets/images/listing/cusco-/0000876_cusco_550.webp',
+      'assets/images/listing/cusco-/0000877_cusco_550.webp',
+      'assets/images/listing/cusco-/0000878_cusco_550.webp',
+      'assets/images/listing/cusco-/0000879_cusco_550.webp'
     ],
     precio: 209.00,
     rating: '4.9 (45)',
@@ -1376,27 +1321,31 @@ export const TOURS: Tour[] = [
     idioma: 'Español',
     descripcion: [
       'Siente la magia de la capital del Imperio Inca con este paquete económico a Cusco.',
-      'Incluye boletos aéreos desde Lima, alojamiento y traslados.'
+      'Incluye boletos aéreos desde Lima, alojamiento y traslados.',
+      'Ubicado en una zona estratégica de Cusco, con fácil acceso a sus principales atractivos, restaurantes y calles llenas de historia y tradición.',
+      'Fechas de viaje 19 de octubre – 15 de diciembre, 2026 3 días · 2 noches'
     ],
     noches: '2 Noches',
     saliendo: 'Saliendo de Lima',
     paquete: 'destinos-sudamerica',
     incluye: [
-      'Vuelo',
-      'Hotel',
-      'Traslado'
+      'Boleto aéreoLima/Cusco/Lima',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto',
+      '2 noches de alojamientoHotel Categoría 3 - Habitación doble',
+      'Desayunos incluidos',
+
     ]
   },
   {
     id: 'medellin',
     titulo: 'Medellín',
     lugar: 'Medellín, Colombia',
-    imagen: 'assets/images/listing/medellin/01.png',
+    imagen: 'assets/images/listing/medellin/0000854_medellin_550.webp',
     galeriaImagen: [
-      'assets/images/listing/medellin/01.png',
-      'assets/images/listing/medellin/02.png',
-      'assets/images/listing/medellin/03.png',
-      'assets/images/listing/medellin/04.png'
+      'assets/images/listing/medellin/0000854_medellin_550.webp',
+      'assets/images/listing/medellin/0000855_medellin_550.webp',
+      'assets/images/listing/medellin/0000856_medellin_550.webp',
+      'assets/images/listing/medellin/0000857_medellin_550.webp'
     ],
     precio: 509.00,
     rating: '4.8 (22)',
@@ -1407,27 +1356,32 @@ export const TOURS: Tour[] = [
     idioma: 'Español',
     descripcion: [
       'Conoce la Ciudad de la Eterna Primavera a un precio promocional.',
-      'Explora el dinamismo cultural, gastronomía y paisajes de Medellín.'
+      'Explora el dinamismo cultural, gastronomía y paisajes de Medellín.',
+      'Ubicado cerca de los sectores más turísticos de Medellín, rodeado de restaurantes, comercios y espacios culturales. Ideal para explorar una ciudad moderna, vibrante y llena de experiencias.',
+      'Fechas de viaje 01 de setiembre – 30 de noviembre , 2026 4 días · 3 noches'
     ],
     noches: '3 Noches',
     saliendo: 'Saliendo de Lima',
     paquete: 'destinos-sudamerica',
     incluye: [
-      'Vuelo',
-      'Hotel',
-      'Traslado'
+      'Boleto aéreoLima/Medellín/Lima',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto',
+      '3 noches de alojamientoHotel Categoría 3 - Habitación doble',
+      'Desayunos incluidos',
+      'Seguro de viajes',
+
     ]
   },
   {
     id: 'santiago-de-chile',
     titulo: 'Santiago de Chile',
     lugar: 'Santiago, Chile',
-    imagen: 'assets/images/listing/santiago/01.png',
+    imagen: 'assets/images/listing/santiago-de-chile/0000858_santiago-de-chile_550.webp',
     galeriaImagen: [
-      'assets/images/listing/santiago/01.png',
-      'assets/images/listing/santiago/02.png',
-      'assets/images/listing/santiago/03.png',
-      'assets/images/listing/santiago/04.png'
+      'assets/images/listing/santiago-de-chile/0000858_santiago-de-chile_550.webp',
+      'assets/images/listing/santiago-de-chile/0000859_santiago-de-chile_550.webp',
+      'assets/images/listing/santiago-de-chile/0000860_santiago-de-chile_550.webp',
+      'assets/images/listing/santiago-de-chile/0000861_santiago-de-chile_550.webp'
     ],
     precio: 489.00,
     rating: '4.6 (17)',
@@ -1438,15 +1392,20 @@ export const TOURS: Tour[] = [
     idioma: 'Español',
     descripcion: [
       'Descubre la moderna capital chilena a los pies de la Cordillera de los Andes.',
-      'Viaje de 3 noches con traslados y vuelos incluidos desde Lima.'
+      'Viaje de 3 noches con traslados y vuelos incluidos desde Lima.',
+      'Disfruta de una estadía cómoda y funcional en Santiago, con ambientes acogedores y fácil acceso a zonas comerciales, culturales y turísticas.'
     ],
     noches: '3 Noches',
     saliendo: 'Saliendo de Lima',
     paquete: 'destinos-sudamerica',
     incluye: [
-      'Vuelo',
-      'Hotel',
-      'Traslado'
+      'Boleto aéreoLima/Santiago de Chile/Lima',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto',
+      '3 noches de alojamientoHotel Categoría 3 - Habitación doble',
+      'Desayunos incluidos',
+      'City Tour Panorámico',
+      'Seguro de viajes',
+
     ]
   },
   {
@@ -1481,69 +1440,40 @@ export const TOURS: Tour[] = [
       'Traslado'
     ]
   },
-  {
-    id: 'vichayito',
+ {
+    id: 'vichayito-',
     titulo: 'Vichayito',
-    lugar: 'Vichayito, Piura, Perú',
-    imagen: 'assets/images/listing/vichayito/01.png',
+    lugar: 'Piura, Perú',
+    imagen: 'assets/images/listing/vichayito_1/0000885_vichayito_550.png',
     galeriaImagen: [
-      'assets/images/listing/vichayito/01.png',
-      'assets/images/listing/vichayito/02.png',
-      'assets/images/listing/vichayito/03.png',
-      'assets/images/listing/vichayito/04.png'
+      'assets/images/listing/vichayito_1/0000885_vichayito_550.png',
+      'assets/images/listing/vichayito_1/0000884_vichayito_550.png',
+      'assets/images/listing/vichayito_1/0000886_vichayito_550.png',
+      'assets/images/listing/vichayito_1/0000887_vichayito_550.png',
     ],
     precio: 209.00,
-    rating: '4.8 (24)',
+    rating: '4.8 (25)',
     descuento: '13% Off',
     duracion: '2 Noches',
-    tipo: 'Nacional / Playa',
+    tipo: 'Playa / Relax',
     grupo: 'General',
     idioma: 'Español',
     descripcion: [
-      'Relájate en el cálido mar del norte peruano con esta promo especial a Vichayito.',
-      'Alojamiento cómodo a pasos de la playa y traslados incluidos.'
+      'Relájate en las cálidas playas del norte peruano en Vichayito, ideal para desconectarse y disfrutar del mar.',
+      'Vichayito con todo listo para que solo disfrutes.',
+      'Ubicado en una zona privilegiada de Vichayito, ideal para disfrutar de sus playas, el clima cálido y la tranquilidad del norte peruano.',
+      'Fechas de viaje 01 de noviembre – 15 de diciembre, 2026 3 días · 2 noches'
     ],
     noches: '2 Noches',
     saliendo: 'Saliendo de Lima',
-    paquete: 'destinos-sudamerica',
+     paquete: 'destinos-sudamerica',
     incluye: [
-      'Vuelo',
-      'Hotel',
-      'Traslado'
+      'Boleto aéreo Lima/Talara/Lima',
+      '2 noches de alojamiento Hotel Categoría 3 - Habitación doble',
+      'Desayunos incluidos'
     ]
   },
-  {
-    id: 'cartagena-plaza-hotel-diciembre',
-    titulo: 'Cartagena - Plaza Hotel',
-    lugar: 'Cartagena de Indias, Colombia',
-    imagen: 'assets/images/listing/cartagena_diciembre/01.png',
-    galeriaImagen: [
-      'assets/images/listing/cartagena_diciembre/01.png',
-      'assets/images/listing/cartagena_diciembre/02.png',
-      'assets/images/listing/cartagena_diciembre/03.png',
-      'assets/images/listing/cartagena_diciembre/04.png'
-    ],
-    precio: 869.00,
-    rating: '4.7 (10)',
-
-    duracion: '3 Noches',
-    tipo: 'Internacional / Playa',
-    grupo: 'General',
-    idioma: 'Español',
-    descripcion: [
-      'Escapada especial a Cartagena viajando del 06 al 09 de diciembre.',
-      'Disfruta del sol del Caribe en Plaza Hotel con pasajes y seguro garantizados.'
-    ],
-    noches: '3 Noches',
-    saliendo: 'Saliendo de Lima',
-    paquete: 'paquetes-internacionales',
-    incluye: [
-      'Vuelo',
-      'Hotel',
-      'Traslado',
-      'Seguro'
-    ]
-  },
+ 
   {
     id: 'cartagena-holiday-inn-express-bocagrande',
     titulo: 'Cartagena - Holiday Inn Express Bocagrande',
@@ -1579,12 +1509,12 @@ export const TOURS: Tour[] = [
     id: 'cartagena-plaza-hotel-todo-incluido',
     titulo: 'Cartagena Plaza Hotel - Todo Incluido',
     lugar: 'Cartagena de Indias, Colombia',
-    imagen: 'assets/images/listing/cartagena_plaza_ti/01.png',
+    imagen: 'assets/images/listing/cartagena-plaza-hotel-todo-incluido/0000909_cartagena-plaza-hotel-todo-incluido_550.webp',
     galeriaImagen: [
-      'assets/images/listing/cartagena_plaza_ti/01.png',
-      'assets/images/listing/cartagena_plaza_ti/02.png',
-      'assets/images/listing/cartagena_plaza_ti/03.png',
-      'assets/images/listing/cartagena_plaza_ti/04.png'
+      'assets/images/listing/cartagena-plaza-hotel-todo-incluido/0000909_cartagena-plaza-hotel-todo-incluido_550.webp',
+      'assets/images/listing/cartagena-plaza-hotel-todo-incluido/0000911_cartagena-plaza-hotel-todo-incluido_550.webp',
+      'assets/images/listing/cartagena-plaza-hotel-todo-incluido/0000912_cartagena-plaza-hotel-todo-incluido_550.webp',
+      'assets/images/listing/cartagena-plaza-hotel-todo-incluido/0000913_cartagena-plaza-hotel-todo-incluido_550.webp'
     ],
     precio: 979.00,
     rating: '4.8 (15)',
@@ -1595,16 +1525,20 @@ export const TOURS: Tour[] = [
     idioma: 'Español',
     descripcion: [
       'Viaja del 06 al 09 de diciembre con todo resuelto en sistema Todo Incluido.',
-      'Sin preocupaciones adicionales en el Cartagena Plaza Hotel.'
+      'Sin preocupaciones adicionales en el Cartagena Plaza Hotel.',
+      'Ubicado a pocos minutos de la Ciudad Amurallada y del histórico barrio de Getsemaní. Descubre la riqueza cultural, la arquitectura colonial y el encanto del Caribe colombiano'
     ],
     noches: '3 Noches',
     saliendo: 'Saliendo de Lima',
     paquete: 'paquetes-internacionales',
     incluye: [
-      'Vuelo',
-      'Hotel',
-      'Traslado',
-      'Seguro'
+     'Boleto aéreoLima / Cartagena / Lima (Permite bolso o mochila + Carry On 12kg)',
+'Traslados incluidosAeropuerto / Hotel / Aeropuerto (Servicio compartido)',
+'03 noches de alojamientoCartagena Plaza Hotel (Habitación Estándar)',
+'Todo incluidoDesayuno y almuerzo buffet, cena buffet o a la carta, snacks y bebidas ilimitadas',
+'Tour de ciudadCartagena en Chiva (Servicio compartido)',
+'Seguro de viajes',
+
     ]
   }
 

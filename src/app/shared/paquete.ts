@@ -101,23 +101,7 @@ export const PAQUETES: Paquete[] = [
       'La ventaja de su origen latino y el relativo sinsentido del Lorum Ipsum es que el texto no atrae la atención sobre sí mismo ni distrae la atención del espectador del diseño.',
     ],
   },
-  {
-    id: 'paquete-playa-caribe',
-    titulo: 'Riviera Maya - Hotel Nickelodeon con vuelo incluido',
-    lugar: 'Riviera Maya - México',
-    imagen: 'assets/images/listing/RIVIERA/RIVIERA.webp',
-    precio: 2942,
-    rating: '5.0 (30)',
-    descuento: '25% Off',
-    duracion: '1 día',
-    tipo: 'Aventura',
-    grupo: '10 personas',
-    idioma: 'Español, Inglés',
-    descripcion: [
-      "El texto de relleno más conocido es el 'Lorem Ipsum', que se dice se originó en el siglo XVI. Se compone en un pseudo-latín que corresponde más o menos al latín 'propio'. Contiene una serie de palabras latinas reales. Este antiguo texto de relleno también es incomprensible, pero imita el ritmo de la mayoría de los idiomas europeos en escritura latina.",
-      'La ventaja de su origen latino y el relativo sinsentido del Lorum Ipsum es que el texto no atrae la atención sobre sí mismo ni distrae la atención del espectador del diseño.',
-    ],
-  },
+ 
 
    {
     id: 'paquete-playa-caribe',
