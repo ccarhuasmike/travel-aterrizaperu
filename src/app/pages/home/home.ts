@@ -83,10 +83,10 @@ export class Home {
   ];
   protected readonly proximaAventura: Destino[] = [
     { nombre: 'paquete-playa-caribe', hoteles: 3, imagen: 'assets/images/listing/proxima_aventura/0000868_playas-del-caribe_350.png', routelink:"paquete-playa-caribe" },
-    { nombre: 'descuentos', hoteles: 3, imagen: 'assets/images/listing/proxima_aventura/0000869_paquetes-con-descuento_350.webp', routelink:"descuentos" },
+    { nombre: 'descuentos', hoteles: 3, imagen: 'assets/images/listing/proxima_aventura/0000869_paquetes-con-descuento_350.png', routelink:"descuentos" },
     { nombre: 'paquetes-nacionales, Plaza Botero', hoteles: 3, imagen: 'assets/images/listing/proxima_aventura/0000870_paquetes-nacionales_350.png', routelink:"paquetes-nacionales" },
-    { nombre: 'destinos-sudamerica', hoteles: 3, imagen: 'assets/images/listing/proxima_aventura/0000872_europa_350.webp', routelink:"destino-europa" },
-    { nombre: 'europa', hoteles: 3, imagen: 'assets/images/listing/proxima_aventura/0000873_destinos-sudamerica_350.webp', routelink:"destinos-sudamerica" },
+    { nombre: 'destinos-sudamerica', hoteles: 3, imagen: 'assets/images/listing/proxima_aventura/0000872_europa_350.png', routelink:"destino-europa" },
+    { nombre: 'europa', hoteles: 3, imagen: 'assets/images/listing/proxima_aventura/0000873_destinos-sudamerica_350.png', routelink:"destinos-sudamerica" },
     { nombre: 'paquetes-año-nuevo', hoteles: 3, imagen: 'assets/images/listing/proxima_aventura/0000874_ano-nuevo_350.webp', routelink:"paquetes-año-nuevo" },
 
   ];

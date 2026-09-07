@@ -24,7 +24,7 @@ export const TOURS: Tour[] = [
 
   {
     id: 'tour-por-nueva-york',
-    titulo: 'Turquía & Grecia con Air Europa + equipaje "05may al 17set"',
+    titulo: 'Turquía & Grecia con Air Europa + equipaje',
     lugar: 'Turquía & Grecia',
     imagen: 'assets/images/listing/Turquía/TURQUIA.jpg.webp',
     precio: 4594,
@@ -40,7 +40,7 @@ export const TOURS: Tour[] = [
   },
   {
     id: 'descubre-grecia',
-    titulo: 'Vichayito - Hotel El Refugio de Vichayito con vuelo incluido',
+    titulo: 'Hotel El Refugio de Vichayito con vuelo incluido',
     lugar: 'Vichayito - Perú',
     imagen: 'assets/images/listing/Vichayito/VACHAYITO.jpg.webp',
     precio: 305,
@@ -56,7 +56,7 @@ export const TOURS: Tour[] = [
   },
   {
     id: 'museo-de-arte-moderno',
-    titulo: 'Buenos Aires con vuelo incluido',
+    titulo: 'Buenos Aires con vuelo incluido \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n',
     lugar: 'Argentina',
     imagen: 'assets/images/listing/BuenosAires/buenosaires.webp',
     precio: 615,
@@ -70,22 +70,22 @@ export const TOURS: Tour[] = [
       'La ventaja de su origen latino y el relativo sinsentido del Lorum Ipsum es que el texto no atrae la atención sobre sí mismo ni distrae la atención del espectador del diseño.',
     ],
   },
-  {
-    id: 'vista-de-la-montana-peek',
-    titulo: 'Escapada Ica',
-    lugar: 'Ica - Perú',
-    imagen: 'assets/images/listing/EscapadaIca/ICA.webp',
-    precio: 69,
-    rating: '5.0 (30)',
-    duracion: '4 días',
-    tipo: 'Montaña',
-    grupo: '25 personas',
-    idioma: 'Español',
-    descripcion: [
-      "El texto de relleno más conocido es el 'Lorem Ipsum', que se dice se originó en el siglo XVI. Se compone en un pseudo-latín que corresponde más o menos al latín 'propio'. Contiene una serie de palabras latinas reales. Este antiguo texto de relleno también es incomprensible, pero imita el ritmo de la mayoría de los idiomas europeos en escritura latina.",
-      'La ventaja de su origen latino y el relativo sinsentido del Lorum Ipsum es que el texto no atrae la atención sobre sí mismo ni distrae la atención del espectador del diseño.',
-    ],
-  },
+  // {
+  //   id: 'vista-de-la-montana-peek',
+  //   titulo: 'Escapada Ica \n \n ',
+  //   lugar: 'Ica - Perú',
+  //   imagen: 'assets/images/listing/EscapadaIca/ICA.webp',
+  //   precio: 69,
+  //   rating: '5.0 (30)',
+  //   duracion: '4 días',
+  //   tipo: 'Montaña',
+  //   grupo: '25 personas',
+  //   idioma: 'Español',
+  //   descripcion: [
+  //     "El texto de relleno más conocido es el 'Lorem Ipsum', que se dice se originó en el siglo XVI. Se compone en un pseudo-latín que corresponde más o menos al latín 'propio'. Contiene una serie de palabras latinas reales. Este antiguo texto de relleno también es incomprensible, pero imita el ritmo de la mayoría de los idiomas europeos en escritura latina.",
+  //     'La ventaja de su origen latino y el relativo sinsentido del Lorum Ipsum es que el texto no atrae la atención sobre sí mismo ni distrae la atención del espectador del diseño.',
+  //   ],
+  // },
 
 
 
@@ -93,17 +93,17 @@ export const TOURS: Tour[] = [
   {
     id: 'punta-cana-caribe-deluxe-Princess',
     titulo: 'Punta Cana - Caribe Deluxe Princess',
-    lugar: 'Punta Cana, Republica Dominicana ',
-    imagen: 'assets/images/listing/PuntaCana/0000758_punta-cana-caribe-deluxe-princess_320.webp',
+    lugar: 'Punta Cana, Rep. Dominicana',
+    imagen: 'assets/images/listing/PuntaCana/0000759_punta-cana-caribe-deluxe-princess_550.png',
     galeriaImagen: [
-      'assets/images/listing/PuntaCana/0000758_punta-cana-caribe-deluxe-princess_320.webp',
-      'assets/images/listing/PuntaCana/0000759_punta-cana-caribe-deluxe-princess_550.webp',
-      'assets/images/listing/PuntaCana/0000760_punta-cana-caribe-deluxe-princess_550.webp',
-      'assets/images/listing/PuntaCana/0000761_punta-cana-caribe-deluxe-princess_550.webp',
+      'assets/images/listing/PuntaCana/0000758_punta-cana-caribe-deluxe-princess_320.png',
+      'assets/images/listing/PuntaCana/0000759_punta-cana-caribe-deluxe-princess_550.png',
+      'assets/images/listing/PuntaCana/0000760_punta-cana-caribe-deluxe-princess_550.png',
+      'assets/images/listing/PuntaCana/0000761_punta-cana-caribe-deluxe-princess_550.png',
     ],
     precio: 1655.00,
     rating: '5.0 (30)',
-    descuento: '10% Off',
+    descuento: '',
     duracion: '2 días',
     tipo: 'Aventura',
     grupo: '50 personas',
@@ -128,7 +128,7 @@ export const TOURS: Tour[] = [
   {
     id: 'punta-cana-grand-sirenis',
     titulo: 'Punta Cana - Grand Sirenis',
-    lugar: 'Punta Cana, Republica Dominicana ',
+    lugar: 'Punta Cana, Rep. Dominicana',
     imagen: 'assets/images/listing/punta-cana-grand-sirenis/0000762_punta-cana-grand-sirenis_550.webp',
     galeriaImagen: [
       'assets/images/listing/punta-cana-grand-sirenis/0000762_punta-cana-grand-sirenis_550.webp',
@@ -166,7 +166,7 @@ export const TOURS: Tour[] = [
   {
     "id": "punta-cana-vista-sol",
     "titulo": "Punta Cana - Vista Sol",
-    "lugar": "Punta Cana, República Dominicana",
+    "lugar": "Punta Cana, Rep. Dominicana",
     "imagen": "assets/images/listing/Punta Cana - Vista Sol/0000769_punta-cana-vista-sol_550.webp",
     "galeriaImagen": [
       "assets/images/listing/Punta Cana - Vista Sol/0000285_punta-cana-vista-sol_550.webp",
@@ -198,7 +198,7 @@ export const TOURS: Tour[] = [
   {
     "id": "punta-cana-whala-bavaro",
     "titulo": "Punta Cana - Whala!Bávaro",
-    "lugar": "Punta Cana, República Dominicana",
+    "lugar": "Punta Cana, Rep. Dominicana",
     "imagen": "assets/images/listing/Punta Cana - Whala!Bávaro/0000771_punta-cana-whalabavaro_550.webp",
     "galeriaImagen": [
       "assets/images/listing/Punta Cana - Whala!Bávaro/0000771_punta-cana-whalabavaro_550.webp",
@@ -230,8 +230,8 @@ export const TOURS: Tour[] = [
     ]
   },
   {
-    "id": "cartagena-cartagena-plaza-hotel",
-    "titulo": "Cartagena - Cartagena Plaza Hotel",
+    "id": "cartagena-plaza-hotel",
+    "titulo": "Cartagena Plaza Hotel",
     "lugar": "Cartagena, Colombia",
     "imagen": "assets/images/listing/Cartagena - Cartagena Plaza Hotel/0000775_cartagena-cartagena-plaza-hotel_550.webp",
     "galeriaImagen": [
@@ -297,12 +297,12 @@ export const TOURS: Tour[] = [
     "id": "cartagena-dreams-karibana",
     "titulo": "Cartagena - Dreams Karibana",
     "lugar": "Cartagena, Colombia",
-    "imagen": "assets/images/listing/Cartagena - Dreams Karibana/0000783_cartagena-dreams-karibana_550.webp",
+    "imagen": "assets/images/listing/Cartagena - Dreams Karibana/0000783_cartagena-dreams-karibana_550.png",
     "galeriaImagen": [
-      "assets/images/listing/Cartagena - Dreams Karibana/0000783_cartagena-dreams-karibana_550.webp",
-      "assets/images/listing/Cartagena - Dreams Karibana/0000784_cartagena-dreams-karibana_550.webp",
-      "assets/images/listing/Cartagena - Dreams Karibana/0000785_cartagena-dreams-karibana_550.webp",
-      "assets/images/listing/Cartagena - Dreams Karibana/0000786_cartagena-dreams-karibana_550.webp"
+      "assets/images/listing/Cartagena - Dreams Karibana/0000783_cartagena-dreams-karibana_550.png",
+      "assets/images/listing/Cartagena - Dreams Karibana/0000784_cartagena-dreams-karibana_550.png",
+      "assets/images/listing/Cartagena - Dreams Karibana/0000785_cartagena-dreams-karibana_550.png",
+      "assets/images/listing/Cartagena - Dreams Karibana/0000786_cartagena-dreams-karibana_550.png"
     ],
     "precio": 1785.00,
     "rating": "5.0 (12)",
@@ -451,7 +451,7 @@ export const TOURS: Tour[] = [
 
   {
     id: 'cusco-casa-andina-standard-catedral',
-    titulo: 'Cusco - Casa Andina Standard Catedral',
+    titulo: 'Casa Andina Standard Catedral',
     lugar: 'Cusco, Perú',
     imagen: 'assets/images/listing/Cusco - Casa Andina Standard Catedral/0000814_cusco-casa-andina-standard-catedral_550.webp',
     galeriaImagen: [
@@ -518,7 +518,7 @@ export const TOURS: Tour[] = [
   },
   {
     id: 'cusco-tierra-viva-cusco-habitacion-estandar',
-    titulo: 'Cusco - Tierra Viva Cusco (Habitación Estándar)',
+    titulo: 'Tierra Viva (Hab. Estándar)',
     lugar: 'Cusco, Perú',
     imagen: 'assets/images/listing/cusco-tierra-viva-cusco-estandar/0000919_cusco-tierra-viva-cusco-habitacion-estandar_550.webp',
     galeriaImagen: [
@@ -1233,12 +1233,12 @@ export const TOURS: Tour[] = [
     id: 'cartagena-dreams-karibana',
     titulo: 'Cartagena - Dreams Karibana',
     lugar: 'Cartagena de Indias, Colombia',
-    "imagen": "assets/images/listing/cartagena-dreams-karibana/0000783_cartagena-dreams-karibana_550.webp",
+    "imagen": "assets/images/listing/cartagena-dreams-karibana/0000783_cartagena-dreams-karibana_550.png",
     "galeriaImagen": [
-      "assets/images/listing/cartagena-dreams-karibana/0000783_cartagena-dreams-karibana_550.webp",
-      "assets/images/listing/cartagena-dreams-karibana/0000784_cartagena-dreams-karibana_550.webp",
-      "assets/images/listing/cartagena-dreams-karibana/0000785_cartagena-dreams-karibana_550.webp",
-      "assets/images/listing/cartagena-dreams-karibana/0000786_cartagena-dreams-karibana_550.webp"
+      "assets/images/listing/cartagena-dreams-karibana/0000783_cartagena-dreams-karibana_550.png",
+      "assets/images/listing/cartagena-dreams-karibana/0000784_cartagena-dreams-karibana_550.png",
+      "assets/images/listing/cartagena-dreams-karibana/0000785_cartagena-dreams-karibana_550.png",
+      "assets/images/listing/cartagena-dreams-karibana/0000786_cartagena-dreams-karibana_550.png"
     ],
     precio: 1785.00,
     rating: '4.9 (21)',
