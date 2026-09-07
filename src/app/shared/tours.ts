@@ -1474,37 +1474,7 @@ export const TOURS: Tour[] = [
     ]
   },
  
-  {
-    id: 'cartagena-holiday-inn-express-bocagrande',
-    titulo: 'Cartagena - Holiday Inn Express Bocagrande',
-    lugar: 'Cartagena de Indias, Colombia',
-    imagen: 'assets/images/listing/cartagena_holiday/01.png',
-    galeriaImagen: [
-      'assets/images/listing/cartagena_holiday/01.png',
-      'assets/images/listing/cartagena_holiday/02.png',
-      'assets/images/listing/cartagena_holiday/03.png',
-      'assets/images/listing/cartagena_holiday/04.png'
-    ],
-    precio: 879.00,
-    rating: '4.8 (13)',
-    descuento: '32% Off',
-    duracion: '3 Noches',
-    tipo: 'Internacional / Playa',
-    grupo: 'General',
-    idioma: 'Español',
-    descripcion: [
-      'Oferta exclusiva del 06 al 09 de diciembre en Holiday Inn Express Bocagrande.',
-      'Excelente ubicación con seguro y traslados incluidos.'
-    ],
-    noches: '3 Noches',
-    saliendo: 'Saliendo de Lima',
-    paquete: 'paquetes-internacionales',
-    incluye: [
-      'Hotel',
-      'Traslado',
-      'Seguro'
-    ]
-  },
+
   {
     id: 'cartagena-plaza-hotel-todo-incluido',
     titulo: 'Cartagena Plaza Hotel - Todo Incluido',
