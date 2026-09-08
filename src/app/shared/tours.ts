@@ -71,21 +71,25 @@ export const TOURS: Tour[] = [
     ],
     translations: {
       en: {
+        saliendo: "Leaving Lima",
         titulo: 'Punta Cana - Caribe Deluxe Princess',
         lugar: 'Punta Cana, Dominican Republic',
         duracion: '2 days',
         tipo: 'Adventure',
         grupo: '50 people',
+        noches: '4 Nights',
         idioma: 'Spanish, English',
         descripcion: ['Punta Cana is ready for you to simply enjoy.', 'Located opposite the idyllic beaches of Punta Cana, surrounded by palm trees and turquoise waters. Enjoy the Caribbean, water activities, and an unforgettable all-inclusive experience.', 'Travel dates December 30 – January 3, 2027 5 days · 4 nights'],
         incluye: ['Air ticket Lima/Punta Cana/Lima with LATAM Airlines - Allows backpack + Carry-On (12 kg)', 'Transfers included: Airport – hotel – airport (Shared Service)', '4 nights accommodation at Grand Sirenis Punta Cana - Double Room', 'All-Inclusive Meal Plan: Buffet breakfast and lunch, buffet or à la carte dinner, snacks and unlimited drinks', 'Travel insurance'],
       },
       pt: {
-        titulo: 'Turquia e Grecia com Air Europa + bagagem',
+        saliendo: "Saindo de Lima",
+        titulo: 'Punta Cana - Caribe Deluxe Princess',
         lugar: 'Turquia e Grecia',
         duracion: '3 dias',
         tipo: 'Cidade',
         grupo: '30 pessoas',
+        noches: '4 noites',
         idioma: 'Espanhol, Inglês',
         descripcion: ['Punta Cana está pronta para você simplesmente aproveitar.', 'Localizado em frente às praias paradisíacas de Punta Cana, rodeado por palmeiras e águas turquesa. Desfrute do Caribe, de atividades aquáticas e de uma experiência inesquecível com tudo incluído.', 'Datas da viagem: 30 de dezembro a 3 de janeiro de 2027 · 5 dias · 4 noites'],
         incluye: ['Passagem aérea Lima/Punta Cana/Lima com a LATAM Airlines - Permite mochila + bagagem de mão (12 kg)', 'Traslados incluídos: Aeroporto – hotel – aeroporto (Serviço Compartilhado)', '4 noites de hospedagem no Grand Sirenis Punta Cana - Quarto Duplo', 'Plano de refeições com tudo incluído: café da manhã e almoço em estilo buffet, jantar em estilo buffet ou à la carte, lanches e bebidas ilimitadas.', 'Seguro de viagem']
@@ -138,6 +142,7 @@ export const TOURS: Tour[] = [
           "In the heart of the Caribbean, with access to paradisiacal beaches and unique tropical landscapes. Relax, enjoy activities by the sea, and discover the magic of Punta Cana.",
           "Travel dates December 30 – January 3, 2027 5 days · 4 nights"
         ],
+        saliendo: "Leaving Lima",
         incluye: [
           "Air ticket Lima/Punta Cana/Lima with LATAM Airlines - Allows backpack + Carry-On (12 kg)",
           "Transfers included: Airport – hotel – airport (Shared Service)",
@@ -158,6 +163,7 @@ export const TOURS: Tour[] = [
           "No coração do Caribe, com acesso a praias paradisíacas e paisagens tropicais únicas. Relaxe, aproveite atividades à beira-mar e descubra a magia de Punta Cana.",
           "Datas de viagem 30 de dezembro – 03 de janeiro, 2027 5 dias · 4 noites"
         ],
+        saliendo: "Saindo de Lima",
         incluye: [
           "Passagem aérea Lima/Punta Cana/Lima com LATAM Airlines - Permite mochila + Carry-On (12 kg)",
           "Traslados incluídos: Aeroporto – hotel – aeroporto (Serviço Compartilhado)",
@@ -178,7 +184,6 @@ export const TOURS: Tour[] = [
       "assets/images/listing/Punta Cana - Vista Sol/0000769_punta-cana-vista-sol_550.webp",
       "assets/images/listing/Punta Cana - Vista Sol/0000948_punta-cana-vista-sol_550.webp",
       "assets/images/listing/Punta Cana - Vista Sol/0000768_punta-cana-vista-sol_550.webp"
-
     ],
     "precio": 1629.00,
     "rating": "4.8 (18)",
@@ -188,20 +193,60 @@ export const TOURS: Tour[] = [
     "grupo": "Año Nuevo",
     "idioma": "Español",
     "descripcion": [
-      "Celebra el Año Nuevo en Vista Sol Punta Cana con la mejor atención y sistema todo incluido."
+      "Celebra el Año Nuevo en Vista Sol Punta Cana con la mejor atención y sistema todo incluido.",
+      'Ubicado en Playa Bávaro, cerca de restaurantes y actividades acuáticas. Relájate frente al mar y descubre todo el encanto del Caribe dominicano.',
+      'Fechas de viaje 30 de diciembre – 03 de enero, 2027 5 días · 4 noches'
     ],
     "noches": "4 Noches",
     "saliendo": "Saliendo de Lima",
     "paquete": "paquete-playa-caribe",
     "incluye": [
-      "Vuelo",
-      "Hotel",
-      "Traslado",
-      "Seguro"
+      'Boleto aéreo Lima/Punta Cana/Limacon LATAM Airlines - Permite mochila + Carry-On (12 kg)',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto (Servicio Compartido)',
+      '4 noches de alojamientoVista Sol Punta Cana - Habitación Comfort con balcón privado',
+      'Sistema de alimentación Todo IncluidoDesayuno y almuerzo buffet, cena buffet o a la carta, piqueos y bebidas ilimitadas',
+      'Cena de gala de Año Nuevo',
+      'Seguro de viajes'
     ],
     translations: {
-      en: {},
-      pt: {}
+      en: {
+        titulo: "Punta Cana - Vista Sol",
+        lugar: "Punta Cana, Dominican Republic",
+        noches: "4 Nights",
+        saliendo: "Leaving Lima",
+        descripcion: [
+          "Celebrate the New Year at Vista Sol Punta Cana with the best service and all-inclusive system.",
+          "Located on Bávaro Beach, close to restaurants and water activities. Relax by the sea and discover all the charm of the Dominican Caribbean.",
+          "Travel dates December 30 – January 3, 2027 5 days · 4 nights"
+        ],
+        incluye: [
+          'Air ticket Lima/Punta Cana/Lima with LATAM Airlines - Allows backpack + Carry-On (12 kg)',
+          'Transfers included Airport – hotel – airport (Shared Service)',
+          '4 nights accommodation Vista Sol Punta Cana - Comfort Room with private balcony',
+          'All-Inclusive meal plan Breakfast and lunch buffet, dinner buffet or à la carte, snacks and unlimited drinks',
+          'New Year\'s Eve gala dinner',
+          'Travel insurance'
+        ]
+      },
+      pt: {
+        titulo: "Punta Cana - Vista Sol",
+        lugar: "Punta Cana, República Dominicana",
+        noches: "4 noites",
+        saliendo: "Saindo de Lima",
+        descripcion: [
+          "Celebre o Ano Novo no Vista Sol Punta Cana com o melhor serviço e sistema all-inclusive.",
+          "Localizado na Praia de Bávaro, perto de restaurantes e atividades aquáticas. Relaxe à beira-mar e descubra todo o charme do Caribe dominicano.",
+          "Datas de viagem 30 de dezembro – 03 de janeiro, 2027 5 dias · 4 noites"
+        ],
+        incluye: [
+          'Passagem aérea Lima/Punta Cana/Lima com LATAM Airlines - Permite mochila + Carry-On (12 kg)',
+          'Traslados incluídos Aeroporto – hotel – aeroporto (Serviço Compartilhado)',
+          '4 noites de acomodação Vista Sol Punta Cana - Quarto Conforto com varanda privativa',
+          'Plano de alimentação All-Inclusive Café da manhã e almoço buffet, jantar buffet ou à la carte, lanches e bebidas ilimitadas',
+          'Jantar de gala de Ano Novo',
+          'Seguro de viagem'
+        ]
+      }
     }
   },
   {
@@ -245,6 +290,7 @@ export const TOURS: Tour[] = [
         tipo: "All Inclusive",
         grupo: "50 people",
         idioma: "Spanish, English",
+        saliendo: "Leaving Lima",
         descripcion: [
           "Punta Cana with everything ready for you to just enjoy.",
           "In the heart of the Caribbean, with access to paradisiacal beaches and unique tropical landscapes. Relax, enjoy activities by the sea, and discover the magic of Punta Cana.",
@@ -261,10 +307,11 @@ export const TOURS: Tour[] = [
       pt: {
         titulo: "Punta Cana - Whala!Bávaro",
         lugar: "Punta Cana, República Dominicana",
-        duracion: "2 días",
-        tipo: "Aventura",
-        grupo: "50 personas",
-        idioma: "Español",
+        duracion: "4 noites",
+        tipo: "Tudo Incluído",
+        grupo: "50 pessoas",
+        idioma: "Espanhol, Inglês",
+        saliendo: "Saindo de Lima",
         descripcion: [
           "Punta Cana está pronta para você simplesmente aproveitar.",
           "No coração do Caribe, com acesso a praias paradisíacas e paisagens tropicais únicas. Relaxe, aproveite atividades à beira-mar e descubra a magia de Punta Cana.",
@@ -319,7 +366,7 @@ export const TOURS: Tour[] = [
           "New Year's getaway to Cartagena de Indias staying at the Cartagena Plaza Hotel."
         ],
         noches: "3 Nights",
-        saliendo: "Departing from Lima",
+        saliendo: "Leaving Lima",
         incluye: [
           "Air ticket Lima/Punta Cana/Lima with LATAM Airlines - Allows backpack + Carry-On (12 kg)",
           "Transfers included Airport – hotel – airport (Shared Service)",
@@ -1620,7 +1667,7 @@ export const TOURS: Tour[] = [
         duracion: '20 Noites',
         tipo: 'Internacional / Grande Tour',
         noches: '20 Noites',
-        saliendo: 'Saindo de Lima',       
+        saliendo: 'Saindo de Lima',
         lugar: 'Europa',
         incluye: [
           'Traslados na chegada e saída Aeroporto de Madrid (MAD) – Hotel',
