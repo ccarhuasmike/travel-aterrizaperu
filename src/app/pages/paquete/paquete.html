@@ -17,13 +17,13 @@
         <ul class="tracking-[0.5px] mb-0 inline-block">
             <li
                 class="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white">
-                <a routerLink="/">Inicio</a>
+                <a routerLink="/">{{ i18n.t('nav.home') }}</a>
             </li>
          
             <li class="inline-block text-base text-white/50 mx-0.5 ltr:rotate-0 rtl:rotate-180"><i
                     class="ri-arrow-right-s-line"></i></li>
             <li class="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white"
-                aria-current="page">Tour</li>
+                aria-current="page">{{ i18n.t('tour.breadcrumb') }}</li>
         </ul>
     </div>
 </section><!--end section-->
@@ -31,9 +31,9 @@
 
 <div class="container relative md:mt-24 mt-16">
     <div class="grid grid-cols-1 pb-8 text-center">
-        <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Paquetes de Tours</h3>
-        <p class="text-slate-400 max-w-xl mx-auto">¿Planificando un viaje? ¡Organizamos tu viaje con los mejores
-            lugares y el mejor presupuesto!</p>
+        <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">{{
+            i18n.t('package.title') }}</h3>
+        <p class="text-slate-400 max-w-xl mx-auto">{{ i18n.t('home.intro') }}</p>
     </div><!--end grid-->
 
     <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mt-6 gap-4">
@@ -81,7 +81,7 @@
 
                 <div style="background: red; padding: 7px; margin-top: auto;" class="mt-4 pt-4 flex justify-between items-center border-t border-slate-100 dark:border-gray-800">
                     <h5 style="color: white;" class="text-lg font-medium text-primary">$ {{ tour.precio }} / Día</h5>
-                    <a  style="color: white;" [routerLink]="['/tours', tour.id]" class="text-slate-400 hover:text-primary">Comprar <i
+                    <a  style="color: white;" [routerLink]="['/tours', tour.id]" class="text-slate-400 hover:text-primary">{{ i18n.t('package.buy') }} <i
                             class="ri-arrow-right-s-line"></i></a>
                 </div>
             </div>
@@ -101,11 +101,11 @@
 } @else {
 <section class="relative md:py-24 py-16 text-center">
     <div class="container relative">
-        <h3 class="mb-6 md:text-3xl text-2xl font-semibold">Tour no encontrado</h3>
-        <p class="text-slate-400 mb-6">El paquete que buscas no existe o fue removido.</p>
+        <h3 class="mb-6 md:text-3xl text-2xl font-semibold">{{ i18n.t('package.notFound') }}</h3>
+        <p class="text-slate-400 mb-6">{{ i18n.t('package.notFoundText') }}</p>
         <a routerLink="/"
             class="py-2 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-primary text-white rounded-md">Volver
-            al inicio</a>
+            {{ i18n.t('package.backHome') }}</a>
     </div>
 </section>
 }

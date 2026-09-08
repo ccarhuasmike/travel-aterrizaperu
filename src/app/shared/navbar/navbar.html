@@ -6,7 +6,7 @@
                 <ul class="list-none">
                     <li class="inline-flex items-center">
                         <i class="ri-time-line text-primary"></i>
-                        <span class="ms-2 text-slate-300">Lun-Sáb: 9am a 6pm</span>
+                        <span class="ms-2 text-slate-300">{{ i18n.t('nav.schedule') }}</span>
                     </li>
                     <li class="inline-flex items-center ms-2">
                         <i class="ri-map-pin-line text-primary"></i>
@@ -51,8 +51,8 @@
         <!-- Logo container-->
         <a class="logo" routerLink="/">
             <span class="inline-block dark:hidden">
-                <img src="assets/images/logo-dark-1.png" class="h-7 l-dark" alt="">
-                <img src="assets/images/logo-light-1.png" class="h-7 l-light" alt="">
+                <img style="height: 64px;width: 100%;" src="assets/images/logo-dark-1.png" class="h-7 l-dark" alt="">
+                <img style="height: 64px;width: 100%;" src="assets/images/logo-light-1.png" class="h-7 l-light" alt="">
             </span>
             <img src="assets/images/logo-white-1.png" class="hidden dark:inline-block" alt="">
         </a>
@@ -73,21 +73,16 @@
         <!-- End Mobile Toggle -->
 
         <!--Login button inset-s-->
-        <ul class="buy-button list-none mb-0">
-            <li class="dropdown inline-block relative pe-1">
-                <button data-dropdown-toggle="dropdown" class="dropdown-toggle align-middle inline-flex search-dropdown"
-                    type="button">
-                    <i class="ri-search-line text-xl dark-icon"></i>
-                    <i class="ri-search-line text-xl white-icon text-white"></i>
-                </button>
-                <!-- Dropdown menu -->
-                <div
-                    class="dropdown-menu absolute overflow-hidden inset-e-0 m-0 mt-5 z-10 md:w-52 w-48 rounded-md bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 hidden">
-                    <div class="relative">
-                        <i class="ri-search-line absolute top-2.25 inset-e-3"></i>
-                        <input type="text" class="h-9 px-3 pe-10 w-full border-0 focus:ring-0 outline-none" name="s"
-                            id="searchItem" placeholder="Buscar...">
-                    </div>
+        <ul class="buy-button list-none mb-0">        
+            <li class="inline-block relative ps-0.5">
+                <div class="language-switcher" role="group" aria-label="Seleccionar idioma">
+                    <i class="ri-global-line" aria-hidden="true"></i>
+                    <button type="button" class="language-option" [class.is-active]="i18n.language() === 'es'"
+                        [attr.aria-pressed]="i18n.language() === 'es'" aria-label="Español" (click)="selectLanguage('es')">🇵🇪</button>
+                    <button type="button" class="language-option" [class.is-active]="i18n.language() === 'en'"
+                        [attr.aria-pressed]="i18n.language() === 'en'" aria-label="English" (click)="selectLanguage('en')">🇺🇸</button>
+                    <button type="button" class="language-option" [class.is-active]="i18n.language() === 'pt'"
+                        [attr.aria-pressed]="i18n.language() === 'pt'" aria-label="Português" (click)="selectLanguage('pt')">🇧🇷</button>
                 </div>
             </li>
 
@@ -131,8 +126,8 @@
         <div id="navigation">
             <!-- Navigation Menu-->
             <ul class="navigation-menu nav-right justify-end! nav-light">
-                <li><a routerLink="/" class="sub-menu-item">Inicio</a></li>
-                <li><a routerLink="/" fragment="proxima-aventura" class="sub-menu-item">Paquetes</a></li>
+                <li><a routerLink="/" class="sub-menu-item">{{ i18n.t('nav.home') }}</a></li>
+                <li><a routerLink="/" fragment="proxima-aventura" class="sub-menu-item">{{ i18n.t('nav.packages') }}</a></li>
                 <!-- <li><a routerLink="/" class="sub-menu-item">Cruceros</a></li>
                 <li><a routerLink="/" class="sub-menu-item">Hotel</a></li> -->
                 
@@ -155,7 +150,7 @@
                     </ul>
                 </li> -->
 
-                <li><a href="#!" class="sub-menu-item">Contáctanos</a></li>
+                <li><a href="#!" class="sub-menu-item">{{ i18n.t('nav.contact') }}</a></li>
             </ul><!--end navigation menu-->
         </div><!--end navigation-->
     </div><!--end container-->

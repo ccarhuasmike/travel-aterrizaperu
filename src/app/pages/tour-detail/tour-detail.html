@@ -10,9 +10,9 @@
 
         <div class="absolute text-center z-10 bottom-5 inset-s-0 inset-e-0 mx-3">
             <ul class="tracking-[0.5px] mb-0 inline-block">
-                <li class="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white"><a routerLink="/">Inicio</a></li>
+                <li class="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white"><a routerLink="/">{{ i18n.t('nav.home') }}</a></li>
                 <li class="inline-block text-base text-white/50 mx-0.5 ltr:rotate-0 rtl:rotate-180"><i class="ri-arrow-right-s-line"></i></li>
-                <li class="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white" aria-current="page">Tour</li>
+                <li class="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white" aria-current="page">{{ i18n.t('tour.breadcrumb') }}</li>
             </ul>
         </div>
     </section><!--end section-->
@@ -39,7 +39,7 @@
                         <li class="inline-flex items-center me-5 mt-5">
                             <i class="ri-time-line text-2xl stroke-1.5 text-primary"></i>
                             <div class="ms-3">
-                                <p class="font-medium">Duración</p>
+                                <p class="font-medium">{{ i18n.t('tour.duration') }}</p>
                                 <span class="text-slate-400 font-medium text-sm">{{ t.duracion }}</span>
                             </div>
                         </li>
@@ -47,7 +47,7 @@
                         <li class="inline-flex items-center me-5 mt-5">
                             <i class="ri-align-item-left-line stroke-1.5 text-primary"></i>
                             <div class="ms-3">
-                                <p class="font-medium">Tipo</p>
+                                <p class="font-medium">{{ i18n.t('tour.type') }}</p>
                                 <span class="text-slate-400 font-medium text-sm">{{ t.tipo }}</span>
                             </div>
                         </li>
@@ -55,7 +55,7 @@
                         <li class="inline-flex items-center me-5 mt-5">
                             <i class="ri-group-line text-2xl stroke-1.5 text-primary"></i>
                             <div class="ms-3">
-                                <p class="font-medium">Tamaño de grupo:</p>
+                                <p class="font-medium">{{ i18n.t('tour.groupSize') }}</p>
                                 <span class="text-slate-400 font-medium text-sm">{{ t.grupo }}</span>
                             </div>
                         </li>
@@ -63,7 +63,7 @@
                         <li class="inline-flex items-center me-5 mt-5">
                             <i class="ri-global-line text-2xl stroke-1.5 text-primary"></i>
                             <div class="ms-3">
-                                <p class="font-medium">Idiomas</p>
+                                <p class="font-medium">{{ i18n.t('tour.languages') }}</p>
                                 <span class="text-slate-400 font-medium text-sm">{{ t.idioma }}</span>
                             </div>
                         </li>
@@ -71,14 +71,14 @@
                         <li class="inline-flex items-center me-5 mt-5">
                             <i class="ri-money-dollar-circle-line text-2xl stroke-1.5 text-primary"></i>
                             <div class="ms-3">
-                                <p class="font-medium">$ {{ t.precio }} / Persona</p>
+                                <p class="font-medium">$ {{ t.precio }} / {{ i18n.t('tour.perPerson') }}</p>
                                 <span class="text-slate-400 font-medium text-sm">1 Día</span>
                             </div>
                         </li>
                     </ul>
 
                     <div class="mt-6">
-                        <h5 class="text-lg font-semibold">Descripción del tour:</h5>
+                        <h5 class="text-lg font-semibold">{{ i18n.t('tour.description') }}</h5>
                         @for (parrafo of t.descripcion; track $index) {
                             <p class="text-slate-400 mt-3">{{ parrafo }}</p>
                         }
@@ -86,7 +86,7 @@
 
                     @if (t.incluye) {
                     <div class="mt-6">
-                        <h5 class="text-lg font-semibold">¿Qué incluye?</h5>
+                        <h5 class="text-lg font-semibold">{{ i18n.t('tour.included') }}</h5>
                         <ul class="list-none mt-3">
                             @for (item of t.incluye; track $index) {
                             <li class="flex items-start mt-2">
@@ -98,8 +98,8 @@
                     </div>
                     }
 
-                    <div class="mt-6">
-                        <h5 class="text-lg font-semibold">Preguntas y Respuestas:</h5>
+                    <!-- <div class="mt-6">
+                        <h5 class="text-lg font-semibold">{{ i18n.t('tour.faq') }}</h5>
 
                         <div class="mt-6">
                             @for (faq of faqs; track $index) {
@@ -120,9 +120,9 @@
                                 </div>
                             }
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="mt-6">
+                    <!-- <div class="mt-6">
                         <h5 class="text-lg font-semibold">Deja un comentario:</h5>
 
                         <form class="mt-6">
@@ -152,7 +152,7 @@
                             </div>
                             <button type="submit" class="py-2 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-primary text-white rounded-md w-full">Enviar mensaje</button>
                         </form>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="lg:col-span-4 md:col-span-5">
@@ -190,7 +190,7 @@
 
                         <div class="mt-4">
                             <a [href]="whatsappUrl(t)" target="_blank" rel="noopener noreferrer"
-                                class="py-2 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-primary text-white rounded-md w-full">Contactate con un asesor</a>
+                                class="py-2 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-primary text-white rounded-md w-full">{{ i18n.t('tour.contact') }}</a>
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,7 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { RouterLink, ActivatedRoute } from '@angular/router';
-import { getPaqueteById } from '../../shared/tours';
+import { getPaqueteById, localizeTour } from '../../shared/tours';
+import { TranslationService } from '../../shared/translation.service';
 
 interface Faq {
   pregunta: string;
@@ -15,13 +16,15 @@ interface Faq {
 })
 export class Paquete {
   private readonly route = inject(ActivatedRoute);
+  protected readonly i18n = inject(TranslationService);
   
-  protected readonly tours = signal(getPaqueteById(this.route.snapshot.paramMap.get('id') ?? ''));
+  private readonly packageTours = signal(getPaqueteById(this.route.snapshot.paramMap.get('id') ?? ''));
+  protected readonly tours = computed(() => this.packageTours().map((tour) => localizeTour(tour, this.i18n.language())));
 
   constructor() {
     this.route.paramMap.subscribe((params) => {
       debugger;
-      this.tours.set(getPaqueteById(params.get('id') ?? ''));
+      this.packageTours.set(getPaqueteById(params.get('id') ?? ''));
     });
     console.log(this.tours());
   }

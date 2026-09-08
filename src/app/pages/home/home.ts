@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TinySliderDirective } from '../../shared/tiny-slider.directive';
-import { TOURS } from '../../shared/tours';
+import { localizeTour, TOURS } from '../../shared/tours';
+import { TranslationService } from '../../shared/translation.service';
 
 interface Destino {
   nombre: string;
@@ -31,6 +32,7 @@ interface Blog {
   templateUrl: './home.html'
 })
 export class Home {
+  protected readonly i18n = inject(TranslationService);
   protected readonly destinosSliderOptions = {
     controls: true,
     mouseDrag: true,
@@ -91,7 +93,7 @@ export class Home {
   ];
 
 
-  protected readonly tours = TOURS;
+  protected readonly tours = computed(() => TOURS.map((tour) => localizeTour(tour, this.i18n.language())));
 
   protected readonly testimonios: Testimonio[] = [
     { nombre: 'Calvin Carlo', cargo: 'Gerente', texto: 'Solo quedan fragmentos del texto original en los textos Lorem Ipsum usados hoy.', imagen: 'assets/images/client/01.jpg' },

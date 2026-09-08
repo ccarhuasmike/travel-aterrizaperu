@@ -5,11 +5,10 @@
     <div class="container relative">
         <div class="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-7.5">
             <div class="lg:col-span-8 md:col-span-7 md:order-1 order-2">
-                <h5 class="text-3xl font-dancing! text-white">Descubre la Belleza</h5>
-                <h4 class="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-6xl mb-6 mt-5">Deja el
-                    camino atrás, <br> y vive Aterriza Perú</h4>
-                <p class="text-white/70 text-xl max-w-xl">¿Planificando un viaje? ¡Organizamos tu viaje con los mejores
-                    lugares y el mejor presupuesto!</p>
+                <h5 class="text-3xl font-dancing! text-white">{{ i18n.t('home.eyebrow') }}</h5>
+                <h4 class="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-6xl mb-6 mt-5">{{
+                    i18n.t('home.headline') }}</h4>
+                <p class="text-white/70 text-xl max-w-xl">{{ i18n.t('home.intro') }}</p>
             </div>
 
             <div class="lg:col-span-4 md:col-span-5 md:text-center md:order-2 order-1">
@@ -126,10 +125,9 @@
     
     <div id="proxima-aventura" class="container relative md:mt-2 mt-2">
         <div class="grid grid-cols-1 pb-6 text-center">
-            <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Empieza tu próxima
-                aventura</h3>
-            <p class="text-slate-400 max-w-xl mx-auto">Explora destinos increíbles y encuentra la mejor opción ideal
-                para ti.</p>
+            <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">{{
+                i18n.t('home.adventureTitle') }}</h3>
+            <p class="text-slate-400 max-w-xl mx-auto">{{ i18n.t('home.adventureText') }}</p>
         </div><!--end grid-->
         <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-6 gap-6">
             @for (destino of proximaAventura; track $index) {

@@ -1,3 +1,18 @@
+import type { Language } from './translation.service';
+
+export type TranslatableTourField =
+  | 'titulo'
+  | 'lugar'
+  | 'duracion'
+  | 'tipo'
+  | 'grupo'
+  | 'idioma'
+  | 'descripcion'
+  | 'noches'
+  | 'saliendo'
+  | 'descripcionbreve'
+  | 'incluye';
+
 export interface Tour {
   id: string;
   titulo: string;
@@ -17,83 +32,14 @@ export interface Tour {
   paquete?: string;
   galeriaImagen?: string[];
   incluye?: string[];
+  translations?: Partial<Record<Exclude<Language, 'es'>, Partial<Pick<Tour, TranslatableTourField>>>>;
 }
 
 export const TOURS: Tour[] = [
-
-
-  {
-    id: 'tour-por-nueva-york',
-    titulo: 'Turquía & Grecia con Air Europa + equipaje',
-    lugar: 'Turquía & Grecia',
-    imagen: 'assets/images/listing/Turquía/TURQUIA.jpg.webp',
-    precio: 4594,
-    rating: '5.0 (30)',
-    duracion: '3 días',
-    tipo: 'Ciudad',
-    grupo: '30 personas',
-    idioma: 'Español, Inglés',
-    descripcion: [
-      "El texto de relleno más conocido es el 'Lorem Ipsum', que se dice se originó en el siglo XVI. Se compone en un pseudo-latín que corresponde más o menos al latín 'propio'. Contiene una serie de palabras latinas reales. Este antiguo texto de relleno también es incomprensible, pero imita el ritmo de la mayoría de los idiomas europeos en escritura latina.",
-      'La ventaja de su origen latino y el relativo sinsentido del Lorum Ipsum es que el texto no atrae la atención sobre sí mismo ni distrae la atención del espectador del diseño.',
-    ],
-  },
-  {
-    id: 'descubre-grecia',
-    titulo: 'Hotel El Refugio de Vichayito con vuelo incluido',
-    lugar: 'Vichayito - Perú',
-    imagen: 'assets/images/listing/Vichayito/VACHAYITO.jpg.webp',
-    precio: 305,
-    rating: '5.0 (30)',
-    duracion: '5 días',
-    tipo: 'Playa',
-    grupo: '20 personas',
-    idioma: 'Español',
-    descripcion: [
-      "El texto de relleno más conocido es el 'Lorem Ipsum', que se dice se originó en el siglo XVI. Se compone en un pseudo-latín que corresponde más o menos al latín 'propio'. Contiene una serie de palabras latinas reales. Este antiguo texto de relleno también es incomprensible, pero imita el ritmo de la mayoría de los idiomas europeos en escritura latina.",
-      'La ventaja de su origen latino y el relativo sinsentido del Lorum Ipsum es que el texto no atrae la atención sobre sí mismo ni distrae la atención del espectador del diseño.',
-    ],
-  },
-  {
-    id: 'museo-de-arte-moderno',
-    titulo: 'Buenos Aires con vuelo incluido \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n',
-    lugar: 'Argentina',
-    imagen: 'assets/images/listing/BuenosAires/buenosaires.webp',
-    precio: 615,
-    rating: '5.0 (30)',
-    duracion: '1 día',
-    tipo: 'Cultural',
-    grupo: '15 personas',
-    idioma: 'Español, Inglés',
-    descripcion: [
-      "El texto de relleno más conocido es el 'Lorem Ipsum', que se dice se originó en el siglo XVI. Se compone en un pseudo-latín que corresponde más o menos al latín 'propio'. Contiene una serie de palabras latinas reales. Este antiguo texto de relleno también es incomprensible, pero imita el ritmo de la mayoría de los idiomas europeos en escritura latina.",
-      'La ventaja de su origen latino y el relativo sinsentido del Lorum Ipsum es que el texto no atrae la atención sobre sí mismo ni distrae la atención del espectador del diseño.',
-    ],
-  },
-  // {
-  //   id: 'vista-de-la-montana-peek',
-  //   titulo: 'Escapada Ica \n \n ',
-  //   lugar: 'Ica - Perú',
-  //   imagen: 'assets/images/listing/EscapadaIca/ICA.webp',
-  //   precio: 69,
-  //   rating: '5.0 (30)',
-  //   duracion: '4 días',
-  //   tipo: 'Montaña',
-  //   grupo: '25 personas',
-  //   idioma: 'Español',
-  //   descripcion: [
-  //     "El texto de relleno más conocido es el 'Lorem Ipsum', que se dice se originó en el siglo XVI. Se compone en un pseudo-latín que corresponde más o menos al latín 'propio'. Contiene una serie de palabras latinas reales. Este antiguo texto de relleno también es incomprensible, pero imita el ritmo de la mayoría de los idiomas europeos en escritura latina.",
-  //     'La ventaja de su origen latino y el relativo sinsentido del Lorum Ipsum es que el texto no atrae la atención sobre sí mismo ni distrae la atención del espectador del diseño.',
-  //   ],
-  // },
-
-
-
-
   {
     id: 'punta-cana-caribe-deluxe-Princess',
     titulo: 'Punta Cana - Caribe Deluxe Princess',
-    lugar: 'Punta Cana, Rep. Dominicana',
+    lugar: 'Punta Cana, Republica Dominicana',
     imagen: 'assets/images/listing/PuntaCana/0000759_punta-cana-caribe-deluxe-princess_550.png',
     galeriaImagen: [
       'assets/images/listing/PuntaCana/0000758_punta-cana-caribe-deluxe-princess_320.png',
@@ -107,9 +53,9 @@ export const TOURS: Tour[] = [
     duracion: '2 días',
     tipo: 'Aventura',
     grupo: '50 personas',
-    idioma: 'Español',
+    idioma: 'Español, Inglés',
     descripcion: [
-      "Punta Cana con todo listo para que solo disfrutes.",
+      'Punta Cana con todo listo para que solo disfrutes.',
       'Ubicado frente a las paradisíacas playas de Punta Cana, rodeado de palmeras y aguas turquesas. Disfruta del Caribe, actividades acuáticas y una experiencia todo incluido inolvidable.',
       'Fechas de viaje 30 de diciembre – 03 de enero, 2027 5 días · 4 noches',
     ],
@@ -123,8 +69,29 @@ export const TOURS: Tour[] = [
       'Sistema de alimentación Todo Incluido: Desayuno y almuerzo buffet, cena buffet o a la carta, piqueos y bebidas ilimitadas',
       'Seguro de viajes',
     ],
+    translations: {
+      en: {
+        titulo: 'Punta Cana - Caribe Deluxe Princess',
+        lugar: 'Punta Cana, Dominican Republic',
+        duracion: '2 days',
+        tipo: 'Adventure',
+        grupo: '50 people',
+        idioma: 'Spanish, English',
+        descripcion: ['Punta Cana is ready for you to simply enjoy.', 'Located opposite the idyllic beaches of Punta Cana, surrounded by palm trees and turquoise waters. Enjoy the Caribbean, water activities, and an unforgettable all-inclusive experience.', 'Travel dates December 30 – January 3, 2027 5 days · 4 nights'],
+        incluye: ['Air ticket Lima/Punta Cana/Lima with LATAM Airlines - Allows backpack + Carry-On (12 kg)', 'Transfers included: Airport – hotel – airport (Shared Service)', '4 nights accommodation at Grand Sirenis Punta Cana - Double Room', 'All-Inclusive Meal Plan: Buffet breakfast and lunch, buffet or à la carte dinner, snacks and unlimited drinks', 'Travel insurance'],
+      },
+      pt: {
+        titulo: 'Turquia e Grecia com Air Europa + bagagem',
+        lugar: 'Turquia e Grecia',
+        duracion: '3 dias',
+        tipo: 'Cidade',
+        grupo: '30 pessoas',
+        idioma: 'Espanhol, Inglês',
+        descripcion: ['Punta Cana está pronta para você simplesmente aproveitar.', 'Localizado em frente às praias paradisíacas de Punta Cana, rodeado por palmeiras e águas turquesa. Desfrute do Caribe, de atividades aquáticas e de uma experiência inesquecível com tudo incluído.', 'Datas da viagem: 30 de dezembro a 3 de janeiro de 2027 · 5 dias · 4 noites'],
+        incluye: ['Passagem aérea Lima/Punta Cana/Lima com a LATAM Airlines - Permite mochila + bagagem de mão (12 kg)', 'Traslados incluídos: Aeroporto – hotel – aeroporto (Serviço Compartilhado)', '4 noites de hospedagem no Grand Sirenis Punta Cana - Quarto Duplo', 'Plano de refeições com tudo incluído: café da manhã e almoço em estilo buffet, jantar em estilo buffet ou à la carte, lanches e bebidas ilimitadas.', 'Seguro de viagem']
+      },
+    },
   },
-
   {
     id: 'punta-cana-grand-sirenis',
     titulo: 'Punta Cana - Grand Sirenis',
@@ -158,11 +125,49 @@ export const TOURS: Tour[] = [
       'Sistema de alimentación Todo Incluido: Desayuno y almuerzo buffet, cena buffet o a la carta, piqueos y bebidas ilimitadas',
       'Seguro de viajes',
     ],
+    translations: {
+      en: {
+        titulo: "Punta Cana - Grand Sirenis",
+        lugar: "Punta Cana, Dominican Republic",
+        duracion: "2 days",
+        tipo: "Adventure",
+        grupo: "50 people",
+        idioma: "Spanish, English",
+        descripcion: [
+          "Punta Cana with everything ready for you to just enjoy.",
+          "In the heart of the Caribbean, with access to paradisiacal beaches and unique tropical landscapes. Relax, enjoy activities by the sea, and discover the magic of Punta Cana.",
+          "Travel dates December 30 – January 3, 2027 5 days · 4 nights"
+        ],
+        incluye: [
+          "Air ticket Lima/Punta Cana/Lima with LATAM Airlines - Allows backpack + Carry-On (12 kg)",
+          "Transfers included: Airport – hotel – airport (Shared Service)",
+          "4 nights accommodation at Grand Sirenis Punta Cana - Double Room",
+          "All-Inclusive meal plan: Breakfast and lunch buffet, dinner buffet or à la carte, snacks and unlimited drinks",
+          "Travel insurance"
+        ]
+      },
+      pt: {
+        titulo: "Punta Cana - Grand Sirenis",
+        lugar: "Punta Cana, República Dominicana",
+        duracion: "2 días",
+        tipo: "Aventura",
+        grupo: "50 personas",
+        idioma: "Español",
+        descripcion: [
+          "Punta Cana está pronta para você simplesmente aproveitar.",
+          "No coração do Caribe, com acesso a praias paradisíacas e paisagens tropicais únicas. Relaxe, aproveite atividades à beira-mar e descubra a magia de Punta Cana.",
+          "Datas de viagem 30 de dezembro – 03 de janeiro, 2027 5 dias · 4 noites"
+        ],
+        incluye: [
+          "Passagem aérea Lima/Punta Cana/Lima com LATAM Airlines - Permite mochila + Carry-On (12 kg)",
+          "Traslados incluídos: Aeroporto – hotel – aeroporto (Serviço Compartilhado)",
+          "4 noites de hospedagem no Grand Sirenis Punta Cana - Quarto Duplo",
+          "Plano de alimentação All-Inclusive: Café da manhã e almoço buffet, jantar buffet ou à la carte, lanches e bebidas ilimitadas",
+          "Seguro de viagem"
+        ]
+      }
+    }
   },
-
-
-
-
   {
     "id": "punta-cana-vista-sol",
     "titulo": "Punta Cana - Vista Sol",
@@ -193,7 +198,11 @@ export const TOURS: Tour[] = [
       "Hotel",
       "Traslado",
       "Seguro"
-    ]
+    ],
+    translations: {
+      en: {},
+      pt: {}
+    }
   },
   {
     "id": "punta-cana-whala-bavaro",
@@ -227,7 +236,49 @@ export const TOURS: Tour[] = [
       "4 noches de alojamiento Whalá!Bávaro - Habitación Doble",
       "Sistema de alimentación Todo Incluido Desayuno y almuerzo buffet, cena buffet o a la carta, piqueos y bebidas ilimitadas",
       'Seguro de viajes',
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: "Punta Cana - Whala!Bávaro",
+        lugar: "Punta Cana, Dominican Republic",
+        duracion: "4 nights",
+        tipo: "All Inclusive",
+        grupo: "50 people",
+        idioma: "Spanish, English",
+        descripcion: [
+          "Punta Cana with everything ready for you to just enjoy.",
+          "In the heart of the Caribbean, with access to paradisiacal beaches and unique tropical landscapes. Relax, enjoy activities by the sea, and discover the magic of Punta Cana.",
+          "Travel dates December 30 – January 3, 2027 5 days · 4 nights"
+        ],
+        incluye: [
+          "Air ticket Lima/Punta Cana/Lima with LATAM Airlines - Allows backpack + Carry-On (12 kg)",
+          "Transfers included: Airport – hotel – airport (Shared Service)",
+          "4 nights accommodation at Whalá!Bávaro - Double Room",
+          "All-Inclusive meal plan: Breakfast and lunch buffet, dinner buffet or à la carte, snacks and unlimited drinks",
+          "Travel insurance"
+        ]
+      },
+      pt: {
+        titulo: "Punta Cana - Whala!Bávaro",
+        lugar: "Punta Cana, República Dominicana",
+        duracion: "2 días",
+        tipo: "Aventura",
+        grupo: "50 personas",
+        idioma: "Español",
+        descripcion: [
+          "Punta Cana está pronta para você simplesmente aproveitar.",
+          "No coração do Caribe, com acesso a praias paradisíacas e paisagens tropicais únicas. Relaxe, aproveite atividades à beira-mar e descubra a magia de Punta Cana.",
+          "Datas de viagem 30 de dezembro – 03 de janeiro, 2027 5 dias · 4 noites"
+        ],
+        incluye: [
+          "Passagem aérea Lima/Punta Cana/Lima com LATAM Airlines - Permite mochila + Carry-On (12 kg)",
+          "Traslados incluídos: Aeroporto – hotel – aeroporto (Serviço Compartilhado)",
+          "4 noites de hospedagem no Whalá!Bávaro - Quarto Duplo",
+          "Plano de alimentação All-Inclusive: Café da manhã e almoço buffet, jantar buffet ou à la carte, lanches e bebidas ilimitadas",
+          "Seguro de viagem"
+        ]
+      }
+    }
   },
   {
     "id": "cartagena-plaza-hotel",
@@ -259,7 +310,41 @@ export const TOURS: Tour[] = [
       "4 noches de alojamiento Whalá!Bávaro - Habitación Doble",
       "Sistema de alimentación Todo Incluido Desayuno y almuerzo buffet, cena buffet o a la carta, piqueos y bebidas ilimitadas",
       'Seguro de viajes',
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: "Cartagena Plaza Hotel",
+        lugar: "Cartagena, Colombia",
+        descripcion: [
+          "New Year's getaway to Cartagena de Indias staying at the Cartagena Plaza Hotel."
+        ],
+        noches: "3 Nights",
+        saliendo: "Departing from Lima",
+        incluye: [
+          "Air ticket Lima/Punta Cana/Lima with LATAM Airlines - Allows backpack + Carry-On (12 kg)",
+          "Transfers included Airport – hotel – airport (Shared Service)",
+          "4 nights of accommodation at Whalá!Bávaro - Double Room",
+          "All-Inclusive meal plan: Breakfast and lunch buffet, dinner buffet or à la carte, snacks and unlimited drinks",
+          "Travel insurance"
+        ]
+      },
+      pt: {
+        titulo: "Cartagena Plaza Hotel",
+        lugar: "Cartagena, Colômbia",
+        descripcion: [
+          "Escapada de Ano Novo para Cartagena de Indias hospedando-se no Cartagena Plaza Hotel."
+        ],
+        noches: "3 Noites",
+        saliendo: "Saindo de Lima",
+        incluye: [
+          "Passagem aérea Lima/Punta Cana/Lima com LATAM Airlines - Permite mochila + Carry-On (12 kg)",
+          "Traslados incluídos Aeroporto – hotel – aeroporto (Serviço Compartilhado)",
+          "4 noites de hospedagem no Whalá!Bávaro - Quarto Duplo",
+          "Plano de alimentação Tudo Incluído: Café da manhã e almoço buffet, jantar buffet ou à la carte, lanches e bebidas ilimitadas",
+          "Seguro de viagem"
+        ]
+      }
+    }
   },
   {
     "id": "cartagena-decameron",
@@ -291,7 +376,41 @@ export const TOURS: Tour[] = [
       "4 noches de alojamiento Whalá!Bávaro - Habitación Doble",
       "Sistema de alimentación Todo Incluido Desayuno y almuerzo buffet, cena buffet o a la carta, piqueos y bebidas ilimitadas",
       'Seguro de viajes',
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: "Cartagena - Decameron",
+        lugar: "Cartagena, Colombia",
+        descripcion: [
+          "Celebrate New Year's in the Caribbean at the Decameron Cartagena Hotel with all-inclusive."
+        ],
+        noches: "3 Nights",
+        saliendo: "Departing from Lima",
+        incluye: [
+          "Air ticket Lima/Punta Cana/Lima with LATAM Airlines - Allows backpack + Carry-On (12 kg)",
+          "Transfers included Airport – hotel – airport (Shared Service)",
+          "4 nights accommodation at Whalá!Bávaro - Double Room",
+          "All-Inclusive meal plan: Breakfast and lunch buffet, dinner buffet or à la carte, snacks and unlimited drinks",
+          "Travel insurance"
+        ]
+      },
+      pt: {
+        titulo: "Cartagena - Decameron",
+        lugar: "Cartagena, Colômbia",
+        descripcion: [
+          "Celebre o Ano Novo no Caribe no Hotel Decameron Cartagena com tudo incluído."
+        ],
+        noches: "3 Noites",
+        saliendo: "Saindo de Lima",
+        incluye: [
+          "Passagem aérea Lima/Punta Cana/Lima com LATAM Airlines - Permite mochila + Carry-On (12 kg)",
+          "Traslados incluídos Aeroporto – hotel – aeroporto (Serviço Compartilhado)",
+          "4 noites de acomodação no Whalá!Bávaro - Quarto Duplo",
+          "Plano de alimentação Tudo Incluído: Café da manhã e almoço buffet, jantar buffet ou à la carte, lanches e bebidas ilimitadas",
+          "Seguro de viagem"
+        ]
+      }
+    }
   },
   {
     "id": "cartagena-dreams-karibana",
@@ -322,7 +441,39 @@ export const TOURS: Tour[] = [
       "Hotel",
       "Traslado",
       "Seguro"
-    ]
+    ],
+    "translations": {
+      "en": {
+        titulo: "Cartagena - Dreams Karibana",
+        lugar: "Cartagena, Colombia",
+        descripcion: [
+          "Luxury New Year's experience at Dreams Karibana Cartagena."
+        ],
+        noches: "3 Nights",
+        saliendo: "Departing from Lima",
+        incluye: [
+          "Flight",
+          "Hotel",
+          "Transfer",
+          "Insurance"
+        ]
+      },
+      "pt": {
+        titulo: "Cartagena - Dreams Karibana",
+        lugar: "Cartagena, Colômbia",
+        descripcion: [
+          "Experiência de Ano Novo de luxo no Dreams Karibana Cartagena."
+        ],
+        noches: "3 Noites",
+        saliendo: "Saindo de Lima",
+        incluye: [
+          "Voo",
+          "Hotel",
+          "Traslado",
+          "Seguro"
+        ]
+      }
+    }
   },
   {
     "id": "aruba-eagle-aruba-resort",
@@ -353,7 +504,39 @@ export const TOURS: Tour[] = [
       "Hotel",
       "Traslado",
       "Seguro"
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: "Aruba - Eagle Aruba Resort",
+        lugar: "Oranjestad, Aruba",
+        descripcion: [
+          "Spend New Year's on the white sands of Eagle Beach staying at Eagle Aruba Resort."
+        ],
+        noches: "4 Nights",
+        saliendo: "Departing from Lima",
+        incluye: [
+          "Flight",
+          "Hotel",
+          "Transfer",
+          "Insurance"
+        ]
+      },
+      pt: {
+        titulo: "Aruba - Eagle Aruba Resort",
+        lugar: "Oranjestad, Aruba",
+        descripcion: [
+          "Passe o Ano Novo nas areias brancas de Eagle Beach hospedando-se no Eagle Aruba Resort."
+        ],
+        noches: "4 Noites",
+        saliendo: "Saindo de Lima",
+        incluye: [
+          "Voo",
+          "Hotel",
+          "Traslado",
+          "Seguro"
+        ]
+      }
+    }
   },
   {
     "id": "aruba-embassy-suites-by-hilton",
@@ -384,7 +567,39 @@ export const TOURS: Tour[] = [
       "Hotel",
       "Traslado",
       "Seguro"
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: "Aruba - Embassy Suites By Hilton",
+        lugar: "Oranjestad, Aruba",
+        descripcion: [
+          "Stay at the Embassy Suites By Hilton in Aruba departing from Lima for New Year's."
+        ],
+        noches: "4 Nights",
+        saliendo: "Departing from Lima",
+        incluye: [
+          "Flight",
+          "Hotel",
+          "Transfer",
+          "Insurance"
+        ]
+      },
+      pt: {
+        titulo: "Aruba - Embassy Suites By Hilton",
+        lugar: "Oranjestad, Aruba",
+        descripcion: [
+          "Fique no Embassy Suites By Hilton em Aruba saindo de Lima para o Ano Novo."
+        ],
+        noches: "4 Noites",
+        saliendo: "Saindo de Lima",
+        incluye: [
+          "Voo",
+          "Hotel",
+          "Traslado",
+          "Seguro"
+        ]
+      }
+    }
   },
   {
     "id": "aruba-secrets-baby-beach",
@@ -414,7 +629,39 @@ export const TOURS: Tour[] = [
       "Hotel",
       "Traslado",
       "Seguro"
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: "Aruba - Secrets Baby Beach",
+        lugar: "Sint Nicolaas, Aruba",
+        descripcion: [
+          "Exclusive all-inclusive New Year's experience at Secrets Baby Beach Aruba."
+        ],
+        noches: "4 Nights",
+        saliendo: "Departing from Lima",
+        incluye: [
+          "Flight",
+          "Hotel",
+          "Transfer",
+          "Insurance"
+        ]
+      },
+      pt: {
+        titulo: "Aruba - Secrets Baby Beach",
+        lugar: "Sint Nicolaas, Aruba",
+        descripcion: [
+          "Experiência exclusiva com tudo incluído de Ano Novo no Secrets Baby Beach Aruba."
+        ],
+        noches: "4 Noites",
+        saliendo: "Saindo de Lima",
+        incluye: [
+          "Voo",
+          "Hotel",
+          "Traslado",
+          "Seguro"
+        ]
+      }
+    }
   },
   {
     "id": "panama",
@@ -444,7 +691,37 @@ export const TOURS: Tour[] = [
       "Vuelo",
       "Hotel",
       "Traslado"
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: "Panama",
+        lugar: "Panama City, Panama",
+        descripcion: [
+          "3-night travel package to Panama departing from Lima with flight, hotel, and transfers."
+        ],
+        noches: "3 Nights",
+        saliendo: "Departing from Lima",
+        incluye: [
+          "Flight",
+          "Hotel",
+          "Transfer"
+        ]
+      },
+      pt: {
+        titulo: "Panamá",
+        lugar: "Cidade do Panamá, Panamá",
+        descripcion: [
+          "Pacote de viagem de 3 noites para o Panamá saindo de Lima com voo, hotel e traslados."
+        ],
+        noches: "3 Noites",
+        saliendo: "Saindo de Lima",
+        incluye: [
+          "Voo",
+          "Hotel",
+          "Traslado"
+        ]
+      }
+    }
   },
   // paquetes-nacionales
 
@@ -482,7 +759,45 @@ export const TOURS: Tour[] = [
       'City Tour con entradas Servicio regular',
       'Boleto Turístico del Cusco Parcial 1 día de vigencia',
       'Impuestos'
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: "Casa Andina Standard Catedral",
+        lugar: "Cusco, Peru",
+        descripcion: [
+          "Enjoy the mystical city of Cusco and the magic of Machu Picchu while staying at the cozy Casa Andina Standard Catedral during New Year's."
+        ],
+        noches: "3 Nights",
+        saliendo: "Departing from Lima",
+        incluye: [
+          "Flight Lima/Cusco/Lima with LATAM Airlines - Allows bag or backpack + hand luggage (12kg)",
+          "Transfers included Airport – hotel – airport (Private Service)",
+          "3 nights accommodation Casa Andina Standard Catedral - Traditional Room",
+          "Daily breakfast",
+          "City Tour with entrance Regular service",
+          "Cusco Tourist Ticket Partial 1 day validity",
+          "Taxes"
+        ]
+      },
+      pt: {
+        titulo: "Casa Andina Standard Catedral",
+        lugar: "Cusco, Peru",
+        descripcion: [
+          "Disfruta de la mística ciudad del Cusco y la magia de Machu Picchu hospedándote en el acogedor Casa Andina Standard Catedral durante Año Nuevo."
+        ],
+        noches: "3 Noches",
+        saliendo: "Saliendo de Lima",
+        incluye: [
+          "Boleto aéreo Lima/Cusco/Lima Con LATAM Airlines - Permite bolso o mochila + equipaje de mano (12kg)",
+          "Traslados incluidos Aeropuerto – hotel – aeropuerto (Servicio Privado)",
+          "3 noches de alojamiento Casa Andina Standard Catedral - Habitación Tradicional",
+          "Desayuno diario",
+          "City Tour con entradas Servicio regular",
+          "Boleto Turístico del Cusco Parcial 1 día de vigencia",
+          "Impuestos"
+        ]
+      }
+    }
   },
   {
     id: 'cusco-casa-andina-standard-cusco-plaza',
@@ -514,7 +829,39 @@ export const TOURS: Tour[] = [
       'Hotel',
       'Traslado',
       'Seguro'
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: "Cusco - Casa Andina Standard Cusco Plaza",
+        lugar: "Cusco, Peru",
+        descripcion: [
+          "Located steps from the Plaza de Armas of Cusco, perfect for experiencing the New Year's celebration in the heart of the imperial city."
+        ],
+        noches: "3 Nights",
+        saliendo: "Departing from Lima",
+        incluye: [
+          "Flight",
+          "Hotel",
+          "Transfer",
+          "Insurance"
+        ]
+      },
+      pt: {
+        titulo: "Cusco - Casa Andina Standard Cusco Plaza",
+        lugar: "Cusco, Peru",
+        descripcion: [
+          "Localizado a poucos passos da Plaza de Armas em Cusco, é perfeito para vivenciar as festividades de Ano Novo no coração da cidade imperial."
+        ],
+        noches: "3 Noites",
+        saliendo: "Saindo de Lima",
+        incluye: [
+          "Voo",
+          "Hotel",
+          "Traslado",
+          "Seguro"
+        ]
+      }
+    }
   },
   {
     id: 'cusco-tierra-viva-cusco-habitacion-estandar',
@@ -550,7 +897,49 @@ export const TOURS: Tour[] = [
       'City Tour con entradas Servicio regular',
       'Boleto Turístico del Cusco Parcial 1 día de vigencia',
       'Impuestos'
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: "Tierra Viva (Standard Room)",
+        lugar: "Cusco, Peru",
+        descripcion: [
+          "Cusco ready for you to just enjoy.",
+          "Located in the center of Cusco, the perfect point to discover the essence of the imperial city. Connect with its history, culture, and the main tourist attractions of the region.",
+          "Travel dates December 31 – January 3, 2027 4 days · 3 nights"
+        ],
+        noches: "3 Nights",
+        saliendo: "Departing from Lima",
+        incluye: [
+          "Air ticket Lima/Cusco/Lima with LATAM Airlines - Allows bag or backpack + hand luggage (12kg)",
+          "Transfers included Airport – hotel – airport (Private Service)",
+          "3 nights accommodation Tierra Viva Cusco - Standard Room",
+          "Daily breakfast",
+          "City Tour with entrance Regular service",
+          "Cusco Tourist Ticket Partial 1 day validity",
+          "Taxes"
+        ]
+      },
+      pt: {
+        titulo: "Terra Viva (Quarto Standard)",
+        lugar: "Cusco, Peru",
+        descripcion: [
+          "Cusco pronto para você apenas aproveitar.",
+          "Localizado no centro de Cusco, o ponto perfeito para descobrir a essência da cidade imperial. Conecte-se com sua história, cultura e as principais atrações turísticas da região.",
+          "Datas de viagem 31 de dezembro – 03 de janeiro, 2027 4 dias · 3 noites"
+        ],
+        noches: "3 Noites",
+        saliendo: "Saindo de Lima",
+        incluye: [
+          "Passagem aérea Lima/Cusco/Lima com LATAM Airlines - Permite bolsa ou mochila + bagagem de mão (12kg)",
+          "Traslados incluídos Aeroporto – hotel – aeroporto (Serviço Privado)",
+          "3 noites de acomodação Tierra Viva Cusco - Quarto Standard",
+          "Café da manhã diário",
+          "City Tour com entrada Serviço regular",
+          "Bilhete Turístico de Cusco Parcial 1 dia de validade",
+          "Impostos"
+        ]
+      }
+    }
   },
   {
     id: 'tarapoto-tucan-suites',
@@ -585,7 +974,47 @@ export const TOURS: Tour[] = [
       'Desayuno diario',
       'Tour Cascada de Ahuashiyacu y Lamas',
       'Impuestos'
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: 'Tarapoto - Tucan Suites',
+        lugar: 'Tarapoto, San Martín, Perú',
+        descripcion: [
+          'Tarapoto with everything ready for you to just enjoy.',
+          'Enjoy a privileged location in Tarapoto, the gateway to the Peruvian Amazon. Explore nature, adventure, and unique experiences among unforgettable tropical landscapes.',
+          'Travel dates December 31 – January 3, 2027 4 days · 3 nights'
+        ],
+        noches: '3 Nights',
+        saliendo: 'Departing from Lima',
+        incluye: [
+          'Air ticket Lima/Tarapoto/Lima with LATAM Airlines - Allows bag or backpack + hand luggage (12kg)',
+          'Transfers included Airport – hotel – airport (Private Service)',
+          '3 nights accommodation Tucan Suites - Deluxe Room',
+          'Daily breakfast',
+          'Cascada de Ahuashiyacu and Lamas Tour',
+          'Taxes'
+        ]
+      },
+      pt: {
+        titulo: 'Tarapoto - Tucan Suites',
+        lugar: 'Tarapoto, San Martín, Perú',
+        descripcion: [
+          'Tarapoto com tudo pronto para você apenas aproveitar.',
+          'Desfrute de uma localização privilegiada em Tarapoto, a porta de entrada para a Amazônia peruana. Explore a natureza, a aventura e experiências únicas entre paisagens tropicais inesquecíveis.',
+          'Datas de viagem 31 de dezembro – 03 de janeiro, 2027 4 dias · 3 noites'
+        ],
+        noches: '3 Noites',
+        saliendo: 'Saindo de Lima',
+        incluye: [
+          'Passagem aérea Lima/Tarapoto/Lima com LATAM Airlines - Permite bolsa ou mochila + bagagem de mão (12kg)',
+          'Traslados incluídos Aeroporto – hotel – aeroporto (Serviço Privado)',
+          '3 noites de acomodação Tucan Suites - Quarto Deluxe',
+          'Café da manhã diário',
+          'Tour Cascada de Ahuashiyacu e Lamas',
+          'Impostos'
+        ]
+      }
+    }
   },
   {
     id: 'arequipa',
@@ -618,7 +1047,47 @@ export const TOURS: Tour[] = [
       'Traslados incluidos Aeropuerto – hotel – aeropuerto',
       '2 noches de alojamiento Terramística Centro / Terramística Monasterio / Terramística de Vallecito - Habitación doble',
       'Desayunos incluidos'
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: 'Arequipa',
+        lugar: 'Arequipa, Peru',
+        descripcion: [
+          'Arequipa with everything ready for you to just enjoy.',
+          'Located just minutes from the Plaza de Armas and the most emblematic places in Arequipa. The ideal starting point to discover its history, culture, and unique landscapes.',
+          'Travel dates September 1 – November 30, 2026 3 days · 2 nights'
+        ],
+        duracion: '2 nights',
+        tipo: 'City / Gastronomy',
+        noches: '2 Nights',
+        saliendo: 'Departing from Lima',
+        incluye: [
+          'Air ticket Lima/Arequipa/Lima',
+          'Transfers included Airport – hotel – airport',
+          '2 nights accommodation Terramística Centro / Terramística Monasterio / Terramística de Vallecito - Double Room',
+          'Daily breakfast'
+        ]
+      },
+      pt: {
+        titulo: 'Arequipa',
+        lugar: 'Arequipa, Peru',
+        descripcion: [
+          'Arequipa com tudo pronto para você apenas aproveitar.',
+          'Localizado a poucos minutos da Plaza de Armas e dos lugares mais emblemáticos de Arequipa. O ponto de partida ideal para descobrir sua história, cultura e paisagens únicas.',
+          'Datas de viagem 1 de setembro – 30 de novembro, 2026 3 dias · 2 noites'
+        ],
+        tipo: 'Cidade / Gastronomia',
+        duracion: '2 noites',
+        noches: '2 Noites',
+        saliendo: 'Saindo de Lima',
+        incluye: [
+          'Passagem aérea Lima/Arequipa/Lima',
+          'Traslados incluídos Aeroporto – hotel – aeroporto',
+          '2 noites de acomodação Terramística Centro / Terramística Monasterio / Terramística de Vallecito - Quarto Duplo',
+          'Café da manhã diário'
+        ]
+      }
+    }
   },
   {
     id: 'vichayito',
@@ -651,7 +1120,47 @@ export const TOURS: Tour[] = [
       'Boleto aéreo Lima/Talara/Lima',
       '2 noches de alojamiento Hotel Categoría 3 - Habitación doble',
       'Desayunos incluidos'
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: 'Vichayito',
+        lugar: 'Piura, Peru',
+        descripcion: [
+          'Relax on the warm beaches of northern Peru in Vichayito, ideal for disconnecting and enjoying the sea.',
+          'Vichayito with everything ready for you to just enjoy.',
+          'Located in a privileged area of Vichayito, ideal for enjoying its beaches, warm climate, and the tranquility of northern Peru.',
+          'Travel dates November 1 – December 15, 2026 3 days · 2 nights'
+        ],
+        noches: '2 Nights',
+        duracion: '2 Nights',
+        tipo: 'Beach / Relax',
+        saliendo: 'Departing from Lima',
+        incluye: [
+          'Air ticket Lima/Talara/Lima',
+          '2 nights accommodation Hotel Category 3 - Double room',
+          'Breakfasts included'
+        ]
+      },
+      pt: {
+        titulo: 'Vichayito',
+        lugar: 'Piura, Peru',
+        descripcion: [
+          'Relaxe nas praias quentes do norte do Peru em Vichayito, ideal para se desconectar e aproveitar o mar.',
+          'Vichayito com tudo pronto para você apenas aproveitar.',
+          'Localizado em uma área privilegiada de Vichayito, ideal para desfrutar de suas praias, clima quente e a tranquilidade do norte do Peru.',
+          'Datas de viagem 1 de novembro – 15 de dezembro, 2026 3 dias · 2 noites'
+        ],
+        noches: '2 Noites',
+        duracion: '2 Noites',
+        tipo: 'Praia / Relax',
+        saliendo: 'Saindo de Lima',
+        incluye: [
+          'Passagem aérea Lima/Talara/Lima',
+          '2 noites de acomodação Hotel Categoria 3 - Quarto duplo',
+          'Cafés da manhã incluídos'
+        ]
+      }
+    }
   },
   {
     id: 'cusco',
@@ -685,7 +1194,49 @@ export const TOURS: Tour[] = [
       'Traslados incluidos Aeropuerto – hotel – aeropuerto',
       '2 noches de alojamiento Hotel Categoría 3 - Habitación doble',
       'Desayunos incluidos'
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: 'Cusco',
+        lugar: 'Cusco, Peru',
+        descripcion: [
+          'Visit the capital of the Inca Empire for 2 nights departing from Lima with a special discount rate.',
+          'Cusco with everything ready for you to just enjoy.',
+          'Located in a strategic area of Cusco, with easy access to its main attractions, restaurants, and streets full of history and tradition.',
+          'Travel dates October 19 – December 15, 2026 3 days · 2 nights'
+        ],
+        noches: '2 Nights',
+        duracion: '2 Nights',
+        tipo: 'Culture / Adventure',
+        saliendo: 'Departing from Lima',
+        incluye: [
+          'Air ticket Lima/Cusco/Lima',
+          'Transfers included Airport – hotel – airport',
+          '2 nights accommodation Hotel Category 3 - Double room',
+          'Breakfasts included'
+        ]
+      },
+      pt: {
+        titulo: 'Cusco',
+        lugar: 'Cusco, Peru',
+        descripcion: [
+          'Visite a capital do Império Inca por 2 noites partindo de Lima com uma tarifa de desconto especial.',
+          'Cusco com tudo pronto para você apenas aproveitar.',
+          'Localizado em uma área estratégica de Cusco, com fácil acesso às suas principais atrações, restaurantes e ruas cheias de história e tradição.',
+          'Datas de viagem 19 de outubro – 15 de dezembro, 2026 3 dias · 2 noites'
+        ],
+        noches: '2 Noites',
+        duracion: '2 Noites',
+        tipo: 'Cultura / Aventura',
+        saliendo: 'Saindo de Lima',
+        incluye: [
+          'Passagem aérea Lima/Cusco/Lima',
+          'Traslados incluídos Aeroporto – hotel – aeroporto',
+          '2 noites de acomodação Hotel Categoria 3 - Quarto duplo',
+          'Cafés da manhã incluídos'
+        ]
+      }
+    }
   },
   {
     id: 'tarapoto',
@@ -721,7 +1272,47 @@ export const TOURS: Tour[] = [
       '2 noches de alojamiento Hotel Categoría 3 - Habitación doble',
       'Desayunos incluidos',
       'Cataratas Ahuashiyacu'
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: 'Tarapoto',
+        lugar: 'Tarapoto, San Martín, Peru',
+        descripcion: [
+          'Enjoy the tropical climate and beautiful natural landscapes of the Tarapoto jungle at a special offer price.',
+          'Tarapoto with everything ready for you to just enjoy.',
+          'Located in a strategic area of Tarapoto, with easy access to its main attractions and surrounded by the natural charm of the Peruvian jungle.',
+          'Travel dates October 19 - December 15, 2026 3 days · 2 nights'
+        ],
+        noches: '2 Nights',
+        saliendo: 'Departing from Lima',
+        incluye: [
+          'Air ticket Lima/Tarapoto/Lima',
+          'Transfers included Airport – hotel – airport',
+          '2 nights accommodation Hotel Category 3 - Double room',
+          'Breakfasts included',
+          'Ahuashiyacu Waterfalls'
+        ]
+      },
+      pt: {
+        titulo: 'Tarapoto',
+        lugar: 'Tarapoto, San Martín, Peru',
+        descripcion: [
+          'Desfrute do clima tropical e das belas paisagens naturais da selva de Tarapoto a um preço especial.',
+          'Tarapoto com tudo pronto para você apenas aproveitar.',
+          'Localizado em uma área estratégica de Tarapoto, com fácil acesso às suas principais atrações e rodeado pelo encanto natural da selva peruana.',
+          'Datas de viagem 19 de outubro – 15 de dezembro, 2026 3 dias · 2 noites'
+        ],
+        noches: '2 Noites',
+        saliendo: 'Saindo de Lima',
+        incluye: [
+          'Passagem aérea Lima/Tarapoto/Lima',
+          'Traslados incluídos Aeroporto – hotel – aeroporto',
+          '2 noites de acomodação Hotel Categoria 3 - Quarto duplo',
+          'Cafés da manhã incluídos',
+          'Cataratas Ahuashiyacu'
+        ]
+      }
+    }
   },
 
 
@@ -764,7 +1355,50 @@ export const TOURS: Tour[] = [
       'Visita con guía local Barcelona, Roma, Florencia, Venecia, París y Madrid',
       'Guía acompañante de habla hispana Durante todo el viaje',
       'Tarjeta de asistencia desde Lima'
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: 'Jewels of Europe',
+        descripcion: [
+          'Discover the main cities and icons of Europe on an unforgettable 14-night tour.',
+          'Complete package with flights, accommodations, and transfers managed for your convenience.',
+          'Explore iconic landscapes and enjoy the cultural richness of the European continent.',
+          'Discover Europe by visiting emblematic cities such as Madrid, Barcelona, Rome, Venice, and Paris. A trip designed to experience its history, culture, and the most fascinating landscapes of the continent.'
+        ],
+        noches: '14 Nights',
+        saliendo: 'Departing from Lima',
+        incluye: [
+          'Air ticket Lima - Madrid - Lima with Air Europa',
+          'Arrival and departure transfers Airport of Barajas (MAD) – Hotel',
+          '14 nights of accommodation According to itinerary',
+          'Buffet breakfast',
+          'Sightseeing with local guide Barcelona, Rome, Florence, Venice, Paris and Madrid',
+          'Spanish-speaking tour guide Throughout the trip',
+          'Assistance card from Lima'
+        ]
+      },
+      pt: {
+        titulo: 'Joias da Europa',
+        descripcion: [
+          'Descubra as principais cidades e ícones da Europa em um inesquecível tour de 14 noites.',
+          'Pacote completo com voos, acomodações e traslados gerenciados para sua conveniência.',
+          'Explore paisagens icônicas e aproveite a riqueza cultural do continente europeu.',
+          'Descubra a Europa visitando cidades emblemáticas como Madrid, Barcelona, Roma, Veneza e Paris. Uma viagem projetada para vivenciar sua história, cultura e as paisagens mais fascinantes do continente.'
+        ],
+        noches: '14 Noites',
+        saliendo: 'Saindo de Lima',
+        incluye: [
+          'Passagem aérea Lima - Madrid - Lima com Air Europa',
+          'Traslados de chegada e saída Aeroporto de Barajas (MAD) – Hotel',
+          '14 noites de acomodação Conforme itinerário',
+          'Café da manhã buffet',
+          'Passeios com guia local Barcelona, Roma, Florença, Veneza, Paris e Madrid',
+          'Guia acompanhante de língua espanhola Durante toda a viagem',
+          'Cartão de assistência desde Lima'
+        ]
+
+      }
+    }
   },
   {
     id: 'eco-europa-clasica',
@@ -798,7 +1432,51 @@ export const TOURS: Tour[] = [
       'Visita con guía local Barcelona, Roma, Florencia, Venecia, París y Madrid',
       'Guía acompañante de habla hispana Durante todo el viaje',
       'Seguro de viaje MAPFRE Aplica desde llegada del pasajero a territorio europeo'
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: 'Eco Classic Europe',
+        descripcion: [
+          'An ideal alternative to explore Europe at your own pace with essential services included.',
+          'Accommodation, transfers, and insurance covered for a worry-free and economical experience.',
+          'Experience the magic of Europe by visiting iconic destinations, streets full of history, and unforgettable landscapes. A journey that brings together the best of Spain, France, and Italy in one trip.'
+        ],
+        noches: '14 Nights',
+        saliendo: 'Departing from Lima',
+        duracion: '14 Nights',
+        lugar: 'Europe',
+        tipo: 'International / Economic',
+        incluye: [
+          'Transfers upon arrival and departure Madrid Airport (MAD) – Hotel',
+          '14 nights accommodation According to itinerary',
+          'Buffet breakfast',
+          'Sightseeing with local guide Barcelona, Rome, Florence, Venice, Paris and Madrid',
+          'Spanish-speaking tour guide Throughout the trip',
+          'MAPFRE travel insurance Applies from passenger arrival in European territory'
+        ]
+      },
+      pt: {
+        titulo: 'Eco Europa Clássica',
+        descripcion: [
+          'Uma alternativa ideal para conhecer a Europa no seu próprio ritmo com serviços essenciais incluídos.',
+          'Acomodação, traslados e seguro cobertos para uma experiência tranquila e econômica.',
+          'Viva a magia da Europa visitando destinos icônicos, ruas cheias de história e paisagens inesquecíveis. Uma experiência que reúne o melhor da Espanha, França e Itália em uma única viagem.'
+        ],
+        noches: '14 Noites',
+        duracion: '14 Noites',
+        saliendo: 'Saindo de Lima',
+        lugar: 'Europa',
+        tipo: 'Internacional / Econômico',
+        incluye: [
+          'Traslados na chegada e saída Aeroporto de Madrid (MAD) – Hotel',
+          '14 noites de acomodação De acordo com o itinerário',
+          'Café da manhã buffet',
+          'Passeios com guia local Barcelona, Roma, Florença, Veneza, Paris e Madrid',
+          'Guia acompanhante de língua espanhola Durante toda a viagem',
+          'Seguro de viagem MAPFRE Aplica desde a chegada do passageiro ao território europeu'
+        ]
+      }
+    }
   },
   {
     id: 'eco-europa-magica',
@@ -833,7 +1511,47 @@ export const TOURS: Tour[] = [
       'Visita con guía local Madrid, París, Venecia, Florencia, Roma y Barcelona',
       'Guía acompañante de habla hispana Durante todo el viaje',
       'Seguro de viaje MAPFRE Aplica desde llegada del pasajero a territorio europeo'
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: 'Eco Magical Europe',
+        descripcion: [
+          'Enjoy 16 magical nights exploring the most dazzling destinations in Europe.',
+          'An extended itinerary designed to make the most of your stay on the continent.',
+          'Explore the magic of Europe by visiting iconic cities, charming towns, and postcard-perfect landscapes. An unforgettable experience from Madrid, Paris, and Zurich to Venice, Florence, and Rome.'
+        ],
+        duracion: '16 Nights',
+        tipo: 'International / Cultural',
+        noches: '16 Nights',
+        incluye: [
+          'Transfers upon arrival and departure Madrid Airport (MAD) – Hotel',
+          '16 nights accommodation According to itinerary',
+          'Buffet breakfast',
+          'Sightseeing with local guide Madrid, Paris, Venice, Florence, Rome and Barcelona',
+          'Spanish-speaking tour guide Throughout the trip',
+          'MAPFRE travel insurance Applies from passenger arrival in European territory'
+        ]
+      },
+      pt: {
+        titulo: 'Europa Mágica Ecológica',
+        descripcion: [
+          'Desfrute de 16 noites mágicas explorando os destinos mais deslumbrantes da Europa.',
+          'Um itinerário estendido projetado para aproveitar ao máximo a sua estadia no continente.',
+          'Explore a magia da Europa visitando cidades icônicas, vilarejos encantadores e paisagens de cartão-postal. Uma experiência inesquecível de Madrid, Paris e Zurique a Veneza, Florença e Roma.'
+        ],
+        duracion: '16 noites',
+        tipo: 'Internacional / Cultural',
+        noches: '16 noites',
+        incluye: [
+          'Traslados na chegada e saída Aeroporto de Madrid (MAD) – Hotel',
+          '16 noites de acomodação De acordo com o itinerário',
+          'Café da manhã buffet',
+          'Passeios com guia local Madrid, Paris, Veneza, Florença, Roma e Barcelona',
+          'Guia acompanhante de língua espanhola Durante toda a viagem',
+          'Seguro de viagem MAPFRE Aplica desde a chegada do passageiro ao território europeu'
+        ]
+      }
+    }
   },
   {
     id: 'leyendas-de-europa',
@@ -869,17 +1587,53 @@ export const TOURS: Tour[] = [
       'Crucero por el Rin',
       'Guía acompañante de habla hispana Durante todo el viaje',
       'Seguro de viaje MAPFRE Aplica desde llegada del pasajero a territorio europeo'
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: 'Legends of Europe',
+        descripcion: [
+          'The most complete trip: 20 nights to immerse yourself in the history, architecture, and legends of Europe.',
+          'Ideal for those seeking a deep and unforgettable experience with all the necessary support.',
+          'Travel through Europe visiting iconic cities, charming towns, and destinations full of history. From Madrid to Rome, passing through Paris, Amsterdam, Vienna, and Venice, discover the best of the continent in a single trip.'
+        ],
+        duracion: '20 Nights',
+        tipo: 'International / Grand Tour',
+        noches: '20 Nights',
+        saliendo: 'Departing from Lima',
+        incluye: [
+          'Transfers upon arrival and departure Madrid Airport (MAD) – Hotel',
+          '20 nights of accommodation According to itinerary',
+          'Buffet breakfast',
+          'Sightseeing with local guide Madrid, Paris, Amsterdam, Prague, Vienna, Venice, Florence, Rome and Barcelona',
+          'Rhine cruise',
+          'Spanish-speaking tour guide Throughout the trip',
+          'MAPFRE travel insurance Applies from the passenger\'s arrival in European territory'
+        ]
+      },
+      pt: {
+        titulo: 'Lendas da Europa',
+        descripcion: [
+          'A viagem mais completa: 20 noites para se aprofundar na história, arquitetura e lendas da Europa.',
+          'Ideal para quem busca uma experiência profunda e inesquecível com todo o suporte necessário.',
+          'Viaje pela Europa visitando cidades icônicas, vilarejos encantadores e destinos cheios de história. De Madrid a Roma, passando por Paris, Amsterdã, Viena e Veneza, descubra o melhor do continente em uma única viagem.'
+        ],
+        duracion: '20 Noites',
+        tipo: 'Internacional / Grande Tour',
+        noches: '20 Noites',
+        saliendo: 'Saindo de Lima',       
+        lugar: 'Europa',
+        incluye: [
+          'Traslados na chegada e saída Aeroporto de Madrid (MAD) – Hotel',
+          '20 noites de acomodação De acordo com o itinerário',
+          'Café da manhã buffet',
+          'Passeios com guia local Madrid, Paris, Amsterdã, Praga, Viena, Veneza, Florença, Roma e Barcelona',
+          'Cruzeiro pelo Reno',
+          'Guia acompanhante de língua espanhola Durante toda a viagem',
+          'Seguro de viagem MAPFRE Aplica desde a chegada do passageiro ao território europeu'
+        ]
+      }
+    }
   },
-
-
-
-
-
-
-
-
-
   {
     id: 'buenos-aires',
     titulo: 'Buenos Aires',
@@ -914,8 +1668,54 @@ export const TOURS: Tour[] = [
       'Desayunos incluidos',
       'City Tour',
       'Seguro de viajes',
+    ],
+    translations: {
+      en: {
+        titulo: 'Buenos Aires',
+        lugar: 'Buenos Aires, Argentina',
+        descripcion: [
+          'Enjoy the tango, gastronomy, and urban charm of Buenos Aires at a special price.',
+          'An ideal 3-night package to explore its most emblematic neighborhoods.',
+          'Conveniently located in Buenos Aires, perfect for getting around and discovering different points of the city.',
+          'Travel dates October 19 – December 15, 2026 4 days · 3 nights'
+        ],
+        incluye: [
+          'Air ticket Lima/Buenos Aires/Lima',
+          'Transfers included Airport – hotel – airport',
+          '3 nights accommodation Hotel Category 3 - Double room',
+          'Breakfast included',
+          'City Tour',
+          'Travel insurance'
+        ],
+        duracion: '3 nights',
+        tipo: 'International / City',
+        saliendo: 'Departing from Lima',
+      },
+      pt: {
+        titulo: 'Buenos Aires',
+        lugar: 'Buenos Aires, Argentina',
+        descripcion: [
+          'Desfrute do tango, gastronomia e charme urbano de Buenos Aires a um preço especial.',
+          'Um pacote ideal de 3 noites para explorar seus bairros mais emblemáticos.',
+          'Localizado convenientemente em Buenos Aires, perfeito para se locomover e descobrir diferentes pontos da cidade.',
+          'Datas de viagem 19 de outubro – 15 de dezembro, 2026 4 dias · 3 noites'
+        ],
+        incluye: [
+          'Passagem aérea Lima/Buenos Aires/Lima',
+          'Traslados incluídos Aeroporto – hotel – aeroporto',
+          '3 noites de acomodação Hotel Categoria 3 - Quarto duplo',
+          'Café da manhã incluído',
+          'City Tour',
+          'Seguro de viagem'
+        ],
+        duracion: '3 noites',
+        tipo: 'Internacional / Cidade',
+        saliendo: 'Saindo de Lima',
+        noches: '3 noites',
+      }
+    }
 
-    ]
+
   },
   {
     id: 'buenos-aires-dora-hotel',
@@ -956,7 +1756,65 @@ export const TOURS: Tour[] = [
       '10% de descuento por consumo a la cartaRestaurant Puerto Cristal en Puerto Madero (Cortesía)',
       'Seguro de viajes',
 
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: 'Buenos Aires - Dora Hotel',
+        lugar: 'Buenos Aires, Argentina',
+        descripcion: [
+          'Celebrate New Year in Buenos Aires staying at the central Dora Hotel.',
+          'Includes travel insurance for added peace of mind during your vacation.',
+          'Located in the heart of Buenos Aires, just minutes from Puerto Madero and Florida Street. Enjoy restaurants, shops, tourist attractions, and the essence of the city at your fingertips.',
+          'Travel dates December 31 – January 3, 2027 4 days · 3 nights'
+        ],
+        incluye: [
+          'Air ticket Lima/Buenos Aires/Lima with LATAM Airlines - Allows bag or backpack + Carry On (12 kg)',
+          'Transfers included Airport – hotel – airport (Semi-private service)',
+          '3 nights accommodation Dora Hotel - Superior Room',
+          'Breakfasts included',
+          'Half-day City tour in regular service Return to the hotel on your own',
+          'Tax Free Guide to recover the tax',
+          'Shopping tour in leather, clothing factories, etc. Courtesy',
+          'Puerto Madero Casino Free entry and transfer provided by the Casino for those over 18 years old (Courtesy)',
+          '10% discount for à la carte consumption Restaurant Puerto Cristal in Puerto Madero (Courtesy)',
+          'Travel insurance'
+        ],
+        duracion: '3 Nights',
+        tipo: 'International / New Year',
+        grupo: 'General',
+        idioma: 'Spanish',
+        noches: '3 Nights',
+        saliendo: 'Departing from Lima',
+      },
+      pt: {
+        titulo: 'Buenos Aires - Dora Hotel',
+        lugar: 'Buenos Aires, Argentina',
+        descripcion: [
+          'Celebre o Ano Novo em Buenos Aires hospedando-se no central Dora Hotel.',
+          'Inclui seguro de viagem para maior tranquilidade durante suas férias.',
+          'Localizado no coração de Buenos Aires, a poucos minutos de Puerto Madero e da Rua Florida. Aproveite restaurantes, lojas, atrações turísticas e a essência da cidade ao seu alcance.',
+          'Datas de viagem 31 de dezembro – 3 de janeiro, 2027 4 dias · 3 noites'
+        ],
+        incluye: [
+          'Passagem aérea Lima/Buenos Aires/Lima com LATAM Airlines - Permite bagagem ou mochila + Carry On (12 kg)',
+          'Traslados incluídos Aeroporto – hotel – aeroporto (Serviço semi-privado)',
+          '3 noites de acomodação Dora Hotel - Quarto Superior',
+          'Cafés da manhã incluídos',
+          'City tour de meio dia em serviço regular Retorno ao hotel por conta própria',
+          'Tax Free Guia para recuperar o imposto',
+          'Tour de compras em couro, fábricas de roupas, etc. Cortesia',
+          'Cassino Puerto Madero Entrada gratuita e traslado fornecido pelo Cassino para maiores de 18 anos (Cortesia)',
+          '10% de desconto para consumo à la carte Restaurante Puerto Cristal em Puerto Madero (Cortesia)',
+          'Seguro de viagem'
+        ],
+        duracion: '3 Noites',
+        tipo: 'Internacional / Ano Novo',
+        grupo: 'Geral',
+        idioma: 'Espanhol',
+        noches: '3 Noites',
+        saliendo: 'Saindo de Lima',
+      }
+    }
   },
   {
     id: 'buenos-aires-grand-brizo',
@@ -997,7 +1855,65 @@ export const TOURS: Tour[] = [
       '10% de descuento por consumo a la cartaRestaurant Puerto Cristal en Puerto Madero - Cortesía',
       'Seguro de viajes',
 
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: 'Buenos Aires - Grand Brizo',
+        lugar: 'Buenos Aires, Argentina',
+        descripcion: [
+          'Celebrate New Year in Buenos Aires staying at Grand Brizo.',
+          'Privileged location with all amenities and guaranteed transfers.',
+          'Located in the center of Buenos Aires, just steps from the Obelisk and Avenida 9 de Julio. Enjoy the main tourist attractions, restaurants, and the vibrant city life.',
+          'Travel dates December 31 – January 3, 2027 4 days · 3 nights'
+        ],
+        incluye: [
+          'Air ticket Lima/Buenos Aires/Lima with LATAM Airlines - Allows bag or backpack + Carry On (12 kg)',
+          'Transfers included Airport – hotel – airport (Semi-private service)',
+          '3 nights accommodation Grand Brizo - Comfort Room',
+          'Breakfasts included',
+          'Half-day City tour in regular service Return to the hotel on your own',
+          'Tax Free Guide to recover the tax',
+          'Shopping tour in leather, clothing factories, etc. Courtesy',
+          'Puerto Madero Casino Free entry and transfer provided by the Casino for those over 18 years old (Courtesy)',
+          '10% discount for à la carte consumption Restaurant Puerto Cristal in Puerto Madero (Courtesy)',
+          'Travel insurance'
+        ],
+        duracion: '3 Nights',
+        tipo: 'International / New Year',
+        grupo: 'General',
+        idioma: 'Spanish',
+        noches: '3 Nights',
+        saliendo: 'Departing from Lima',
+      },
+      pt: {
+        titulo: 'Buenos Aires - Grand Brizo',
+        lugar: 'Buenos Aires, Argentina',
+        descripcion: [
+          'Celebre o Ano Novo em Buenos Aires hospedando-se no Grand Brizo.',
+          'Localização privilegiada com todas as comodidades e traslados garantidos.',
+          'Localizado no centro de Buenos Aires, a poucos passos do Obelisco e da Avenida 9 de Julio. Aproveite as principais atrações turísticas, restaurantes e a vibrante vida da cidade.',
+          'Datas de viagem 31 de dezembro – 3 de janeiro, 2027 4 dias · 3 noites'
+        ],
+        incluye: [
+          'Passagem aérea Lima/Buenos Aires/Lima com LATAM Airlines - Permite bagagem ou mochila + Carry On (12 kg)',
+          'Traslados incluídos Aeroporto – hotel – aeroporto (Serviço semi-privado)',
+          '3 noites de acomodação Grand Brizo - Quarto Conforto',
+          'Cafés da manhã incluídos',
+          'City tour de meio dia em serviço regular Retorno ao hotel por conta própria',
+          'Tax Free Guia para recuperar o imposto',
+          'Tour de compras em couro, fábricas de roupas, etc. Cortesia',
+          'Cassino Puerto Madero Entrada gratuita e traslado fornecido pelo Cassino para maiores de 18 anos (Cortesia)',
+          '10% de desconto para consumo à la carte Restaurante Puerto Cristal em Puerto Madero (Cortesia)',
+          'Seguro de viagem'
+        ],
+        duracion: '3 Noites',
+        tipo: 'Internacional / Ano Novo',
+        grupo: 'Geral',
+        idioma: 'Espanhol',
+        noches: '3 Noites',
+        saliendo: 'Saindo de Lima',
+      }
+    }
   },
   {
     id: 'buenos-aires-hotel-madero',
@@ -1012,7 +1928,6 @@ export const TOURS: Tour[] = [
     ],
     precio: 945.00,
     rating: '4.9 (15)',
-
     duracion: '3 Noches',
     tipo: 'Internacional / Año Nuevo',
     grupo: 'General',
@@ -1037,8 +1952,63 @@ export const TOURS: Tour[] = [
       'Casino Puerto MaderoEntrada y traslado gratis brindado por el Casino para mayores de 18 años - Cortesía',
       '10% de descuento por consumo a la cartaRestaurant Puerto Cristal en Puerto Madero - Cortesía',
       'Seguro de viajes',
-
-    ]
+    ],
+    translations: {
+      en: {
+        lugar: 'Buenos Aires, Argentina',
+        descripcion: [
+          'Celebrate New Year in Puerto Madero with exclusive accommodation at the Hotel Madero.',
+          'Top-notch services with transfers and travel insurance included.',
+          'Stay in the elegant Puerto Madero, one of the most exclusive areas of the city. Enjoy gastronomy, walks along the river, and easy access to the main tourist attractions.',
+          'Travel dates December 31 – January 3, 2027 4 days · 3 nights'
+        ],
+        incluye: [
+          'Air ticket Lima/Buenos Aires/Lima with LATAM Airlines - Allows bag or backpack + Carry On (12 kg)',
+          'Transfers included Airport – hotel – airport (Semi-private service)',
+          '3 nights accommodation Hotel Madero - Superior Room',
+          'Breakfasts included',
+          'Half-day City tour in regular service Return to the hotel on your own',
+          'Tax Free Guide to recover the tax',
+          'Shopping tour in leather, clothing factories, etc. Courtesy',
+          'Puerto Madero Casino Free entry and transfer provided by the Casino for those over 18 years old - Courtesy',
+          '10% discount for à la carte consumption Restaurant Puerto Cristal in Puerto Madero - Courtesy',
+          'Travel insurance'
+        ],
+        duracion: '3 Nights',
+        tipo: 'International / New Year',
+        grupo: 'General',
+        idioma: 'Spanish',
+        noches: '3 Nights',
+        saliendo: 'Departing from Lima',
+      },
+      pt: {
+        lugar: 'Buenos Aires, Argentina',
+        descripcion: [
+          'Celebre o Ano Novo em Puerto Madero com acomodação exclusiva no Hotel Madero.',
+          'Serviços de primeira linha com traslados e seguro de viagem incluídos.',
+          'Fique no elegante Puerto Madero, uma das áreas mais exclusivas da cidade. Aproveite a gastronomia, passeios ao longo do rio e fácil acesso às principais atrações turísticas.',
+          'Datas de viagem 31 de dezembro – 3 de janeiro, 2027 4 dias · 3 noites'
+        ],
+        incluye: [
+          'Passagem aérea Lima/Buenos Aires/Lima com LATAM Airlines - Permite bagagem ou mochila + Carry On (12 kg)',
+          'Traslados incluídos Aeroporto – hotel – aeroporto (Serviço semi-privado)',
+          '3 noites de acomodação Hotel Madero - Quarto Superior',
+          'Cafés da manhã incluídos',
+          'City tour de meio dia em serviço regular Retorno ao hotel por conta própria',
+          'Tax Free Guia para recuperar o imposto',
+          'Tour de compras em couro, fábricas de roupas, etc. Cortesia',
+          'Cassino Puerto Madero Entrada gratuita e traslado fornecido pelo Cassino para maiores de 18 anos (Cortesia)',
+          '10% de desconto para consumo à la carte Restaurante Puerto Cristal em Puerto Madero (Cortesia)',
+          'Seguro de viagem'
+        ],
+        duracion: '3 Noites',
+        tipo: 'Internacional / Ano Novo',
+        grupo: 'Geral',
+        idioma: 'Espanhol',
+        noches: '3 Noites',
+        saliendo: 'Saindo de Lima',
+      }
+    }
   },
   {
     id: 'buenos-aires-ker-san-telmo',
@@ -1078,7 +2048,65 @@ export const TOURS: Tour[] = [
       'Casino Puerto Madero Entrada y traslado gratis brindado por el Casino para mayores de 18 años - Cortesía',
       '10% de descuento por consumo a la carta Restaurant Puerto Cristal en Puerto Madero - Cortesía',
       'Seguro de viajes'
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: 'New Year in San Telmo with Stay at Ker San Telmo Hotel',
+        lugar: 'San Telmo, Buenos Aires',
+        descripcion: [
+          'Celebrate New Year in the picturesque San Telmo neighborhood with a stay at Ker San Telmo Hotel.',
+          'Perfect combination of urban tradition and total comfort.',
+          'Located in the heart of San Telmo, near Plaza de Mayo and Puerto Madero. Discover streets full of history, traditional cafes, and the main attractions of Buenos Aires.',
+          'Travel dates December 31 – January 3, 2027 4 days · 3 nights'
+        ],
+        incluye: [
+          'Air ticket Lima/Buenos Aires/Lima with LATAM Airlines - Allows bag or backpack + Carry On (12 kg)',
+          'Transfers included Airport – hotel – airport (Semi-private service)',
+          '3 nights accommodation Ker San Telmo - Classic Room',
+          'Breakfasts included',
+          'Half-day City tour in regular service Return to the hotel on your own',
+          'Tax Free Guide to recover the tax',
+          'Shopping tour in leather, clothing factories, etc. Courtesy',
+          'Puerto Madero Casino Free entry and transfer provided by the Casino for those over 18 years old - Courtesy',
+          '10% discount for à la carte consumption Restaurant Puerto Cristal in Puerto Madero - Courtesy',
+          'Travel insurance'
+        ],
+        duracion: '3 Nights',
+        tipo: 'International / New Year',
+        grupo: 'General',
+        idioma: 'Spanish',
+        noches: '3 Nights',
+        saliendo: 'Departing from Lima',
+      },
+      pt: {
+        titulo: 'Ano Novo em San Telmo com Estadia no Ker San Telmo Hotel',
+        lugar: 'San Telmo, Buenos Aires',
+        descripcion: [
+          'Celebre o Ano Novo no pitoresco bairro de San Telmo com uma estadia no Ker San Telmo Hotel.',
+          'Combinação perfeita de tradição urbana e total conforto.',
+          'Localizado no coração de San Telmo, perto da Plaza de Mayo e Puerto Madero. Descubra ruas cheias de história, cafés tradicionais e as principais atrações de Buenos Aires.',
+          'Datas de viagem 31 de dezembro – 3 de janeiro de 2027 4 dias · 3 noites'
+        ],
+        incluye: [
+          'Passagem aérea Lima/Buenos Aires/Lima com LATAM Airlines - Permite bagagem ou mochila + Carry On (12 kg)',
+          'Traslados incluídos Aeroporto – hotel – aeroporto (Serviço semi-privado)',
+          '3 noites de acomodação Ker San Telmo - Quarto Clássico',
+          'Cafés da manhã incluídos',
+          'City tour de meio dia em serviço regular Retorno ao hotel por conta própria',
+          'Tax Free Guia para recuperar o imposto',
+          'Tour de compras em fábricas de couro, roupas, etc. Cortesia',
+          'Cassino Puerto Madero Entrada gratuita e traslado fornecido pelo Cassino para maiores de 18 anos - Cortesia',
+          '10% de desconto para consumo à la carte Restaurante Puerto Cristal em Puerto Madero - Cortesia',
+          'Seguro de viagem'
+        ],
+        duracion: '3 Noites',
+        tipo: 'Internacional / Ano Novo',
+        grupo: 'Geral',
+        idioma: 'Espanhol',
+        noches: '3 Noites',
+        saliendo: 'Saindo de Lima',
+      }
+    }
   },
   {
     id: 'buenos-aires-sheraton',
@@ -1119,7 +2147,65 @@ export const TOURS: Tour[] = [
       '10% de descuento por consumo a la cartaRestaurant Puerto Cristal en Puerto Madero - Cortesía',
       'Seguro de viajes',
 
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: 'Buenos Aires - Sheraton',
+        lugar: 'Buenos Aires, Argentina',
+        descripcion: [
+          'Celebrate New Year in the picturesque neighborhood of San Telmo with a stay at the Ker San Telmo Hotel.',
+          'Perfect blend of urban tradition and total comfort.',
+          'Located in the heart of San Telmo, near Plaza de Mayo and Puerto Madero. Discover streets full of history, traditional cafés, and the main attractions of Buenos Aires.',
+          'Travel dates December 31 – January 3, 2027 4 days · 3 nights'
+        ],
+        incluye: [
+          'Air ticket Lima/Buenos Aires/Lima with LATAM Airlines - Allows bag or backpack + Carry On (12 kg)',
+          'Transfers included Airport – hotel – airport (Semi-private service)',
+          '3 nights accommodation Ker San Telmo - Classic Room',
+          'Breakfasts included',
+          'Half-day city tour in regular service Return to the hotel on your own',
+          'Tax Free Guide to recover the tax',
+          'Shopping tour in leather factories, clothing, etc. Courtesy',
+          'Puerto Madero Casino Free entry and transfer provided by the Casino for those over 18 - Courtesy',
+          '10% discount for à la carte consumption Puerto Cristal Restaurant in Puerto Madero - Courtesy',
+          'Travel insurance'
+        ],
+        duracion: '3 Nights',
+        tipo: 'International / New Year',
+        grupo: 'General',
+        idioma: 'Spanish',
+        noches: '3 Nights',
+        saliendo: 'Departing from Lima',
+      },
+      pt: {
+        titulo: 'Buenos Aires - Sheraton',
+        lugar: 'Buenos Aires, Argentina',
+        descripcion: [
+          'Uma escapadela luxuosa de Ano Novo no Sheraton Buenos Aires.',
+          'Máximo conforto com voo, hotel, traslados e seguro incluídos.',
+          'Hospede-se no coração do Retiro, perto dos pontos turísticos mais emblemáticos da cidade. Explore Puerto Madero, o Obelisco e restaurantes exclusivos a poucos minutos de distância.',
+          'Datas da viagem: 31 de dezembro de 2026 a 3 de janeiro de 2027 (4 dias · 3 noites)',
+        ],
+        incluye: [
+          'Passagem aérea Lima/Buenos Aires/Lima com LATAM Airlines - Permite bagagem ou mochila + Carry On (12 kg)',
+          'Traslados incluídos Aeroporto – hotel – aeroporto (Serviço semi-privado)',
+          '3 noites de acomodação Ker San Telmo - Quarto Clássico',
+          'Cafés da manhã incluídos',
+          'Passeio pela cidade de meio dia em serviço regular Retorno ao hotel por conta própria',
+          'Guia Tax Free para recuperar o imposto',
+          'Tour de compras em fábricas de couro, roupas, etc. Cortesia',
+          'Cassino Puerto Madero Entrada gratuita e traslado fornecido pelo Cassino para maiores de 18 anos - Cortesia',
+          '10% de desconto para consumo à la carte no Restaurante Puerto Cristal em Puerto Madero - Cortesia',
+          'Seguro de viagem'
+        ],
+        duracion: '3 Noites',
+        tipo: 'Internacional / Ano Novo',
+        grupo: 'Geral',
+        idioma: 'Espanhol',
+        noches: '3 Noites',
+        saliendo: 'Saindo de Lima',
+      }
+    }
   },
   {
     id: 'cartagena',
@@ -1155,7 +2241,65 @@ export const TOURS: Tour[] = [
       'Desayunos incluidos',
       'Seguro de viajes',
 
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: 'Cartagena',
+        lugar: 'Cartagena de Indias, Colombia',
+        descripcion: [
+          'Enjoy the beaches and the historic Walled City of Cartagena.',
+          'Package with flight, accommodation, and transfers at a promotional price.',
+          'Located in an excellent area to discover the best of Cartagena and its beaches. Enjoy a city full of history, Caribbean flavors, and unforgettable landscapes.',
+          'Travel dates October 19 – December 15, 2026 4 days · 3 nights'
+        ],
+        incluye: [
+          'Air ticket Lima/Cartagena/Lima with LATAM Airlines - Allows luggage or backpack + Carry On (12 kg)',
+          'Transfers included Airport – hotel – airport (Semi-private service)',
+          '3 nights accommodation Cartagena Marriott Hotel - Classic Room',
+          'Breakfasts included',
+          'Half-day city tour in regular service Return to the hotel on your own',
+          'Tax Free Guide to recover the tax',
+          'Shopping tour in leather factories, clothing, etc. Courtesy',
+          'Puerto Madero Casino Free entry and transfer provided by the Casino for those over 18 - Courtesy',
+          '10% discount for à la carte consumption at Puerto Cristal Restaurant in Puerto Madero - Courtesy',
+          'Travel insurance'
+        ],
+        duracion: '3 Nights',
+        tipo: 'International / Beach',
+        grupo: 'General',
+        idioma: 'Spanish',
+        noches: '3 Nights',
+        saliendo: 'Departing from Lima',
+      },
+      pt: {
+        titulo: 'Cartagena',
+        lugar: 'Cartagena de Indias, Colômbia',
+        descripcion: [
+          'Aproveite as praias e a histórica Cidade Murada de Cartagena.',
+          'Pacote com voo, acomodação e traslados a um preço promocional.',
+          'Localizado em uma excelente área para descobrir o melhor de Cartagena e suas praias. Aproveite uma cidade cheia de história, sabores caribenhos e paisagens inesquecíveis.',
+          'Datas de viagem 19 de outubro – 15 de dezembro, 2026 4 dias · 3 noites'
+        ],
+        incluye: [
+          'Passagem aérea Lima/Cartagena/Lima com LATAM Airlines - Permite bagagem ou mochila + Carry On (12 kg)',
+          'Traslados incluídos Aeroporto – hotel – aeroporto (Serviço semi-privado)',
+          '3 noites de acomodação Cartagena Marriott Hotel - Quarto Clássico',
+          'Cafés da manhã incluídos',
+          'Passeio pela cidade de meio dia em serviço regular Retorno ao hotel por conta própria',
+          'Guia Tax Free para recuperar o imposto',
+          'Tour de compras em fábricas de couro, roupas, etc. Cortesia',
+          'Cassino Puerto Madero Entrada gratuita e traslado fornecido pelo Cassino para maiores de 18 anos - Cortesia',
+          '10% de desconto para consumo à la carte no Restaurante Puerto Cristal em Puerto Madero - Cortesia',
+          'Seguro de viagem'
+        ],
+        duracion: '3 Noites',
+        tipo: 'Internacional / Praia',
+        grupo: 'Geral',
+        idioma: 'Espanhol',
+        noches: '3 Noites',
+        saliendo: 'Saindo de Lima',
+      }
+    }
   },
   {
     id: 'cartagena-cartagena-plaza-hotel',
@@ -1191,7 +2335,53 @@ export const TOURS: Tour[] = [
       'Sistema alimentaciónDesayunos incluidos',
       'Seguro de viajes',
 
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: 'Cartagena - Cartagena Plaza Hotel',
+        lugar: 'Cartagena de Indias, Colombia',
+        descripcion: [
+          'Celebrate the New Year by the sea at the Cartagena Plaza Hotel.',
+          'Includes travel medical insurance, airfare, and transfers.',
+          'Stay near the Historic Center and the most popular beaches of Cartagena. Explore streets full of history, Caribbean flavors, and unforgettable landscapes.',
+          'Travel dates December 31 – January 3, 2027 4 days · 3 nights'
+        ],
+        noches: '3 Nights',
+        saliendo: 'Departing from Lima',
+        tipo: 'International / New Year',
+        grupo: 'General',
+        idioma: 'Spanish',
+        incluye: [
+          'Air ticket Lima/Cartagena/Lima with LATAM Airlines - Allows bag or backpack + Carry On (12 kg)',
+          'Transfers included Airport – hotel – airport (Shared Service)',
+          '3 nights accommodation Cartagena Plaza - Standard Room',
+          'Meal plan Breakfast included',
+          'Travel insurance'
+        ]
+      },
+      pt: {
+        titulo: 'Cartagena - Cartagena Plaza Hotel',
+        lugar: 'Cartagena de Indias, Colombia',
+        descripcion: [
+          'Celebre o Ano Novo à beira-mar no Cartagena Plaza Hotel.',
+          'Inclui seguro médico de viagem, passagens aéreas e traslados.',
+          'Fique perto do Centro Histórico e das praias mais populares de Cartagena. Explore ruas cheias de história, sabores caribenhos e paisagens inesquecíveis.',
+          'Datas de viagem 31 de dezembro – 03 de janeiro, 2027 4 dias · 3 noites'
+        ],
+        noches: '3 Noites',
+        saliendo: 'Saindo de Lima',
+        tipo: 'Internacional / Ano Novo',
+        grupo: 'Geral',
+        idioma: 'Espanhol',
+        incluye: [
+          'Passagem aérea Lima/Cartagena/Lima com LATAM Airlines - Permite bolsa ou mochila + Carry On (12 kg)',
+          'Traslados incluídos Aeroporto – hotel – aeroporto (Serviço Compartilhado)',
+          '3 noites de alojamento Cartagena Plaza - Quarto Standard',
+          'Plano de refeições Café da manhã incluído',
+          'Seguro de viagem'
+        ]
+      }
+    }
   },
   {
     id: 'cartagena-decameron',
@@ -1226,8 +2416,53 @@ export const TOURS: Tour[] = [
       '3 noches de alojamientoDecameron Cartagena - Habitación Estándar',
       'Sistema alimentación Todo IncluidoDesayuno y almuerzo buffet, cena buffet o a la carta, snacks y bebidas ilimitadas',
       'Seguro de viajes',
-
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: 'Cartagena - Decameron',
+        lugar: 'Cartagena de Indias, Colombia',
+        descripcion: [
+          'All-Inclusive experience to celebrate New Year at Decameron Cartagena.',
+          'Meals, drinks, entertainment, and transfers included.',
+          'Located in front of Bocagrande beach, one of the most exclusive areas of Cartagena. Enjoy the Caribbean Sea, restaurants, shops, and the Historic Center just minutes away.',
+          'Travel dates December 31 – January 3, 2027 4 days · 3 nights'
+        ],
+        noches: '3 Nights',
+        saliendo: 'Departing from Lima',
+        tipo: 'International / All Inclusive',
+        grupo: 'General',
+        idioma: 'Spanish',
+        incluye: [
+          'Air ticket Lima/Cartagena/Lima with LATAM Airlines - Allows bag or backpack + Carry On (12 kg)',
+          'Transfers included Airport – hotel – airport (Shared Service)',
+          '3 nights accommodation Decameron Cartagena - Standard Room',
+          'All-Inclusive meal plan Breakfast and lunch buffet, dinner buffet or à la carte, snacks and unlimited drinks',
+          'Travel insurance'
+        ]
+      },
+      pt: {
+        titulo: 'Cartagena - Decameron',
+        lugar: 'Cartagena de Indias, Colombia',
+        descripcion: [
+          'Experiencia Todo Incluido para celebrar Año Nuevo en Decameron Cartagena.',
+          'Comidas, bebidas, entretenimiento y traslados incluidos.',
+          'Ubicado frente a la playa de Bocagrande, una de las zonas más exclusivas de Cartagena. Disfruta del Mar Caribe, restaurantes, tiendas y el Centro Histórico a pocos minutos.',
+          'Fechas de viaje 31 de diciembre – 03 de enero, 2027 4 días · 3 noches'
+        ],
+        noches: '3 Noches',
+        saliendo: 'Saliendo de Lima',
+        tipo: 'Internacional / Todo Incluido',
+        grupo: 'General',
+        idioma: 'Español',
+        incluye: [
+          'Boleto aéreo Lima/Cartagena/Lima con LATAM Airlines - Permite bolso o mochila + Carry On (12 kg)',
+          'Traslados incluidos Aeropuerto – hotel – aeropuerto (Servicio Compartido)',
+          '3 noches de alojamiento Decameron Cartagena - Habitación Estándar',
+          'Sistema de alimentación Todo Incluido Desayuno y almuerzo buffet, cena buffet o a la carta, snacks y bebidas ilimitadas',
+          'Seguro de viajes'
+        ]
+      }
+    }
   },
   {
     id: 'cartagena-dreams-karibana',
@@ -1263,7 +2498,53 @@ export const TOURS: Tour[] = [
       'Sistema de alimentación Todo IncluidoDesayuno y almuerzo buffet, cena buffet o a la carta, snacks y bebidas ilimitadas',
       'Seguro de viajes',
 
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: 'Cartagena - Dreams Karibana',
+        lugar: 'Cartagena de Indias, Colombia',
+        descripcion: [
+          'Luxury New Year All-Inclusive resort at Dreams Karibana Cartagena.',
+          'Exclusive services in a paradisiacal setting.',
+          'Stay in an exclusive environment facing the Caribbean, surrounded by nature and tranquility. Relax on paradisiacal beaches and discover the charm of Cartagena at a short distance.',
+          'Travel dates December 31 – January 3, 2027 4 days · 3 nights'
+        ],
+        noches: '3 Nights',
+        saliendo: 'Departing from Lima',
+        tipo: 'International / All Inclusive',
+        grupo: 'General',
+        idioma: 'Spanish',
+        incluye: [
+          'Air ticket Lima/Cartagena/Lima with LATAM Airlines - Allows bag or backpack + Carry On (12 kg)',
+          'Transfers included Airport – hotel – airport (Shared Service)',
+          '3 nights accommodation Dreams Karibana 5 - Junior Suite Tropical View King',
+          'All-Inclusive meal plan Breakfast and lunch buffet, dinner buffet or à la carte, snacks and unlimited drinks',
+          'Travel insurance'
+        ]
+      },
+      pt: {
+        titulo: 'Cartagena - Dreams Karibana',
+        lugar: 'Cartagena de Indias, Colômbia',
+        descripcion: [
+          'Resort de luxo com tudo incluído para o Ano Novo no Dreams Karibana Cartagena.',
+          'Serviços exclusivos em um cenário paradisíaco.',
+          'Fique em um ambiente exclusivo de frente para o Caribe, cercado pela natureza e tranquilidade. Relaxe em praias paradisíacas e descubra o charme de Cartagena a uma curta distância.',
+          'Datas de viagem 31 de dezembro – 03 de janeiro, 2027 4 dias · 3 noites'
+        ],
+        noches: '3 Noites',
+        saliendo: 'Saindo de Lima',
+        tipo: 'Internacional / Tudo Incluído',
+        grupo: 'Geral',
+        idioma: 'Espanhol',
+        incluye: [
+          'Passagem aérea Lima/Cartagena/Lima com LATAM Airlines - Permite bolsa ou mochila + Carry On (12 kg)',
+          'Traslados incluídos Aeroporto – hotel – aeroporto (Serviço Compartilhado)',
+          '3 noites de acomodação Dreams Karibana 5 - Junior Suite Tropical View King',
+          'Plano de alimentação Tudo Incluído Café da manhã e almoço buffet, jantar buffet ou à la carte, lanches e bebidas ilimitadas',
+          'Seguro de viagem'
+        ]
+      }
+    }
   },
   {
     id: 'cartagena-plaza-hotel-superior',
@@ -1299,7 +2580,53 @@ export const TOURS: Tour[] = [
       'Sistema alimentaciónDesayunos incluidos',
       'Seguro de viajes',
 
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: 'Cartagena - Dreams Karibana',
+        lugar: 'Cartagena de Indias, Colombia',
+        descripcion: [
+          'Luxury New Year All-Inclusive resort at Dreams Karibana Cartagena.',
+          'Exclusive services in a paradisiacal setting.',
+          'Stay in an exclusive environment facing the Caribbean, surrounded by nature and tranquility. Relax on paradisiacal beaches and discover the charm of Cartagena at a short distance.',
+          'Travel dates December 31 – January 3, 2027 4 days · 3 nights'
+        ],
+        noches: '3 Nights',
+        saliendo: 'Departing from Lima',
+        tipo: 'International / All Inclusive',
+        grupo: 'General',
+        idioma: 'Spanish',
+        incluye: [
+          'Air ticket Lima/Cartagena/Lima with LATAM Airlines - Allows bag or backpack + Carry On (12 kg)',
+          'Transfers included Airport – hotel – airport (Shared Service)',
+          '3 nights accommodation Dreams Karibana 5 - Junior Suite Tropical View King',
+          'All-Inclusive meal plan Breakfast and lunch buffet, dinner buffet or à la carte, snacks and unlimited drinks',
+          'Travel insurance'
+        ]
+      },
+      pt: {
+        titulo: 'Cartagena - Dreams Karibana',
+        lugar: 'Cartagena de Indias, Colômbia',
+        descripcion: [
+          'Resort de luxo com tudo incluído para o Ano Novo no Dreams Karibana Cartagena.',
+          'Serviços exclusivos em um cenário paradisíaco.',
+          'Fique em um ambiente exclusivo de frente para o Caribe, cercado pela natureza e tranquilidade. Relaxe em praias paradisíacas e descubra o charme de Cartagena a uma curta distância.',
+          'Datas de viagem 31 de dezembro – 03 de janeiro, 2027 4 dias · 3 noites'
+        ],
+        noches: '3 Noites',
+        saliendo: 'Saindo de Lima',
+        tipo: 'Internacional / Tudo Incluído',
+        grupo: 'Geral',
+        idioma: 'Espanhol',
+        incluye: [
+          'Passagem aérea Lima/Cartagena/Lima com LATAM Airlines - Permite bolsa ou mochila + Carry On (12 kg)',
+          'Traslados incluídos Aeroporto – hotel – aeroporto (Serviço Compartilhado)',
+          '3 noites de acomodação Dreams Karibana 5 - Junior Suite Tropical View King',
+          'Plano de alimentação Tudo Incluído Café da manhã e almoço buffet, jantar buffet ou à la carte, lanches e bebidas ilimitadas',
+          'Seguro de viagem'
+        ]
+      }
+    }
   },
   {
     id: 'cusco-',
@@ -1333,8 +2660,51 @@ export const TOURS: Tour[] = [
       'Traslados incluidosAeropuerto – hotel – aeropuerto',
       '2 noches de alojamientoHotel Categoría 3 - Habitación doble',
       'Desayunos incluidos',
-
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: 'Cusco',
+        lugar: 'Cusco, Peru',
+        descripcion: [
+          'Feel the magic of the capital of the Inca Empire with this budget package to Cusco.',
+          'Includes air tickets from Lima, accommodation, and transfers.',
+          'Located in a strategic area of Cusco, with easy access to its main attractions, restaurants, and streets full of history and tradition.',
+          'Travel dates October 19 – December 15, 2026 3 days · 2 nights'
+        ],
+        noches: '2 Nights',
+        saliendo: 'Departing from Lima',
+        tipo: 'National / History',
+        grupo: 'General',
+        idioma: 'Spanish',
+        incluye: [
+          'Air ticket Lima/Cusco/Lima',
+          'Transfers included Airport – hotel – airport',
+          '2 nights accommodation Hotel Category 3 - Double room',
+          'Breakfasts included',
+        ]
+      },
+      pt: {
+        titulo: 'Cusco',
+        lugar: 'Cusco, Peru',
+        descripcion: [
+          'Sinta a magia da capital do Império Inca com este pacote econômico para Cusco.',
+          'Inclui passagens aéreas de Lima, acomodação e traslados.',
+          'Localizado em uma área estratégica de Cusco, com fácil acesso às suas principais atrações, restaurantes e ruas cheias de história e tradição.',
+          'Datas de viagem 19 de outubro – 15 de dezembro, 2026 3 dias · 2 noites'
+        ],
+        noches: '2 Noites',
+        saliendo: 'Saindo de Lima',
+        tipo: 'Nacional / História',
+        grupo: 'Geral',
+        idioma: 'Espanhol',
+        incluye: [
+          'Passagem aérea Lima/Cusco/Lima',
+          'Traslados incluídos Aeroporto – hotel – aeroporto',
+          '2 noites de acomodação Hotel Categoria 3 - Quarto duplo',
+          'Cafés da manhã incluídos',
+        ]
+      }
+    }
   },
   {
     id: 'medellin',
@@ -1370,7 +2740,53 @@ export const TOURS: Tour[] = [
       'Desayunos incluidos',
       'Seguro de viajes',
 
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: 'Medellín',
+        lugar: 'Medellín, Colombia',
+        descripcion: [
+          'Discover the City of Eternal Spring at a promotional price.',
+          'Explore the cultural dynamism, gastronomy, and landscapes of Medellín.',
+          'Located near the most touristy areas of Medellín, surrounded by restaurants, shops, and cultural spaces. Ideal for exploring a modern, vibrant city full of experiences.',
+          'Travel dates September 1 – November 30, 2026 4 days · 3 nights'
+        ],
+        noches: '3 Nights',
+        saliendo: 'Departing from Lima',
+        tipo: 'International / City',
+        grupo: 'General',
+        idioma: 'Spanish',
+        incluye: [
+          'Air ticket Lima/Medellín/Lima',
+          'Transfers included Airport – hotel – airport',
+          '3 nights accommodation Hotel Category 3 - Double room',
+          'Breakfasts included',
+          'Travel insurance',
+        ]
+      },
+      pt: {
+        titulo: 'Medellín',
+        lugar: 'Medellín, Colômbia',
+        descripcion: [
+          'Descubra a Cidade da Eterna Primavera a um preço promocional.',
+          'Explore o dinamismo cultural, a gastronomia e as paisagens de Medellín.',
+          'Localizado próximo às áreas mais turísticas de Medellín, cercado por restaurantes, lojas e espaços culturais. Ideal para explorar uma cidade moderna e vibrante, cheia de experiências.',
+          'Datas de viagem 1 de setembro – 30 de novembro, 2026 4 dias · 3 noites'
+        ],
+        noches: '3 Noites',
+        saliendo: 'Saindo de Lima',
+        tipo: 'Internacional / Cidade',
+        grupo: 'Geral',
+        idioma: 'Espanhol',
+        incluye: [
+          'Passagem aérea Lima/Medellín/Lima',
+          'Traslados incluídos Aeroporto – hotel – aeroporto',
+          '3 noites de acomodação Hotel Categoria 3 - Quarto duplo',
+          'Cafés da manhã incluídos',
+          'Seguro de viagem',
+        ]
+      }
+    }
   },
   {
     id: 'santiago-de-chile',
@@ -1405,8 +2821,54 @@ export const TOURS: Tour[] = [
       'Desayunos incluidos',
       'City Tour Panorámico',
       'Seguro de viajes',
+    ],
+    translations: {
+      en: {
+        titulo: 'Santiago de Chile',
+        lugar: 'Santiago, Chile',
+        descripcion: [
+          'Discover the modern Chilean capital at the foot of the Andes Mountains.',
+          '3-night trip with transfers and flights included from Lima.',
+          'Enjoy a comfortable and functional stay in Santiago, with cozy environments and easy access to commercial, cultural, and tourist areas.'
+        ],
+        noches: '3 Nights',
+        saliendo: 'Departing from Lima',
+        tipo: 'International / City',
+        grupo: 'General',
+        idioma: 'Spanish',
+        incluye: [
+          'Air ticket Lima/Santiago de Chile/Lima',
+          'Transfers included Airport – hotel – airport',
+          '3 nights accommodation Hotel Category 3 - Double room',
+          'Breakfasts included',
+          'Panoramic City Tour',
+          'Travel insurance',
+        ]
+      },
+      pt: {
+        titulo: 'Santiago de Chile',
+        lugar: 'Santiago, Chile',
+        descripcion: [
+          'Descubra a moderna capital chilena aos pés da Cordilheira dos Andes.',
+          'Viagem de 3 noites com traslados e voos incluídos desde Lima.',
+          'Desfrute de uma estadia confortável e funcional em Santiago, com ambientes acolhedores e fácil acesso a áreas comerciais, culturais e turísticas.'
+        ],
+        noches: '3 Noites',
+        saliendo: 'Saindo de Lima',
+        tipo: 'Internacional / Cidade',
+        grupo: 'Geral',
+        idioma: 'Espanhol',
+        incluye: [
+          'Passagem aérea Lima/Santiago de Chile/Lima',
+          'Traslados incluídos Aeroporto – hotel – aeroporto',
+          '3 noites de acomodação Hotel Categoria 3 - Quarto duplo',
+          'Cafés da manhã incluídos',
+          'City Tour Panorâmico',
+          'Seguro de viagem',
+        ]
+      }
+    }
 
-    ]
   },
   {
     id: 'tarapoto',
@@ -1438,9 +2900,49 @@ export const TOURS: Tour[] = [
       'Vuelo',
       'Hotel',
       'Traslado'
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: 'Tarapoto',
+        lugar: 'Tarapoto, San Martín, Peru',
+        descripcion: [
+          'Enjoy the tropical climate and beautiful natural landscapes of the Tarapoto jungle at a special offer price.',
+          'Tarapoto with everything ready for you to just enjoy.',
+          'Located in a strategic area of Tarapoto, with easy access to its main attractions and surrounded by the natural charm of the Peruvian jungle.'
+        ],
+        noches: '2 Nights',
+        saliendo: 'Departing from Lima',
+        tipo: 'Nature / Adventure',
+        grupo: 'General',
+        idioma: 'Spanish',
+        incluye: [
+          'Flight',
+          'Hotel',
+          'Transfer'
+        ]
+      },
+      pt: {
+        titulo: 'Tarapoto',
+        lugar: 'Tarapoto, San Martín, Peru',
+        descripcion: [
+          'Desfrute do clima tropical e das belas paisagens naturais da selva de Tarapoto a um preço especial.',
+          'Tarapoto com tudo pronto para você apenas aproveitar.',
+          'Localizado em uma área estratégica de Tarapoto, com fácil acesso às suas principais atrações e cercado pelo charme natural da selva peruana.'
+        ],
+        noches: '2 Noites',
+        saliendo: 'Saindo de Lima',
+        tipo: 'Natureza / Aventura',
+        grupo: 'Geral',
+        idioma: 'Espanhol',
+        incluye: [
+          'Voo',
+          'Hotel',
+          'Traslado'
+        ]
+      }
+    }
   },
- {
+  {
     id: 'vichayito-',
     titulo: 'Vichayito',
     lugar: 'Piura, Perú',
@@ -1466,14 +2968,56 @@ export const TOURS: Tour[] = [
     ],
     noches: '2 Noches',
     saliendo: 'Saliendo de Lima',
-     paquete: 'destinos-sudamerica',
+    paquete: 'destinos-sudamerica',
     incluye: [
       'Boleto aéreo Lima/Talara/Lima',
       '2 noches de alojamiento Hotel Categoría 3 - Habitación doble',
       'Desayunos incluidos'
-    ]
+    ],
+    translations: {
+      en: {
+        titulo: 'Vichayito',
+        lugar: 'Piura, Peru',
+        descripcion: [
+          'Relax on the warm beaches of northern Peru in Vichayito, ideal for disconnecting and enjoying the sea.',
+          'Vichayito with everything ready for you to just enjoy.',
+          'Located in a privileged area of Vichayito, ideal for enjoying its beaches, warm climate, and the tranquility of northern Peru.',
+          'Travel dates November 1 – December 15, 2026 3 days · 2 nights'
+        ],
+        noches: '2 Nights',
+        saliendo: 'Departing from Lima',
+        tipo: 'Beach / Relax',
+        grupo: 'General',
+        idioma: 'Spanish',
+        incluye: [
+          'Flight Lima/Talara/Lima',
+          '2 nights accommodation Hotel Category 3 - Double room',
+          'Breakfast included'
+        ]
+      },
+      pt: {
+        titulo: 'Vichayito',
+        lugar: 'Piura, Peru',
+        descripcion: [
+          'Relaxe nas praias quentes do norte do Peru em Vichayito, ideal para se desconectar e aproveitar o mar.',
+          'Vichayito com tudo pronto para você apenas aproveitar.',
+          'Localizado em uma área privilegiada de Vichayito, ideal para desfrutar de suas praias, clima quente e a tranquilidade do norte do Peru.',
+          'Datas de viagem 01 de novembro – 15 de dezembro, 2026 3 dias · 2 noites'
+        ],
+        noches: '2 Noites',
+        saliendo: 'Saindo de Lima',
+        tipo: 'Praia / Relax',
+        grupo: 'Geral',
+        idioma: 'Espanhol',
+        incluye: [
+          'Passagem aérea Lima/Talara/Lima',
+          '2 noites de hospedagem em hotel categoria 3 - Quarto duplo',
+          'Café da manhã incluído'
+        ]
+      }
+    }
   },
- 
+
 
   {
     id: 'cartagena-plaza-hotel-todo-incluido',
@@ -1502,21 +3046,60 @@ export const TOURS: Tour[] = [
     saliendo: 'Saliendo de Lima',
     paquete: 'paquetes-internacionales',
     incluye: [
-     'Boleto aéreoLima / Cartagena / Lima (Permite bolso o mochila + Carry On 12kg)',
-'Traslados incluidosAeropuerto / Hotel / Aeropuerto (Servicio compartido)',
-'03 noches de alojamientoCartagena Plaza Hotel (Habitación Estándar)',
-'Todo incluidoDesayuno y almuerzo buffet, cena buffet o a la carta, snacks y bebidas ilimitadas',
-'Tour de ciudadCartagena en Chiva (Servicio compartido)',
-'Seguro de viajes',
-
-    ]
+      'Boleto aéreoLima / Cartagena / Lima (Permite bolso o mochila + Carry On 12kg)',
+      'Traslados incluidosAeropuerto / Hotel / Aeropuerto (Servicio compartido)',
+      '03 noches de alojamientoCartagena Plaza Hotel (Habitación Estándar)',
+      'Todo incluidoDesayuno y almuerzo buffet, cena buffet o a la carta, snacks y bebidas ilimitadas',
+      'Tour de ciudadCartagena en Chiva (Servicio compartido)',
+      'Seguro de viajes',
+    ],
+    translations: {
+      en: {
+        titulo: 'Cartagena Plaza Hotel - All Inclusive',
+        lugar: 'Cartagena de Indias, Colombia',
+        descripcion: [
+          'Travel from December 6 to 9 with everything resolved in the All Inclusive system.',
+          'No additional worries at the Cartagena Plaza Hotel.',
+          'Located a few minutes from the Walled City and the historic Getsemaní neighborhood. Discover the cultural richness, colonial architecture, and charm of the Colombian Caribbean.'
+        ],
+        noches: '3 Nights',
+        saliendo: 'Departing from Lima',
+        tipo: 'International / All Inclusive',
+        grupo: 'General',
+        idioma: 'Spanish',
+        incluye: [
+          'Air ticket Lima / Cartagena / Lima (Allows bag or backpack + Carry On 12kg)',
+          'Transfers included Airport / Hotel / Airport (Shared service)',
+          '03 nights accommodation Cartagena Plaza Hotel (Standard Room)',
+          'All inclusive Breakfast and lunch buffet, dinner buffet or à la carte, snacks and unlimited drinks',
+          'City tour Cartagena en Chiva (Shared service)',
+          'Travel insurance',
+        ]
+      },
+      pt: {
+        titulo: 'Cartagena Plaza Hotel - Tudo Incluído',
+        lugar: 'Cartagena de Indias, Colômbia',
+        descripcion: [
+          'Viaje de 6 a 9 de dezembro com tudo resolvido no sistema Tudo Incluído.',
+          'Sem preocupações adicionais no Cartagena Plaza Hotel.',
+          'Localizado a poucos minutos da Cidade Murada e do histórico bairro de Getsemaní. Descubra a riqueza cultural, a arquitetura colonial e o charme do Caribe colombiano.'
+        ],
+        noches: '3 Noites',
+        saliendo: 'Saindo de Lima',
+        tipo: 'Internacional / Tudo Incluído',
+        grupo: 'Geral',
+        idioma: 'Espanhol',
+        incluye: [
+          'Passagem aérea Lima / Cartagena / Lima (Permite bolsa ou mochila + Carry On 12kg)',
+          'Traslados incluídos Aeroporto / Hotel / Aeroporto (Serviço compartilhado)',
+          '03 noites de hospedagem Cartagena Plaza Hotel (Quarto Standard)',
+          'Tudo incluído Café da manhã e almoço buffet, jantar buffet ou à la carte, lanches e bebidas ilimitadas',
+          'Tour pela cidade Cartagena en Chiva (Serviço compartilhado)',
+          'Seguro de viagem',
+        ]
+      }
+    }
   }
-
-
-
-
-
-
 ];
 
 export function getTourById(id: string): Tour | undefined {
@@ -1524,5 +3107,10 @@ export function getTourById(id: string): Tour | undefined {
 }
 export function getPaqueteById(id: string): Tour[] {
   return TOURS.filter((tour) => tour.paquete === id);
+}
+
+export function localizeTour(tour: Tour, language: Language): Tour {
+  const translation = language === 'es' ? undefined : tour.translations?.[language];
+  return { ...tour, ...translation };
 }
 

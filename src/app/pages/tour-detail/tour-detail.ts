@@ -1,7 +1,8 @@
-import { Component, effect, inject, PLATFORM_ID, signal } from '@angular/core';
+import { Component, computed, effect, inject, PLATFORM_ID, signal } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { RouterLink, ActivatedRoute } from '@angular/router';
-import { getTourById, Tour } from '../../shared/tours';
+import { getTourById, localizeTour, Tour } from '../../shared/tours';
+import { TranslationService } from '../../shared/translation.service';
 
 declare const Tobii: new (options?: unknown) => { destroy: () => void };
 
@@ -19,13 +20,18 @@ interface Faq {
 export class TourDetail {
   private readonly route = inject(ActivatedRoute);
   private readonly platformId = inject(PLATFORM_ID);
+  protected readonly i18n = inject(TranslationService);
   private tobiiInstance?: { destroy: () => void };
 
-  protected readonly tour = signal(getTourById(this.route.snapshot.paramMap.get('id') ?? ''));
+  private readonly selectedTour = signal(getTourById(this.route.snapshot.paramMap.get('id') ?? ''));
+  protected readonly tour = computed(() => {
+    const tour = this.selectedTour();
+    return tour ? localizeTour(tour, this.i18n.language()) : undefined;
+  });
 
   constructor() {
     this.route.paramMap.subscribe((params) => {
-      this.tour.set(getTourById(params.get('id') ?? ''));
+      this.selectedTour.set(getTourById(params.get('id') ?? ''));
     });
 
     if (isPlatformBrowser(this.platformId)) {
