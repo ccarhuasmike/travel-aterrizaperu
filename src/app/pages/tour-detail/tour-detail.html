@@ -157,7 +157,7 @@
 
                 <div class="lg:col-span-4 md:col-span-5">
                     <div class="p-4 rounded-md shadow-sm dark:shadow-gray-700 sticky top-20">
-                        <div>
+                        <!-- <div>
                             <label for="date" class="font-semibold">Fecha:</label>
                             <input name="date" id="date" type="text" class="mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded-sm outline-none border border-gray-100 dark:border-gray-800 focus:ring-0 start" placeholder="Selecciona fecha:">
                         </div>
@@ -186,10 +186,11 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="mt-4">
-                            <button class="py-2 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-primary text-white rounded-md w-full">Buscar ahora</button>
+                            <a [href]="whatsappUrl(t)" target="_blank" rel="noopener noreferrer"
+                                class="py-2 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-primary text-white rounded-md w-full">Contactate con un asesor</a>
                         </div>
                     </div>
                 </div>

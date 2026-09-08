@@ -88,7 +88,6 @@ export class Home {
     { nombre: 'destinos-sudamerica', hoteles: 3, imagen: 'assets/images/listing/proxima_aventura/0000872_europa_350.png', routelink:"destino-europa" },
     { nombre: 'europa', hoteles: 3, imagen: 'assets/images/listing/proxima_aventura/0000873_destinos-sudamerica_350.png', routelink:"destinos-sudamerica" },
     { nombre: 'paquetes-año-nuevo', hoteles: 3, imagen: 'assets/images/listing/proxima_aventura/0000874_ano-nuevo_350.webp', routelink:"paquetes-año-nuevo" },
-
   ];
 
 

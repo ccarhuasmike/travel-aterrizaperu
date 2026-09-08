@@ -36,9 +36,9 @@
             lugares y el mejor presupuesto!</p>
     </div><!--end grid-->
 
-    <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-6 gap-6">
+    <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mt-6 gap-4">
         @for (tour of tours(); track $index) {
-        <div class="group rounded-md shadow-sm dark:shadow-gray-700">
+        <div class="group flex h-full flex-col rounded-md shadow-sm dark:shadow-gray-700">
             <div class="relative overflow-hidden rounded-t-md shadow-sm dark:shadow-gray-700 mx-3 mt-3">
                 <img [src]="tour.imagen" class="scale-125 group-hover:scale-100 duration-500" alt="">
                 @if (tour.descuento) {
@@ -54,11 +54,11 @@
                 </div>
             </div>
 
-            <div class="p-4">
+            <div class="flex flex-1 flex-col p-4">
                 <p class="flex items-center text-slate-400 font-medium mb-2"><i
-                        class="ri-map-pin-line text-primary me-1"></i> {{ tour.lugar }}</p>
+                        class="ri-map-pin-line text-primary me-1"></i> <span class="truncate">{{ tour.lugar }}</span></p>
                 <a [routerLink]="['/tours', tour.id]"
-                    class="text-lg font-medium hover:text-primary duration-500 ease-in-out">{{ tour.titulo }}</a>
+                    class="block h-12 overflow-hidden leading-6 text-lg font-medium hover:text-primary duration-500 ease-in-out">{{ tour.titulo }}</a>
 
                 <div class="flex items-center mt-1">
                     <span class="text-slate-400">{{ tour.noches }}</span>
@@ -79,9 +79,9 @@
                     </ul>
                 </div> -->
 
-                <div class="mt-4 pt-4 flex justify-between items-center border-t border-slate-100 dark:border-gray-800">
-                    <h5 class="text-lg font-medium text-primary">$ {{ tour.precio }} / Día</h5>
-                    <a [routerLink]="['/tours', tour.id]" class="text-slate-400 hover:text-primary">Comprar <i
+                <div style="background: red; padding: 7px; margin-top: auto;" class="mt-4 pt-4 flex justify-between items-center border-t border-slate-100 dark:border-gray-800">
+                    <h5 style="color: white;" class="text-lg font-medium text-primary">$ {{ tour.precio }} / Día</h5>
+                    <a  style="color: white;" [routerLink]="['/tours', tour.id]" class="text-slate-400 hover:text-primary">Comprar <i
                             class="ri-arrow-right-s-line"></i></a>
                 </div>
             </div>

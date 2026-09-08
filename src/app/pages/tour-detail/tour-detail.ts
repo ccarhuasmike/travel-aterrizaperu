@@ -1,7 +1,7 @@
 import { Component, effect, inject, PLATFORM_ID, signal } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { RouterLink, ActivatedRoute } from '@angular/router';
-import { getTourById } from '../../shared/tours';
+import { getTourById, Tour } from '../../shared/tours';
 
 declare const Tobii: new (options?: unknown) => { destroy: () => void };
 
@@ -52,5 +52,19 @@ export class TourDetail {
 
   protected toggleFaq(index: number): void {
     this.openFaqIndex = this.openFaqIndex === index ? -1 : index;
+  }
+
+  protected whatsappUrl(tour: Tour): string {
+    const tourUrl = isPlatformBrowser(this.platformId) ? window.location.href : '';
+    const message = [
+      'Hola, deseo recibir asesoria sobre este tour:',
+      `Tour: ${tour.titulo}`,
+      `Destino: ${tour.lugar}`,
+      `Duracion: ${tour.duracion}`,
+      `Precio: $${tour.precio} por persona`,
+      `Enlace: ${tourUrl}`,
+    ].join('\n');
+
+    return `https://wa.me/51958343812?text=${encodeURIComponent(message)}`;
   }
 }
