@@ -19,6 +19,7 @@ export interface Tour {
   lugar: string;
   imagen: string;
   precio: number;
+  precioAnterior?: number;
   rating: string;
   descuento?: string;
   duracion: string;
@@ -783,7 +784,6 @@ export const TOURS: Tour[] = [
       'assets/images/listing/Cusco - Casa Andina Standard Catedral/0000815_cusco-casa-andina-standard-catedral_550.webp',
       'assets/images/listing/Cusco - Casa Andina Standard Catedral/0000816_cusco-casa-andina-standard-catedral_550.webp',
       'assets/images/listing/Cusco - Casa Andina Standard Catedral/0000817_cusco-casa-andina-standard-catedral_550.webp',
-
     ],
     precio: 529.00,
     rating: '5.0 (20)',
@@ -3143,6 +3143,1316 @@ export const TOURS: Tour[] = [
           'Tudo incluído Café da manhã e almoço buffet, jantar buffet ou à la carte, lanches e bebidas ilimitadas',
           'Tour pela cidade Cartagena en Chiva (Serviço compartilhado)',
           'Seguro de viagem',
+        ]
+      }
+    }
+  },
+  // Descuento:
+  {
+    "id": "cartagena-holiday-inn-express-bocagrande",
+    "titulo": "Cartagena - Holiday Inn Express Bocagrande",
+    "lugar": "Cartagena de Indias, Colombia",
+    "imagen": "assets/images/listing/cartagena-holiday-inn-express-bocagrande/0000905_cartagena-holiday-inn-express-bocagrande_550.webp",
+    "galeriaImagen": [
+      "assets/images/listing/cartagena-holiday-inn-express-bocagrande/0000905_cartagena-holiday-inn-express-bocagrande_550.webp",
+      "assets/images/listing/cartagena-holiday-inn-express-bocagrande/0000906_cartagena-holiday-inn-express-bocagrande_550.webp",
+      "assets/images/listing/cartagena-holiday-inn-express-bocagrande/0000907_cartagena-holiday-inn-express-bocagrande_550.webp",
+      "assets/images/listing/cartagena-holiday-inn-express-bocagrande/0000908_cartagena-holiday-inn-express-bocagrande_550.webp",
+    ],
+    "precio": 879.00,
+    "precioAnterior": 1299.00,
+    "descuento": "-32%",
+    "rating": "4.8 (15)",
+    "duracion": "3 Noches",
+    "tipo": "Internacional",
+    "grupo": "General",
+    "idioma": "Español",
+    "descripcion": [
+      'Ubicado en una privilegiada zona costera, ideal para disfrutar de las playas del Caribe colombiano. Explora la Ciudad Amurallada y vive una experiencia entre historia, cultura y mar.'
+    ],
+    "noches": "3 Noches",
+    "saliendo": "Saliendo de Lima",
+    "paquete": "descuentos",
+    "incluye": [
+      'Lima / Cartagena / Lima (Permite bolso o mochila + Carry On 12kg)',
+      'Traslados incluidosAeropuerto / Hotel / Aeropuerto (Servicio compartido)',
+      '03 noches de alojamiento Holiday Inn Express Bocagrande (Habitación Estándar)',
+      'Desayunos incluidos',
+      'Tour de ciudadCartagena en Chiva (Servicio compartido)',
+      'Seguro de viajes',
+    ],
+    "translations": {
+      "en": {
+        "titulo": "Cartagena - Holiday Inn Express Bocagrande",
+        "lugar": "Cartagena de Indias, Colombia",
+        "descripcion": [
+          "Located in a privileged coastal area, ideal for enjoying the beaches of the Colombian Caribbean. Explore the Walled City and experience a mix of history, culture, and sea."
+        ],
+        "noches": "3 Nights",
+        "saliendo": "Departing from Lima",
+        "tipo": "International",
+        "grupo": "General",
+        "idioma": "Spanish",
+        "incluye": [
+          "Lima / Cartagena / Lima (Allows bag or backpack + Carry On 12kg)",
+          "Transfers included Airport / Hotel / Airport (Shared service)",
+          "03 nights accommodation Holiday Inn Express Bocagrande (Standard Room)",
+          "Breakfasts included",
+          "City tour Cartagena in Chiva (Shared service)",
+          "Travel insurance"
+        ]
+      },
+      "pt": {
+        "titulo": "Cartagena - Holiday Inn Express Bocagrande",
+        "lugar": "Cartagena de Indias, Colômbia",
+        "descripcion": [
+          'Localizado em uma área costeira privilegiada, ideal para desfrutar das praias do Caribe colombiano. Explore a Cidade Murada e viva uma experiência entre história, cultura e mar.'
+        ],
+        "noches": "3 Noites",
+        "saliendo": "Saindo de Lima",
+        "tipo": "Internacional",
+        "grupo": "Geral",
+        "idioma": "Espanhol",
+        "incluye": [
+          'Lima / Cartagena / Lima (Permite bolsa ou mochila + bagagem de mão de 12 kg)',
+          'Traslados incluídos: Aeroporto / Hotel / Aeroporto (Serviço compartilhado)',
+          '03 noites de hospedagem no Holiday Inn Express Bocagrande (Quarto Standard)',
+          'Café da manhã incluído',
+          'City tour em Cartagena de Chiva (Serviço compartilhado)',
+          'Seguro-viagem'
+        ]
+      }
+    }
+  },
+  {
+    "id": "buenos-aires-dora-hotel",
+    "titulo": "Buenos Aires - Dora Hotel",
+    "lugar": "Buenos Aires, Argentina",
+    imagen: 'assets/images/listing/buenos-aires-dora-hotel/0000904_buenos-aires-dora-hotel_550.webp',
+    galeriaImagen: [
+      'assets/images/listing/buenos-aires-dora-hotel/0000904_buenos-aires-dora-hotel_550.webp',
+      'assets/images/listing/buenos-aires-dora-hotel/0000826_buenos-aires-dora-hotel_550.webp',
+      'assets/images/listing/buenos-aires-dora-hotel/0000827_buenos-aires-dora-hotel_550.webp',
+      'assets/images/listing/buenos-aires-dora-hotel/0000829_buenos-aires-dora-hotel_550.webp'
+    ],
+    "precio": 645.00,
+    "precioAnterior": 779.00,
+    "descuento": "-17%",
+    "rating": "4.7 (10)",
+    "duracion": "3 Noches",
+    "tipo": "Internacional / Año Nuevo",
+    "grupo": "General",
+    "idioma": "Español",
+    "descripcion": [
+      "Buenos Aires con todo listo para que solo disfrutes.",
+      "Ubicado en el corazón de Buenos Aires, a pocos minutos de Puerto Madero y la calle Florida. Disfruta de restaurantes, tiendas, atractivos turísticos y la esencia de la ciudad a tu alcance.",
+      'Fechas de viaje 31 de diciembre – 03 de enero, 2027 4 días · 3 noches'
+    ],
+    "noches": "3 Noches",
+    "saliendo": "Saliendo de Lima",
+    "paquete": "descuentos",
+    "incluye": [
+      'Boleto aéreo Lima/Buenos Aires/Limacon LATAM Airlines - Permite bolso o mochila + Carry On (12 kg)',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto (Servicio Semi-privado)',
+      '3 noches de alojamientoDora Hotel - Habitación Superior',
+      'Desayunos incluidos',
+      'Excursión de medio día City tour en servicio regularRegreso al hotel por cuenta propia',
+      'Tax FreeGuía para recuperar el impuesto',
+      'Tour de Compras en fábricas de cuero, ropa, etc.Cortesía',
+      'Casino Puerto MaderoEntrada y traslado gratis brindado por el Casino para mayores de 18 años (Cortesía)',
+      '10% de descuento por consumo a la cartaRestaurant Puerto Cristal en Puerto Madero (Cortesía)',
+    ],
+    "translations": {
+      "en": {
+        "titulo": "Buenos Aires - Dora Hotel",
+        "lugar": "Buenos Aires, Argentina",
+        "descripcion": [
+          'Buenos Aires with everything ready for you to just enjoy.',
+          'Located in the heart of Buenos Aires, just minutes from Puerto Madero and Florida Street. Enjoy restaurants, shops, tourist attractions, and the essence of the city at your fingertips.',
+          'Travel dates December 31 – January 3, 2027 4 days · 3 nights'
+
+        ],
+        "noches": "3 Nights",
+        "saliendo": "Departing from Lima",
+        "tipo": "International / New Year",
+        "grupo": "General",
+        "idioma": "Spanish",
+        "incluye": [
+          'Air ticket Lima/Buenos Aires/Lima with LATAM Airlines - Allows bag or backpack + Carry On (12 kg)',
+          'Transfers included Airport – hotel – airport (Semi-private Service)',
+          '3 nights accommodation Dora Hotel - Superior Room',
+          'Breakfast included',
+          'Half-day City tour excursion in regular service Return to the hotel on your own',
+          'Tax Free Guide to recover the tax',
+          'Shopping Tour in leather factories, clothing, etc. Courtesy',
+          'Casino Puerto Madero Free entry and transfer provided by the Casino for those over 18 years old (Courtesy)',
+          '10% discount for à la carte consumption Restaurant Puerto Cristal in Puerto Madero (Courtesy)'
+        ]
+      },
+      "pt": {
+        "titulo": "Buenos Aires - Dora Hotel",
+        "lugar": "Buenos Aires, Argentina",
+        "descripcion": [
+          "Buenos Aires com tudo pronto para você apenas aproveitar.",
+          "Localizado no coração de Buenos Aires, a poucos minutos de Puerto Madero e da Rua Florida. Aproveite restaurantes, lojas, atrações turísticas e a essência da cidade ao seu alcance.",
+          "Datas de viagem 31 de dezembro – 03 de janeiro de 2027 4 dias · 3 noites"
+        ],
+        "noches": "3 Noites",
+        "saliendo": "Saindo de Lima",
+        "tipo": "Internacional / Ano Novo",
+        "grupo": "Geral",
+        "idioma": "Espanhol",
+        "incluye": [
+          'Passagem aérea Lima/Buenos Aires/Lima com LATAM Airlines - Permite bagagem de mão ou mochila + Carry On (12 kg)',
+          'Traslados incluídos Aeroporto – hotel – aeroporto (Serviço Semi-privado)',
+          '3 noites de acomodação Dora Hotel - Quarto Superior',
+          'Café da manhã incluído',
+          'Excursão de meio dia City tour em serviço regular Retorno ao hotel por conta própria',
+          'Tax Free Guia para recuperar o imposto',
+          'Tour de Compras em fábricas de couro, roupas, etc. Cortesia',
+          'Casino Puerto Madero Entrada e traslado gratuitos fornecidos pelo Casino para maiores de 18 anos (Cortesia)',
+          '10% de desconto para consumo à la carte Restaurante Puerto Cristal em Puerto Madero (Cortesia)'
+        ]
+      }
+    }
+  },
+  {
+    "id": "punta-cana-whala-bavaro",
+    "titulo": "Punta Cana - Whala!Bávaro",
+    "lugar": "Punta Cana, República Dominicana",
+    "imagen": "assets/images/listing/punta-cana-whala-bavaro/0000771_punta-cana-whalabavaro_550.webp",
+    "galeriaImagen": [
+      "assets/images/listing/punta-cana-whala-bavaro/0000771_punta-cana-whalabavaro_550.webp",
+      "assets/images/listing/punta-cana-whala-bavaro/0000772_punta-cana-whalabavaro_550.webp",
+      "assets/images/listing/punta-cana-whala-bavaro/0000773_punta-cana-whalabavaro_550.webp",
+      "assets/images/listing/punta-cana-whala-bavaro/0000947_punta-cana-whalabavaro_550.webp",
+
+    ],
+    "precio": 1359.00,
+    "precioAnterior": 1549.00,
+    "descuento": "-12%",
+    "rating": "4.6 (12)",
+    "duracion": "4 Noches",
+    "tipo": "Internacional / Todo Incluido / Año Nuevo",
+    "grupo": "General",
+    "idioma": "Español",
+    "descripcion": [
+      "Punta Cana con todo listo para que solo disfrutes",
+      "A pocos pasos de Playa Bávaro, una de las zonas más emblemáticas de Punta Cana. Vive una experiencia tropical rodeada de sol, mar y la esencia del Caribe dominicano.",
+      'Fechas de viaje 30 de diciembre – 03 de enero, 2027 5 días · 4 noches'
+    ],
+    "noches": "4 Noches",
+    "saliendo": "Saliendo de Lima",
+    "paquete": "descuentos",
+    "incluye": [
+      'Boleto aéreo Lima/Punta Cana/Limacon LATAM Airlines - Permite mochila + Carry-On (12 kg)',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto (Servicio Compartido)',
+      '4 noches de alojamientoWhalá!Bávaro - Habitación Doble',
+      'Sistema de alimentación Todo IncluidoDesayuno y almuerzo buffet, cena buffet o a la carta, piqueos y bebidas ilimitadas',
+      'Seguro de viajes',
+    ],
+    "translations": {
+      "en": {
+        "titulo": "Punta Cana - Whala!Bávaro",
+        "lugar": "Punta Cana, Dominican Republic",
+        "descripcion": [
+          'Punta Cana with everything ready for you to just enjoy.',
+          'A few steps from Playa Bávaro, one of the most emblematic areas of Punta Cana. Experience a tropical getaway surrounded by sun, sea, and the essence of the Dominican Caribbean.',
+          'Travel dates December 30 – January 03, 2027 5 days · 4 nights'
+        ],
+        "noches": "4 Nights",
+        "saliendo": "Departing from Lima",
+        "tipo": "International / All Inclusive / New Year",
+        "grupo": "General",
+        "idioma": "Spanish",
+        "incluye": [
+          "Flight Lima/Punta Cana/Lima with LATAM Airlines - Allows backpack + Carry-On (12 kg)",
+          "Transfers included Airport – hotel – airport (Shared Service)",
+          "4 nights accommodation at Whalá!Bávaro - Double Room",
+          "All Inclusive Meal Plan Breakfast and lunch buffet, dinner buffet or à la carte, snacks and unlimited drinks",
+          "Travel insurance"
+        ]
+      },
+      "pt": {
+        "titulo": "Punta Cana - Whala!Bávaro",
+        "lugar": "Punta Cana, República Dominicana",
+        "descripcion": [
+          'Punta Cana com tudo pronto para você apenas aproveitar.',
+          'A poucos passos da Playa Bávaro, uma das áreas mais emblemáticas de Punta Cana. Viva uma experiência tropical cercada de sol, mar e a essência do Caribe dominicano.',
+          'Datas de viagem 30 de dezembro – 03 de janeiro, 2027 5 dias · 4 noites'
+        ],
+        "noches": "4 Noites",
+        "saliendo": "Saindo de Lima",
+        "tipo": "Internacional / Tudo Incluído / Ano Novo",
+        "grupo": "Geral",
+        "idioma": "Espanhol",
+        "incluye": [
+          'Passagem aérea Lima/Punta Cana/Lima pela LATAM Airlines – Permite mochila + bagagem de mão (12 kg)',
+          'Traslados incluídos: Aeroporto – hotel – aeroporto (serviço compartilhado)',
+          '4 noites de hospedagem no Whalá! Bávaro – Quarto duplo',
+          'Sistema de alimentação "All Inclusive": café da manhã e almoço em buffet, jantar em buffet ou à la carte, petiscos e bebidas ilimitadas',
+          'Seguro de viagem',
+        ]
+      }
+    }
+  },
+  {
+    "id": "cusco-casa-andina-standard-cusco-plaza-desc",
+    "titulo": "Cusco - Casa Andina Standard Cusco Plaza",
+    "lugar": "Cusco, Perú",
+    imagen: 'assets/images/listing/cusco-casa-andina-standard-cusco-plaza/0000819_cusco-casa-andina-standard-cusco-plaza_550.webp',
+    galeriaImagen: [
+      'assets/images/listing/cusco-casa-andina-standard-cusco-plaza/0000819_cusco-casa-andina-standard-cusco-plaza_550.webp',
+      'assets/images/listing/cusco-casa-andina-standard-cusco-plaza/0000820_cusco-casa-andina-standard-cusco-plaza_550.webp',
+      'assets/images/listing/cusco-casa-andina-standard-cusco-plaza/0000821_cusco-casa-andina-standard-cusco-plaza_550.webp',
+      'assets/images/listing/cusco-casa-andina-standard-cusco-plaza/0000946_cusco-casa-andina-standard-cusco-plaza_550.webp',
+
+    ],
+    "precio": 569.00,
+    "precioAnterior": 649.00,
+    "descuento": "-12%",
+    "rating": "4.9 (20)",
+    "duracion": "3 Noches",
+    "tipo": "Nacional / Año Nuevo",
+    "grupo": "General",
+    "idioma": "Español",
+    "descripcion": [
+      "Cusco con todo listo para que solo disfrutes.",
+      "Hospédate en el corazón de Cusco, rodeado de historia, cultura y tradición andina. Explora la Plaza de Armas, museos y calles coloniales desde una ubicación privilegiada.",
+      "Fechas de viaje 31 de diciembre – 03 de enero, 2027 4 días · 3 noches"
+    ],
+    "noches": "3 Noches",
+    "saliendo": "Saliendo de Lima",
+    "paquete": "descuentos",
+    "incluye": [
+      'Boleto aéreo Lima/Cusco/LimaCon LATAM Airlines - Permite bolso o mochila + equipaje de mano (12kg)',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto (Servicio Privado)',
+      '3 noches de alojamientoCasa Andina Standard Cusco Plaza - Habitación Tradicional',
+      'Desayuno diario',
+      'City Tour con entradasServicio regular',
+      'Boleto Turístico del Cusco Parcial1 día de vigencia',
+      'Impuestos',
+    ],
+    "translations": {
+      "en": {
+        "titulo": "Cusco - Casa Andina Standard Cusco Plaza",
+        "lugar": "Cusco, Peru",
+        "descripcion": [
+          "Cusco: everything is ready for you to simply enjoy.",
+          "Stay in the heart of Cusco, surrounded by history, culture, and Andean tradition. Explore the Plaza de Armas, museums, and colonial streets from a prime location.",
+          "Travel dates: December 31 – January 3, 2027 | 4 days · 3 nights"
+        ],
+        "noches": "3 Nights",
+        "saliendo": "Departing from Lima",
+        "tipo": "National / New Year",
+        "grupo": "General",
+        "idioma": "Spanish",
+        "incluye": [
+          "Air ticket Lima/Cusco/Lima with LATAM Airlines - Allows bag or backpack + hand luggage (12kg)",
+          "Included transfers Airport – hotel – airport (Private Service)",
+          "3 nights accommodation Casa Andina Standard Cusco Plaza - Traditional Room",
+          "Daily breakfast",
+          "City Tour with entrance Regular service",
+          "Cusco Tourist Ticket Partial 1 day validity",
+          "Taxes"
+        ]
+      },
+      "pt": {
+        "titulo": "Cusco - Casa Andina Standard Cusco Plaza",
+        "lugar": "Cusco, Peru",
+        "descripcion": [
+          "Cusco: tudo pronto para você apenas aproveitar.",
+          "Fique no coração de Cusco, cercado de história, cultura e tradição andina. Explore a Plaza de Armas, museus e ruas coloniais a partir de uma localização privilegiada.",
+          "Datas de viagem: 31 de dezembro – 03 de janeiro de 2027 | 4 dias · 3 noites"
+        ],
+        "noches": "3 Noites",
+        "saliendo": "Saindo de Lima",
+        "tipo": "Nacional / Ano Novo",
+        "grupo": "Geral",
+        "idioma": "Espanhol",
+        "incluye": [
+          "Passagem aérea Lima/Cusco/Lima com LATAM Airlines - Permite bagagem ou mochila + bagagem de mão (12kg)",
+          "Traslados incluídos Aeroporto – hotel – aeroporto (Serviço Privado)",
+          "3 noites de hospedagem Casa Andina Standard Cusco Plaza - Quarto Tradicional",
+          "Café da manhã diário",
+          "City Tour com entrada Serviço regular",
+          "Boleto Turístico do Cusco Parcial 1 dia de validade",
+          "Impostos"
+        ]
+      }
+    }
+  },
+  {
+    "id": "cusco-tierra-viva-cusco-habitacion-estandar-desc",
+    "titulo": "Cusco - Tierra Viva Cusco (Habitación Estándar)",
+    "lugar": "Cusco, Perú",
+    imagen: 'assets/images/listing/cusco-tierra-viva-cusco-estandar/0000952_cusco-tierra-viva-cusco-habitacion-estandar_550.webp',
+    galeriaImagen: [
+      'assets/images/listing/cusco-tierra-viva-cusco-estandar/0000919_cusco-tierra-viva-cusco-habitacion-estandar_550.webp',
+      'assets/images/listing/cusco-tierra-viva-cusco-estandar/0000920_cusco-tierra-viva-cusco-habitacion-estandar_550.webp',
+      'assets/images/listing/cusco-tierra-viva-cusco-estandar/0000921_cusco-tierra-viva-cusco-habitacion-estandar_550.webp',
+      'assets/images/listing/cusco-tierra-viva-cusco-estandar/0000952_cusco-tierra-viva-cusco-habitacion-estandar_550.webp',
+    ],
+    "precio": 455.00,
+    "rating": "4.8 (12)",
+    "duracion": "3 Noches",
+    "tipo": "Nacional / Año Nuevo",
+    "grupo": "General",
+    "idioma": "Español",
+    "descripcion": [
+      "Cusco con todo listo para que solo disfrutes.",
+      'Ubicado en el centro de Cusco, el punto perfecto para descubrir la esencia de la ciudad imperial. Conecta con su historia, cultura y los principales atractivos turísticos de la región.',
+      'Fechas de viaje 31 de diciembre – 03 de enero, 2027 4 días · 3 noches'
+    ],
+    "noches": "3 Noches",
+    "saliendo": "Saliendo de Lima",
+    "paquete": "descuentos",
+    "incluye": [
+      'Boleto aéreo Lima/Cusco/LimaCon LATAM Airlines - Permite bolso o mochila + equipaje de mano (12kg)',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto (Servicio Privado)',
+      '3 noches de alojamientoTierra Viva Cusco - Habitación Estándar',
+      'Desayuno diario',
+      'City Tour con entradasServicio regular',
+      'Boleto Turístico del Cusco Parcial1 día de vigencia',
+      'Impuestos',
+    ],
+    "translations": {
+      "en": {
+        "titulo": "Cusco - Tierra Viva Cusco (Standard Room)",
+        "lugar": "Cusco, Peru",
+        "descripcion": [
+          "Cusco with everything ready for you to just enjoy.",
+          "Located in the center of Cusco, the perfect point to discover the essence of the imperial city. Connect with its history, culture, and the main tourist attractions of the region.",
+          "Travel dates December 31 – January 3, 2027 4 days · 3 nights"
+        ],
+        "noches": "3 Nights",
+        "saliendo": "Departing from Lima",
+        "tipo": "National / New Year",
+        "grupo": "General",
+        "idioma": "Spanish",
+        "incluye": [
+          "Air ticket Lima/Cusco/Lima with LATAM Airlines - Allows bag or backpack + hand luggage (12kg)",
+          "Included transfers Airport – hotel – airport (Private Service)",
+          "3 nights accommodation Tierra Viva Cusco - Standard Room",
+          "Daily breakfast",
+          "City Tour with entrance Regular service",
+          "Cusco Tourist Ticket Partial 1 day validity",
+          "Taxes"
+        ]
+      },
+      "pt": {
+        "titulo": "Cusco - Tierra Viva Cusco (Quarto Standard)",
+        "lugar": "Cusco, Peru",
+        "descripcion": [
+          "Cusco com tudo pronto para você apenas aproveitar.",
+          "Localizado no centro de Cusco, o ponto perfeito para descobrir a essência da cidade imperial. Conecte-se com sua história, cultura e as principais atrações turísticas da região.",
+          "Datas de viagem 31 de dezembro – 03 de janeiro, 2027 4 dias · 3 noites"
+        ],
+        "noches": "3 Noites",
+        "saliendo": "Saindo de Lima",
+        "tipo": "Nacional / Ano Novo",
+        "grupo": "Geral",
+        "idioma": "Espanhol",
+        "incluye": [
+          "Passagem aérea Lima/Cusco/Lima com LATAM Airlines - Permite bagagem de mão + mochila ou bolsa (12kg)",
+          "Traslados incluídos Aeroporto – hotel – aeroporto (Serviço Privado)",
+          "3 noites de acomodação Tierra Viva Cusco - Quarto Standard",
+          "Café da manhã diário",
+          "City Tour com entrada Serviço Regular",
+          "Bilhete Turístico de Cusco Parcial 1 dia de validade",
+          "Impostos"
+        ]
+      }
+    }
+  },
+  {
+    "id": "cusco-casa-andina-standard-catedral-desc",
+    "titulo": "Cusco - Casa Andina Standard Catedral",
+    "lugar": "Cusco, Perú",
+    imagen: 'assets/images/listing/Cusco - Casa Andina Standard Catedral/0000814_cusco-casa-andina-standard-catedral_550.webp',
+    galeriaImagen: [
+      'assets/images/listing/Cusco - Casa Andina Standard Catedral/0000814_cusco-casa-andina-standard-catedral_550.webp',
+      'assets/images/listing/Cusco - Casa Andina Standard Catedral/0000815_cusco-casa-andina-standard-catedral_550.webp',
+      'assets/images/listing/Cusco - Casa Andina Standard Catedral/0000816_cusco-casa-andina-standard-catedral_550.webp',
+      'assets/images/listing/Cusco - Casa Andina Standard Catedral/0000817_cusco-casa-andina-standard-catedral_550.webp',
+    ],
+    "precio": 529.00,
+    "rating": "4.7 (14)",
+    "duracion": "3 Noches",
+    "tipo": "Nacional / Año Nuevo",
+    "grupo": "General",
+    "idioma": "Español",
+    "descripcion": [
+      "Cusco con todo listo para que solo disfrutes.",
+      "Ubicado a pocos pasos de la Plaza de Armas y la Catedral del Cusco, en pleno Centro Histórico. Descubre iglesias coloniales, mercados, restaurantes y el encanto de la antigua capital del Imperio Inca.",
+      "Fechas de viaje 31 de diciembre – 03 de enero, 2027 4 días · 3 noches"
+    ],
+    "noches": "3 Noches",
+    "saliendo": "Saliendo de Lima",
+    "paquete": "descuentos",
+    "incluye": [
+      'Boleto aéreo Lima/Cusco/LimaCon LATAM Airlines - Permite bolso o mochila + equipaje de mano (12kg)',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto (Servicio Privado)',
+      '3 noches de alojamientoCasa Andina Standard Catedral - Habitación Tradicional',
+      'Desayuno diario',
+      'City Tour con entradasServicio regular',
+      'Boleto Turístico del Cusco Parcial1 día de vigencia',
+      'Impuestos',
+    ],
+    "translations": {
+      "en": {
+        "titulo": "Cusco - Casa Andina Standard Catedral",
+        "lugar": "Cusco, Peru",
+        "descripcion": [
+          "Cusco with everything ready for you to just enjoy.",
+          "Located just steps from the Plaza de Armas and the Cusco Cathedral, in the heart of the Historic Center. Discover colonial churches, markets, restaurants, and the charm of the ancient capital of the Inca Empire.",
+          "Travel dates December 31 – January 3, 2027 4 days · 3 nights"
+        ],
+        "noches": "3 Nights",
+        "saliendo": "Departing from Lima",
+        "tipo": "National / New Year",
+        "grupo": "General",
+        "idioma": "Spanish",
+        "incluye": [
+          "Flight from Lima to Cusco and back with LATAM Airlines - Allows carry-on bag + hand luggage (12kg)",
+          "Transfers included Airport – hotel – airport (Private Service)",
+          "3 nights accommodation at Casa Andina Standard Catedral - Traditional Room",
+          "Daily breakfast",
+          "City Tour with entrance fees Regular service",
+          "Cusco Tourist Ticket Partial 1-day validity",
+          "Taxes"
+        ]
+      },
+      "pt": {
+        "titulo": "Cusco - Casa Andina Standard Catedral",
+        "lugar": "Cusco, Peru",
+        "descripcion": [
+          "Cusco com tudo pronto para que você apenas aproveite.",
+          "Localizado a poucos passos da Plaza de Armas e da Catedral de Cusco, no coração do Centro Histórico. Descubra igrejas coloniais, mercados, restaurantes e o charme da antiga capital do Império Inca.",
+          "Datas de viagem 31 de dezembro – 03 de janeiro de 2027 4 dias · 3 noites"
+        ],
+        "noches": "3 Noites",
+        "saliendo": "Saindo de Lima",
+        "tipo": "Nacional / Ano Novo",
+        "grupo": "Geral",
+        "idioma": "Espanhol",
+        "incluye": [
+          "Voo de Lima para Cusco e volta com a LATAM Airlines - Permite bagagem de mão + bagagem de mão (12kg)",
+          "Traslados incluídos Aeroporto – hotel – aeroporto (Serviço Privado)",
+          "3 noites de acomodação no Casa Andina Standard Catedral - Quarto Tradicional",
+          "Café da manhã diário",
+          "City Tour com entradas Serviço regular",
+          "Bilhete Turístico de Cusco Parcial 1 dia de validade",
+          "Impostos"
+        ]
+      }
+    }
+  },
+  {
+    "id": "tarapoto-tucan-suites-desc",
+    "titulo": "Tarapoto - Tucan Suites",
+    "lugar": "Tarapoto, Perú",
+    imagen: 'assets/images/listing/tarapoto-tucan-suites/0000914_tarapoto-tucan-suites_550.webp',
+    galeriaImagen: [
+      'assets/images/listing/tarapoto-tucan-suites/0000914_tarapoto-tucan-suites_550.webp',
+      'assets/images/listing/tarapoto-tucan-suites/0000915_tarapoto-tucan-suites_550.webp',
+      'assets/images/listing/tarapoto-tucan-suites/0000951_tarapoto-tucan-suites_550.webp',
+      'assets/images/listing/tarapoto-tucan-suites/0000916_tarapoto-tucan-suites_550.webp',
+    ],
+    "precio": 615.00,
+    "rating": "4.8 (11)",
+    "duracion": "3 Noches",
+    "tipo": "Nacional / Año Nuevo",
+    "grupo": "General",
+    "idioma": "Español",
+    "descripcion": [
+      "Tarapoto con todo listo para que solo disfrutes.",
+      'Disfruta una ubicación privilegiada en Tarapoto, la puerta de entrada a la Amazonía peruana. Explora naturaleza, aventura y experiencias únicas entre paisajes tropicales inolvidables.',
+      "Fechas de viaje 31 de diciembre – 03 de enero, 2027 4 días · 3 noches",
+
+    ],
+    "noches": "3 Noches",
+    "saliendo": "Saliendo de Lima",
+    "paquete": "descuentos",
+    "incluye": [
+      'Boleto aéreo Lima/Tarapoto/LimaCon LATAM Airlines - Permite bolso o mochila + equipaje de mano (12kg)',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto (Servicio Privado)',
+      '3 noches de alojamientoTucan Suites - Habitación Deluxe',
+      'Desayuno diario',
+      'Tour Cascada de Ahuashiyacu y Lamas',
+      'Impuestos',
+    ],
+    "translations": {
+      "en": {
+        "titulo": "Tarapoto - Tucan Suites",
+        "lugar": "Tarapoto, Peru",
+        "descripcion": [
+          "Tarapoto with everything ready for you to just enjoy.",
+          "Enjoy a privileged location in Tarapoto, the gateway to the Peruvian Amazon. Explore nature, adventure, and unique experiences among unforgettable tropical landscapes.",
+          "Travel dates December 31 – January 3, 2027 4 days · 3 nights"
+        ],
+        "noches": "3 Nights",
+        "saliendo": "Departing from Lima",
+        "tipo": "National / New Year",
+        "grupo": "General",
+        "idioma": "Spanish",
+        "incluye": [
+          "Air ticket Lima/Tarapoto/Lima with LATAM Airlines - Allows bag or backpack + hand luggage (12kg)",
+          "Transfers included Airport – hotel – airport (Private Service)",
+          "3 nights accommodation Tucan Suites - Deluxe Room",
+          "Daily breakfast",
+          "Ahuashiyacu Waterfall and Lamas Tour",
+          "Taxes"
+        ]
+      },
+      "pt": {
+        "titulo": "Tarapoto - Tucan Suites",
+        "lugar": "Tarapoto, Peru",
+        "descripcion": [
+          "Tarapoto com tudo pronto para você apenas aproveitar.",
+          "Desfrute de uma localização privilegiada em Tarapoto, a porta de entrada para a Amazônia peruana. Explore a natureza, a aventura e experiências únicas entre paisagens tropicais inesquecíveis.",
+          "Datas de viagem 31 de dezembro – 03 de janeiro de 2027 4 dias · 3 noites"
+        ],
+        "noches": "3 Noites",
+        "saliendo": "Saindo de Lima",
+        "tipo": "Nacional / Ano Novo",
+        "grupo": "Geral",
+        "idioma": "Espanhol",
+        "incluye": [
+          "Passagem aérea Lima/Tarapoto/Lima com LATAM Airlines - Permite bolso ou mochila + bagagem de mão (12kg)",
+          "Traslados incluídos Aeroporto – hotel – aeroporto (Serviço Privado)",
+          "3 noites de acomodação Tucan Suites - Quarto Deluxe",
+          "Café da manhã diário",
+          "Tour Cascata de Ahuashiyacu e Lamas",
+          "Impostos"
+        ]
+      }
+    }
+  },
+  {
+    "id": "buenos-aires-ker-san-telmo-desc",
+    "titulo": "Buenos Aires - Ker San Telmo",
+    "lugar": "Buenos Aires, Argentina",
+    imagen: 'assets/images/listing/buenos-aires-ker-san-telmo/0000950_buenos-aires-ker-san-telmo_550.webp',
+    galeriaImagen: [
+      'assets/images/listing/buenos-aires-ker-san-telmo/0000950_buenos-aires-ker-san-telmo_550.webp',
+      'assets/images/listing/buenos-aires-ker-san-telmo/0000841_buenos-aires-ker-san-telmo_550.webp',
+      'assets/images/listing/buenos-aires-ker-san-telmo/0000839_buenos-aires-ker-san-telmo_550.webp',
+      'assets/images/listing/buenos-aires-ker-san-telmo/0000840_buenos-aires-ker-san-telmo_550.webp'
+    ],
+    "precio": 675.00,
+    "rating": "4.7 (9)",
+    "duracion": "3 Noches",
+    "tipo": "Internacional / Año Nuevo",
+    "grupo": "General",
+    "idioma": "Español",
+    "descripcion": [
+      "Buenos Aires con todo listo para que solo disfrutes.",
+      'Ubicado en el corazón de San Telmo, cerca de Plaza de Mayo y Puerto Madero. Descubre calles llenas de historia, cafés tradicionales y los principales atractivos de Buenos Aires.',
+      'Fechas de viaje 31 de diciembre – 03 de enero, 2027 4 días · 3 noches'
+    ],
+    "noches": "3 Noches",
+    "saliendo": "Saliendo de Lima",
+    "paquete": "descuentos",
+    "incluye": [
+      'Boleto aéreo Lima/Buenos Aires/LimaCon LATAM Airlines - Permite bolso o mochila + Carry On (12 kg)',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto (Servicio Semi-privado)',
+      '3 noches de alojamientoKer San Telmo - Habitación Classic',
+      'Desayunos incluidos',
+      'Excursión de medio día City tour en servicio regularRegreso al hotel por cuenta propia',
+      'Tax FreeGuía para recuperar el impuesto',
+      'Tour de Compras en fábricas de cuero, ropa, etc.Cortesía',
+      'Casino Puerto MaderoEntrada y traslado gratis brindado por el Casino para mayores de 18 años - Cortesía',
+      '10% de descuento por consumo a la cartaRestaurant Puerto Cristal en Puerto Madero - Cortesía',
+      'Seguro de viajes',
+    ],
+    "translations": {
+      "en": {
+        "titulo": "Buenos Aires - Ker San Telmo",
+        "lugar": "Buenos Aires, Argentina",
+        "descripcion": [
+          'Buenos Aires with everything ready for you to just enjoy.',
+          'Located in the heart of San Telmo, near Plaza de Mayo and Puerto Madero. Discover streets full of history, traditional cafes, and the main attractions of Buenos Aires.',
+          'Travel dates December 31 – January 3, 2027 4 days · 3 nights'
+        ],
+        "noches": "3 Nights",
+        "saliendo": "Departing from Lima",
+        "tipo": "International / New Year",
+        "grupo": "General",
+        "idioma": "Spanish",
+        "incluye": [
+          'Air ticket Lima/Buenos Aires/Lima with LATAM Airlines - Allows bag or backpack + Carry On (12 kg)',
+          'Transfers included Airport – hotel – airport (Semi-private Service)',
+          '3 nights accommodation Ker San Telmo - Classic Room',
+          'Breakfast included',
+          'Half-day City tour excursion in regular service Return to the hotel on your own',
+          'Tax Free Guide to recover the tax',
+          'Shopping Tour in leather factories, clothing, etc. Courtesy',
+          'Casino Puerto Madero Entry and free transfer provided by the Casino for those over 18 - Courtesy',
+          '10% discount for à la carte consumption Restaurant Puerto Cristal in Puerto Madero - Courtesy',
+          'Travel insurance',
+        ]
+      },
+      "pt": {
+        "titulo": "Buenos Aires - Ker San Telmo",
+        "lugar": "Buenos Aires, Argentina",
+        "descripcion": [
+          'Buenos Aires com tudo pronto para você apenas aproveitar.',
+          'Localizado no coração de San Telmo, perto da Plaza de Mayo e do Puerto Madero. Descubra ruas cheias de história, cafés tradicionais e as principais atrações de Buenos Aires.',
+          'Datas de viagem 31 de dezembro – 3 de janeiro de 2027 4 dias · 3 noites'
+        ],
+        "noches": "3 Noites",
+        "saliendo": "Saindo de Lima",
+        "tipo": "Internacional / Ano Novo",
+        "grupo": "Geral",
+        "idioma": "Espanhol",
+        "incluye": [
+          'Passagem aérea Lima/Buenos Aires/Lima com LATAM Airlines - Permite bagagem despachada ou mochila + Bagagem de mão (12 kg)',
+          'Traslados incluídos Aeroporto – hotel – aeroporto (Serviço Semi-privado)',
+          '3 noites de acomodação Ker San Telmo - Quarto Clássico',
+          'Café da manhã incluído',
+          'Excursão de meio dia pela cidade em serviço regular Retorno ao hotel por conta própria',
+          'Guia Tax Free para recuperar o imposto',
+          'Tour de compras em fábricas de couro, roupas, etc. Cortesia',
+          'Entrada no Casino Puerto Madero e traslado gratuito fornecido pelo Casino para maiores de 18 anos - Cortesia',
+          '10% de desconto para consumo à la carte Restaurante Puerto Cristal em Puerto Madero - Cortesia',
+          'Seguro de viagem'
+        ]
+      }
+    }
+  },
+  {
+    "id": "buenos-aires-grand-brizo",
+    "titulo": "Buenos Aires - Grand Brizo",
+    "lugar": "Buenos Aires, Argentina",
+    imagen: 'assets/images/listing/buenos-aires-grand-brizo/0000949_buenos-aires-grand-brizo_550.webp',
+    galeriaImagen: [
+      'assets/images/listing/buenos-aires-grand-brizo/0000949_buenos-aires-grand-brizo_550.webp',
+      'assets/images/listing/buenos-aires-grand-brizo/0000830_buenos-aires-grand-brizo_550.webp',
+      'assets/images/listing/buenos-aires-grand-brizo/0000831_buenos-aires-grand-brizo_550.webp',
+      'assets/images/listing/buenos-aires-grand-brizo/0000832_buenos-aires-grand-brizo_550.webp'
+    ],
+    "precio": 785.00,
+    "rating": "4.9 (18)",
+    "duracion": "3 Noches",
+    "tipo": "Internacional / Año Nuevo",
+    "grupo": "General",
+    "idioma": "Español",
+    "descripcion": [
+      "Buenos Aires con todo listo para que solo disfrutes."
+      , 'Ubicado en el centro de Buenos Aires, a pocos pasos del Obelisco y la Avenida 9 de Julio. Disfruta de los principales atractivos turísticos, restaurantes y la vibrante vida porteña.',
+      'Fechas de viaje 31 de diciembre – 03 de enero, 2027 4 días · 3 noches'
+    ],
+    "noches": "3 Noches",
+    "saliendo": "Saliendo de Lima",
+    "paquete": "descuentos",
+    "incluye": [
+      'Boleto aéreo Lima/Buenos Aires/Limacon LATAM Airlines - Permite bolso o mochila + Carry On (12 kg)',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto (Servicio Semi-privado)',
+      '3 noches de alojamientoGrand Brizo - Habitación Comfort',
+      'Desayunos incluidos',
+      'Excursión de medio día City tour en servicio regularRegreso al hotel por cuenta propia',
+      'Tax FreeGuía para recuperar el impuesto',
+      'Tour de Compras en fábricas de cuero, ropa, etc.Cortesía',
+      'Casino Puerto MaderoEntrada y traslado gratis brindado por el Casino para mayores de 18 años - Cortesía',
+      '10% de descuento por consumo a la cartaRestaurant Puerto Cristal en Puerto Madero - Cortesía',
+      'Seguro de viajes',
+    ],
+    "translations": {
+      "en": {
+        "titulo": "Buenos Aires - Grand Brizo",
+        "lugar": "Buenos Aires, Argentina",
+        "descripcion": [
+          "Buenos Aires with everything ready for you to just enjoy.",
+          "Located in the center of Buenos Aires, just steps from the Obelisk and Avenida 9 de Julio. Enjoy the main tourist attractions, restaurants, and the vibrant porteño life.",
+          "Travel dates December 31 – January 3, 2027 4 days · 3 nights"
+        ],
+        "noches": "3 Nights",
+        "saliendo": "Departing from Lima",
+        "tipo": "International / New Year",
+        "grupo": "General",
+        "idioma": "Spanish",
+        "incluye": [
+          'Air ticket Lima/Buenos Aires/Limacon LATAM Airlines - Allows bag or backpack + Carry On (12 kg)',
+          'Transfers includedAirport – hotel – airport (Semi-private Service)',
+          '3 nights accommodationGrand Brizo - Comfort Room',
+          'Breakfast included',
+          'Half-day City tour excursion in regular serviceReturn to the hotel on your own',
+          'Tax FreeGuide to recover the tax',
+          'Shopping Tour in leather factories, clothing, etc.Courtesy',
+          'Casino Puerto MaderoFree entry and transfer provided by the Casino for those over 18 - Courtesy',
+          '10% discount for à la carte consumptionRestaurant Puerto Cristal in Puerto Madero - Courtesy',
+          'Travel insurance',
+        ]
+      },
+      "pt": {
+        "titulo": "Buenos Aires - Grand Brizo",
+        "lugar": "Buenos Aires, Argentina",
+        "descripcion": [
+          "Buenos Aires com tudo pronto para você apenas aproveitar.",
+          "Localizado no centro de Buenos Aires, a poucos passos do Obelisco e da Avenida 9 de Julio. Aproveite as principais atrações turísticas, restaurantes e a vibrante vida portenha.",
+          "Datas de viagem 31 de dezembro a 3 de janeiro de 2027 4 dias · 3 noites"
+        ],
+        "noches": "3 Noites",
+        "saliendo": "Saindo de Lima",
+        "tipo": "Internacional / Ano Novo",
+        "grupo": "Geral",
+        "idioma": "Espanhol",
+        "incluye": [
+          'Passagem aérea Lima/Buenos Aires/Limacon LATAM Airlines - Permite bagagem despachada ou mochila + Carry On (12 kg)',
+          'Traslados incluídosAeroporto – hotel – aeroporto (Serviço semi-privado)',
+          '3 noites de acomodaçãoGrand Brizo - Quarto Conforto',
+          'Café da manhã incluído',
+          'Excursão de meio dia pela cidade em serviço regularRetorno ao hotel por conta própria',
+          'Tax FreeGuia para recuperar o imposto',
+          'Tour de compras em fábricas de couro, roupas, etc.Cortesia',
+          'Cassino Puerto MaderoEntrada gratuita e traslado fornecido pelo Cassino para maiores de 18 anos - Cortesia',
+          '10% de desconto para consumo à la carteRestaurante Puerto Cristal em Puerto Madero - Cortesia',
+          'Seguro de viagem'
+        ]
+      }
+    }
+  },
+  {
+    "id": "cartagena-plaza-hotel",
+    "titulo": "Cartagena - Plaza Hotel",
+    "lugar": "Cartagena de Indias, Colombia",
+    "imagen": "assets/images/listing/Cartagena - Cartagena Plaza Hotel/0000775_cartagena-cartagena-plaza-hotel_550.webp",
+    "galeriaImagen": [
+      "assets/images/listing/Cartagena - Cartagena Plaza Hotel/0000775_cartagena-cartagena-plaza-hotel_550.webp",
+      "assets/images/listing/Cartagena - Cartagena Plaza Hotel/0000776_cartagena-cartagena-plaza-hotel_550.webp",
+      "assets/images/listing/Cartagena - Cartagena Plaza Hotel/0000777_cartagena-cartagena-plaza-hotel_550.webp",
+      "assets/images/listing/Cartagena - Cartagena Plaza Hotel/0000778_cartagena-cartagena-plaza-hotel_550.webp"
+    ],
+    "precio": 869.00,
+    "rating": "4.7 (13)",
+    "duracion": "3 Noches",
+    "tipo": "Internacional",
+    "grupo": "General",
+    "idioma": "Español",
+    "descripcion": [
+      "Ubicado frente a la playa de Bocagrande, una de las zonas más exclusivas y turísticas de Cartagena. Disfruta del mar Caribe, restaurantes, tiendas y un ambiente lleno de vida."
+    ],
+    "noches": "3 Noches",
+    "saliendo": "Saliendo de Lima",
+    "paquete": "descuentos",
+    "incluye": [
+      'Boleto aéreoLima / Cartagena / Lima (Permite bolso o mochila + Carry On 12kg)',
+      'Traslados incluidosAeropuerto / Hotel / Aeropuerto (Servicio compartido)',
+      '03 noches de alojamientoCartagena Plaza Hotel (Habitación Superior Vista a la Ciudad)',
+      'Desayunos incluidos',
+      'Tour de ciudadCartagena en Chiva (Servicio compartido)',
+      'Seguro de viajes',
+    ],
+    "translations": {
+      "en": {
+        "titulo": "Cartagena - Plaza Hotel",
+        "lugar": "Cartagena de Indias, Colombia",
+        "descripcion": [
+          "Located in front of Bocagrande beach, one of the most exclusive and touristic areas of Cartagena. Enjoy the Caribbean Sea, restaurants, shops, and a lively atmosphere."
+        ],
+        "noches": "3 Nights",
+        "saliendo": "Departing from Lima",
+        "tipo": "International",
+        "grupo": "General",
+        "idioma": "Spanish",
+        "incluye": [
+          'Air ticket Lima / Cartagena / Lima (Allows bag or backpack + Carry On 12kg)',
+          'Transfers included Airport / Hotel / Airport (Shared service)',
+          '03 nights accommodation Cartagena Plaza Hotel (Superior Room City View)',
+          'Breakfast included',
+          'City tour Cartagena in Chiva (Shared service)',
+          'Travel insurance'
+        ]
+      },
+      "pt": {
+        "titulo": "Cartagena - Plaza Hotel",
+        "lugar": "Cartagena de Indias, Colômbia",
+        "descripcion": [
+          "Localizado em frente à praia de Bocagrande, uma das áreas mais exclusivas e turísticas de Cartagena. Aproveite o Mar do Caribe, restaurantes, lojas e um ambiente animado."
+        ],
+        "noches": "3 Noites",
+        "saliendo": "Saindo de Lima",
+        "tipo": "Internacional",
+        "grupo": "Geral",
+        "idioma": "Espanhol",
+        "incluye": [
+          'Passagem aérea Lima / Cartagena / Lima (Permite bolsa ou mochila + Carry On 12kg)',
+          'Traslados incluídos Aeroporto / Hotel / Aeroporto (Serviço compartilhado)',
+          '03 noites de acomodação Cartagena Plaza Hotel (Quarto Superior Vista para a Cidade)',
+          'Café da manhã incluído',
+          'Tour pela cidade Cartagena em Chiva (Serviço compartilhado)',
+          'Seguro de viagem'
+        ]
+      }
+    }
+  },
+  {
+    "id": "cartagena-plaza-hotel-habitacion-superior",
+    "titulo": "Cartagena Plaza Hotel - Habitación Superior",
+    "lugar": "Cartagena de Indias, Colombia",
+    imagen: 'assets/images/listing/cartagena-plaza-hotel-habitacion-superior/0000788_cartagena-plaza-hotel-habitacion-superior_550.webp',
+    galeriaImagen: [
+      'assets/images/listing/cartagena-plaza-hotel-habitacion-superior/0000788_cartagena-plaza-hotel-habitacion-superior_550.webp',
+      'assets/images/listing/cartagena-plaza-hotel-habitacion-superior/0000787_cartagena-plaza-hotel-habitacion-superior_550.webp',
+      'assets/images/listing/cartagena-plaza-hotel-habitacion-superior/0000789_cartagena-plaza-hotel-habitacion-superior_550.webp',
+      'assets/images/listing/cartagena-plaza-hotel-habitacion-superior/0000790_cartagena-plaza-hotel-habitacion-superior_550.webp'
+    ],
+    "precio": 965.00,
+    "rating": "4.8 (16)",
+    "duracion": "3 Noches",
+    "tipo": "Internacional / Año Nuevo",
+    "grupo": "General",
+    "idioma": "Español",
+    "descripcion": [
+      "Cartagena con todo listo para que solo disfrutes.",
+      "A minutos de la Ciudad Amurallada, el principal atractivo turístico de Cartagena. Combina descanso, vistas al Caribe y una ubicación ideal para explorar la ciudad.",
+      "Fechas de viaje 31 de diciembre – 03 de enero, 2027 4 días · 3 noches"
+    ],
+    "noches": "3 Noches",
+    "saliendo": "Saliendo de Lima",
+    "paquete": "descuentos",
+    "incluye": [
+      'Boleto aéreo Lima/Cartagena/Limacon LATAM Airlines - Permite bolso o mochila + Carry On (12 kg)',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto (Servicio Compartido)',
+      '3 noches de alojamientoCartagena Plaza Hotel - Habitación Superior',
+      'Sistema alimentaciónDesayunos incluidos',
+      'Seguro de viajes',
+    ],
+    "translations": {
+      "en": {
+        "titulo": "Cartagena Plaza Hotel - Superior Room",
+        "lugar": "Cartagena de Indias, Colombia",
+        "descripcion": [
+          "Cartagena with everything ready for you to just enjoy.",
+          "Minutes from the Walled City, the main tourist attraction in Cartagena. Combines relaxation, Caribbean views, and an ideal location to explore the city.",
+          "Travel dates December 31 – January 3, 2027 4 days · 3 nights"
+        ],
+        "noches": "3 Nights",
+        "saliendo": "Departing from Lima",
+        "tipo": "International / New Year",
+        "grupo": "General",
+        "idioma": "Spanish",
+        "incluye": [
+          "Air ticket Lima/Cartagena/Lima with LATAM Airlines - Allows bag or backpack + Carry On (12 kg)",
+          "Transfers included Airport – hotel – airport (Shared Service)",
+          "3 nights accommodation Cartagena Plaza Hotel - Superior Room",
+          "Meal plan Breakfast included",
+          "Travel insurance"
+        ]
+      },
+      "pt": {
+        "titulo": "Cartagena Plaza Hotel - Quarto Superior",
+        "lugar": "Cartagena de Indias, Colômbia",
+        "descripcion": [
+          "Cartagena com tudo pronto para você apenas aproveitar.",
+          "A poucos minutos da Cidade Murada, a principal atração turística de Cartagena. Combina relaxamento, vistas do Caribe e uma localização ideal para explorar a cidade.",
+          "Datas de viagem 31 de dezembro – 03 de janeiro, 2027 4 dias · 3 noites"
+        ],
+        "noches": "3 Noites",
+        "saliendo": "Saindo de Lima",
+        "tipo": "Internacional / Ano Novo",
+        "grupo": "Geral",
+        "idioma": "Espanhol",
+        "incluye": [
+          "Passagem aérea Lima/Cartagena/Lima com LATAM Airlines - Permite bagagem ou mochila + Carry On (12 kg)",
+          "Traslados incluídos Aeroporto – hotel – aeroporto (Serviço compartilhado)",
+          "3 noites de acomodação Cartagena Plaza Hotel - Quarto Superior",
+          "Plano de refeições Café da manhã incluído",
+          "Seguro de viagem"
+        ]
+      }
+    }
+  },
+  {
+    "id": "cartagena-plaza-hotel-todo-incluido",
+    "titulo": "Cartagena Plaza Hotel - Todo Incluido",
+    "lugar": "Cartagena de Indias, Colombia",
+    "imagen": "assets/images/listing/cartagena-plaza-hotel-todo-incluido/0000909_cartagena-plaza-hotel-todo-incluido_550.webp",
+    "galeriaImagen": [
+      "assets/images/listing/cartagena-plaza-hotel-todo-incluido/0000909_cartagena-plaza-hotel-todo-incluido_550.webp",
+      "assets/images/listing/cartagena-plaza-hotel-todo-incluido/0000911_cartagena-plaza-hotel-todo-incluido_550.webp",
+      "assets/images/listing/cartagena-plaza-hotel-todo-incluido/0000912_cartagena-plaza-hotel-todo-incluido_550.webp",
+      "assets/images/listing/cartagena-plaza-hotel-todo-incluido/0000913_cartagena-plaza-hotel-todo-incluido_550.webp"
+    ],
+    "precio": 979.00,
+    "rating": "4.8 (15)",
+    "duracion": "3 Noches",
+    "tipo": "Internacional / Todo Incluido",
+    "grupo": "General",
+    "idioma": "Español",
+    "descripcion": [
+      "Viaja del 06 al 09 de diciembre con todo resuelto en sistema Todo Incluido.",
+      "Sin preocupaciones adicionales en el Cartagena Plaza Hotel.",
+      "Ubicado a pocos minutos de la Ciudad Amurallada y del histórico barrio de Getsemaní. Descubre la riqueza cultural, la arquitectura colonial y el encanto del Caribe colombiano"
+    ],
+    "noches": "3 Noches",
+    "saliendo": "Saliendo de Lima",
+    "paquete": "descuentos",
+    "incluye": [
+      "Boleto aéreoLima / Cartagena / Lima (Permite bolso o mochila + Carry On 12kg)",
+      "Traslados incluidosAeropuerto / Hotel / Aeropuerto (Servicio compartido)",
+      "03 noches de alojamientoCartagena Plaza Hotel (Habitación Estándar)",
+      "Todo incluidoDesayuno y almuerzo buffet, cena buffet o a la carta, snacks y bebidas ilimitadas",
+      "Tour de ciudadCartagena en Chiva (Servicio compartido)",
+      "Seguro de viajes"
+    ],
+    "translations": {
+      "en": {
+        "titulo": "Cartagena Plaza Hotel - All Inclusive",
+        "lugar": "Cartagena de Indias, Colombia",
+        "descripcion": [
+          "Travel from December 6 to 9 with everything resolved in the All Inclusive system.",
+          "No additional worries at the Cartagena Plaza Hotel.",
+          "Located a few minutes from the Walled City and the historic Getsemaní neighborhood. Discover the cultural richness, colonial architecture, and charm of the Colombian Caribbean."
+        ],
+        "noches": "3 Nights",
+        "saliendo": "Departing from Lima",
+        "tipo": "International / All Inclusive",
+        "grupo": "General",
+        "idioma": "Spanish",
+        "incluye": [
+          "Air ticket Lima / Cartagena / Lima (Allows bag or backpack + Carry On 12kg)",
+          "Transfers included Airport / Hotel / Airport (Shared service)",
+          "03 nights accommodation Cartagena Plaza Hotel (Standard Room)",
+          "All inclusive Breakfast and lunch buffet, dinner buffet or à la carte, snacks and unlimited drinks",
+          "City tour Cartagena en Chiva (Shared service)",
+          "Travel insurance"
+        ]
+      },
+      "pt": {
+        "titulo": "Cartagena Plaza Hotel - Tudo Incluído",
+        "lugar": "Cartagena de Indias, Colômbia",
+        "descripcion": [
+          "Viaje de 6 a 9 de dezembro com tudo resolvido no sistema Tudo Incluído.",
+          "Sem preocupações adicionais no Cartagena Plaza Hotel.",
+          "Localizado a poucos minutos da Cidade Murada e do histórico bairro de Getsemaní. Descubra a riqueza cultural, a arquitetura colonial e o charme do Caribe colombiano."
+        ],
+        "noches": "3 Noites",
+        "saliendo": "Saindo de Lima",
+        "tipo": "Internacional / Tudo Incluído",
+        "grupo": "Geral",
+        "idioma": "Espanhol",
+        "incluye": [
+          "Passagem aérea Lima / Cartagena / Lima (Permite bolsa ou mochila + Carry On 12kg)",
+          "Traslados incluídos Aeroporto / Hotel / Aeroporto (Serviço compartilhado)",
+          "03 noites de hospedagem Cartagena Plaza Hotel (Quarto Standard)",
+          "Tudo incluído Café da manhã e almoço buffet, jantar buffet ou à la carte, lanches e bebidas ilimitadas",
+          "Tour pela cidade Cartagena en Chiva (Serviço compartilhado)",
+          "Seguro de viagem"
+        ]
+      }
+    }
+  },
+  {
+    "id": "punta-cana-grand-sirenis-desc",
+    "titulo": "Punta Cana - Grand Sirenis",
+    "lugar": "Punta Cana, República Dominicana",
+    imagen: 'assets/images/listing/punta-cana-grand-sirenis/0000762_punta-cana-grand-sirenis_550.webp',
+    galeriaImagen: [
+      'assets/images/listing/punta-cana-grand-sirenis/0000762_punta-cana-grand-sirenis_550.webp',
+      'assets/images/listing/punta-cana-grand-sirenis/0000763_punta-cana-grand-sirenis_550.webp',
+      'assets/images/listing/punta-cana-grand-sirenis/0000764_punta-cana-grand-sirenis_550.webp',
+      'assets/images/listing/punta-cana-grand-sirenis/0000765_punta-cana-grand-sirenis_550.webp',
+    ],
+    "precio": 1579.00,
+    "rating": "4.8 (17)",
+    "duracion": "4 Noches",
+    "tipo": "Internacional / Todo Incluido / Año Nuevo",
+    "grupo": "General",
+    "idioma": "Español",
+    "descripcion": [
+      "Punta Cana con todo listo para que solo disfrutes.",
+      "En el corazón del Caribe, con acceso a playas paradisíacas y paisajes tropicales únicos. Relájate, disfruta actividades frente al mar y descubre la magia de Punta Cana.",
+      "Fechas de viaje 30 de diciembre – 03 de enero, 2027 5 días · 4 noches"
+    ],
+    "noches": "4 Noches",
+    "saliendo": "Saliendo de Lima",
+    "paquete": "descuentos",
+    "incluye": [
+      'Boleto aéreo Lima/Punta Cana/Limacon LATAM Airlines - Permite mochila + Carry-On (12 kg)',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto (Servicio Compartido)',
+      '4 noches de alojamientoGrand Sirenis Punta Cana - Habitación Doble',
+      'Sistema de alimentación Todo IncluidoDesayuno y almuerzo buffet, cena buffet o a la carta, piqueos y bebidas ilimitadas',
+      'Seguro de viajes',
+    ],
+    "translations": {
+      "en": {
+        "titulo": "Punta Cana - Grand Sirenis",
+        "lugar": "Punta Cana, Dominican Republic",
+        "descripcion": [
+          "Punta Cana with everything ready for you to just enjoy.",
+          "In the heart of the Caribbean, with access to paradisiacal beaches and unique tropical landscapes. Relax, enjoy activities by the sea, and discover the magic of Punta Cana.",
+          "Travel dates December 30 – January 3, 2027 5 days · 4 nights"
+        ],
+        "noches": "4 Nights",
+        "saliendo": "Departing from Lima",
+        "tipo": "International / All Inclusive / New Year",
+        "grupo": "General",
+        "idioma": "Spanish",
+        "incluye": [
+          "Air ticket Lima/Punta Cana/Lima with LATAM Airlines - Allows backpack + Carry-On (12 kg)",
+          "Included transfers Airport – hotel – airport (Shared Service)",
+          "4 nights accommodation Grand Sirenis Punta Cana - Double Room",
+          "All Inclusive meal plan Breakfast and lunch buffet, dinner buffet or à la carte, snacks and unlimited drinks",
+          "Travel insurance"
+        ]
+      },
+      "pt": {
+        "titulo": "Punta Cana - Grand Sirenis",
+        "lugar": "Punta Cana, República Dominicana",
+        "descripcion": [
+          "Punta Cana com tudo pronto para você apenas aproveitar.",
+          "No coração do Caribe, com acesso a praias paradisíacas e paisagens tropicais únicas. Relaxe, aproveite atividades à beira-mar e descubra a magia de Punta Cana.",
+          "Datas de viagem 30 de dezembro – 03 de janeiro, 2027 5 dias · 4 noites"
+        ],
+        "noches": "4 Noites",
+        "saliendo": "Saindo de Lima",
+        "tipo": "Internacional / Tudo Incluído / Ano Novo",
+        "grupo": "Geral",
+        "idioma": "Espanhol",
+        "incluye": [
+          "Passagem aérea Lima/Punta Cana/Lima com LATAM Airlines - Permite mochila + Carry-On (12 kg)",
+          "Traslados incluídos Aeroporto – hotel – aeroporto (Serviço Compartilhado)",
+          "4 noites de acomodação Grand Sirenis Punta Cana - Quarto Duplo",
+          "Plano de alimentação Tudo Incluído Café da manhã e almoço buffet, jantar buffet ou à la carte, lanches e bebidas ilimitadas",
+          "Seguro de viagem"
+        ]
+      }
+    }
+  },
+  {
+    "id": "punta-cana-vista-sol-desc",
+    "titulo": "Punta Cana - Vista Sol",
+    "lugar": "Punta Cana, República Dominicana",
+    "imagen": "assets/images/listing/Punta Cana - Vista Sol/0000769_punta-cana-vista-sol_550.webp",
+    "galeriaImagen": [
+      "assets/images/listing/Punta Cana - Vista Sol/0000285_punta-cana-vista-sol_550.webp",
+      "assets/images/listing/Punta Cana - Vista Sol/0000769_punta-cana-vista-sol_550.webp",
+      "assets/images/listing/Punta Cana - Vista Sol/0000948_punta-cana-vista-sol_550.webp",
+      "assets/images/listing/Punta Cana - Vista Sol/0000768_punta-cana-vista-sol_550.webp"
+    ],
+    "precio": 1629.00,
+    "rating": "4.7 (14)",
+    "duracion": "4 Noches",
+    "tipo": "Internacional / Todo Incluido / Año Nuevo",
+    "grupo": "General",
+    "idioma": "Español",
+    "descripcion": [
+      "Punta Cana con todo listo para que solo disfrutes.",
+      "Ubicado en Playa Bávaro, cerca de restaurantes y actividades acuáticas. Relájate frente al mar y descubre todo el encanto del Caribe dominicano.",
+      "Fechas de viaje 30 de diciembre – 03 de enero, 2027 5 días · 4 noches"
+    ],
+    "noches": "4 Noches",
+    "saliendo": "Saliendo de Lima",
+    "paquete": "descuentos",
+    "incluye": [
+      'Boleto aéreo Lima/Punta Cana/Limacon LATAM Airlines - Permite mochila + Carry-On (12 kg)',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto (Servicio Compartido)',
+      '4 noches de alojamientoVista Sol Punta Cana - Habitación Comfort con balcón privado',
+      'Sistema de alimentación Todo IncluidoDesayuno y almuerzo buffet, cena buffet o a la carta, piqueos y bebidas ilimitadas',
+      'Cena de gala de Año Nuevo',
+      'Seguro de viajes',
+    ],
+    "translations": {
+      "en": {
+        "titulo": "Punta Cana - Vista Sol",
+        "lugar": "Punta Cana, Dominican Republic",
+        "descripcion": [
+          "Punta Cana: everything is ready so you can simply enjoy yourself.",
+          "Located on Playa Bávaro, close to restaurants and water activities. Relax by the sea and discover all the charm of the Dominican Caribbean.",
+          "Travel dates December 30 – January 3, 2027 5 days · 4 nights"
+        ],
+        "noches": "4 Nights",
+        "saliendo": "Departing from Lima",
+        "tipo": "International / All Inclusive / New Year",
+        "grupo": "General",
+        "idioma": "Spanish",
+        "incluye": [
+          'Round-trip airfare (Lima/Punta Cana/Lima) with LATAM Airlines – Includes backpack + carry-on (12 kg)',
+          'Airport–hotel–airport transfers included (shared service)',
+          '4-night stay at Vista Sol Punta Cana – Comfort Room with private balcony',
+          'All-Inclusive meal plan – Buffet breakfast and lunch, buffet or à la carte dinner, snacks, and unlimited drinks',
+          'New Year’s Eve gala dinner',
+          'Travel insurance',
+        ]
+      },
+      "pt": {
+        "titulo": "Punta Cana - Vista Sol",
+        "lugar": "Punta Cana, República Dominicana",
+        "descripcion": [
+
+          "Punta Cana com tudo pronto para você apenas aproveitar.",
+          "Localizado em Playa Bávaro, perto de restaurantes e atividades aquáticas. Relaxe de frente para o mar e descubra todo o encanto do Caribe dominicano.",
+          "Datas da viagem: 30 de dezembro a 3 de janeiro de 2027 | 5 dias · 4 noites"
+
+        ],
+        "noches": "4 Noites",
+        "saliendo": "Saindo de Lima",
+        "tipo": "Internacional / Tudo Incluído / Ano Novo",
+        "grupo": "Geral",
+        "idioma": "Espanhol",
+        "incluye": [
+          'Passagem aérea Lima/Punta Cana/Lima pela LATAM Airlines – Permite mochila + bagagem de mão (12 kg)',
+          'Traslados incluídos: Aeroporto – hotel – aeroporto (serviço compartilhado)',
+          '4 noites de hospedagem no Vista Sol Punta Cana – Quarto Comfort com varanda privativa',
+          'Sistema de alimentação All-Inclusive: café da manhã e almoço em buffet, jantar em buffet ou à la carte, petiscos e bebidas ilimitadas',
+          'Jantar de gala de Ano Novo',
+          'Seguro-viagem',
+        ]
+      }
+    }
+  },
+  {
+    "id": "aruba-embassy-suites-by-hilton-desc",
+    "titulo": "Aruba - Embassy Suites By Hilton",
+    "lugar": "Oranjestad, Aruba",
+    "imagen": "assets/images/listing/Aruba - Embassy Suites By Hilton/0000796_aruba-embassy-suites-by-hilton_550.webp",
+    "galeriaImagen": [
+      "assets/images/listing/Aruba - Embassy Suites By Hilton/0000796_aruba-embassy-suites-by-hilton_550.webp",
+      "assets/images/listing/Aruba - Embassy Suites By Hilton/0000797_aruba-embassy-suites-by-hilton_550.webp",
+      "assets/images/listing/Aruba - Embassy Suites By Hilton/0000795_aruba-embassy-suites-by-hilton_550.webp",
+      "assets/images/listing/Aruba - Embassy Suites By Hilton/0000798_aruba-embassy-suites-by-hilton_550.webp",
+    ],
+    "precio": 1970.00,
+    "rating": "4.9 (19)",
+    "duracion": "4 Noches",
+    "tipo": "Internacional / Año Nuevo",
+    "grupo": "General",
+    "idioma": "Español",
+    "descripcion": [
+      "Aruba con todo listo para que solo disfrutes.",
+      "Hospédate cerca a Palm Beach, una de las playas más emblemáticas de Aruba. Disfruta de restaurantes, tiendas, entretenimiento y el encanto del Caribe a tu alcance.",
+      "Fechas de viaje 30 de diciembre – 03 de enero, 2027 5 días · 4 noches"
+    ],
+    "noches": "4 Noches",
+    "saliendo": "Saliendo de Lima",
+    "paquete": "descuentos",
+    "incluye": [
+      'Boleto aéreo Lima/Aruba/Limacon LATAM Airlines - Permite bolso o mochila + carry on (12kg)',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto (Servicio compartido)',
+      '4 noches de alojamientoEmbassy Suites By Hilton Aruba Resort - Habitación Sunrise Nature Views',
+      'Sistema de alimentaciónDesayunos incluidos',
+      'Seguro de viajes',
+    ],
+    "translations": {
+      "en": {
+        "titulo": "Aruba - Embassy Suites By Hilton",
+        "lugar": "Oranjestad, Aruba",
+        "descripcion": [
+          "Aruba is all set for you to just enjoy.",
+          "Stay near Palm Beach, one of Aruba's most iconic beaches. Enjoy restaurants, shops, entertainment, and the charm of the Caribbean at your fingertips.",
+          "Travel dates December 30 – January 3, 2027 5 days · 4 nights"
+        ],
+        "noches": "4 Nights",
+        "saliendo": "Departing from Lima",
+        "tipo": "International / New Year",
+        "grupo": "General",
+        "idioma": "Spanish",
+        "incluye": [
+          "Air ticket Lima/Aruba/Lima with LATAM Airlines - Allows bag or backpack + carry on (12kg)",
+          "Transfers included Airport – hotel – airport (Shared service)",
+          "4 nights accommodation at Embassy Suites By Hilton Aruba Resort - Sunrise Nature Views Room",
+          "Meal plan Breakfasts included",
+          "Travel insurance"
+        ]
+      },
+      "pt": {
+        "titulo": "Aruba - Embassy Suites By Hilton",
+        "lugar": "Oranjestad, Aruba",
+        "descripcion": [
+          "Aruba está pronta para você apenas aproveitar.",
+          "Fique perto de Palm Beach, uma das praias mais icônicas de Aruba. Aproveite restaurantes, lojas, entretenimento e o charme do Caribe ao seu alcance.",
+          "Datas de viagem 30 de dezembro – 03 de janeiro, 2027 5 dias · 4 noites"
+        ],
+        "noches": "4 Noites",
+        "saliendo": "Saindo de Lima",
+        "tipo": "Internacional / Ano Novo",
+        "grupo": "Geral",
+        "idioma": "Espanhol",
+        "incluye": [
+          "Passagem aérea Lima/Aruba/Lima com LATAM Airlines - Permite bolso ou mochila + carry on (12kg)",
+          "Traslados incluídos Aeroporto – hotel – aeroporto (Serviço compartilhado)",
+          "4 noites de acomodação no Embassy Suites By Hilton Aruba Resort - Quarto Sunrise Nature Views",
+          "Plano de refeições Café da manhã incluído",
+          "Seguro de viagem"
+        ]
+      }
+    }
+  },
+  {
+    "id": "aruba-eagle-aruba-resort",
+    "titulo": "Aruba - Eagle Aruba Resort",
+    "lugar": "Oranjestad, Aruba",
+    "imagen": "assets/images/listing/Aruba - Eagle Aruba Resort/0000794_aruba-eagle-aruba-resort_550.webp",
+    "galeriaImagen": [
+      "assets/images/listing/Aruba - Eagle Aruba Resort/0000791_aruba-eagle-aruba-resort_550.webp",
+      "assets/images/listing/Aruba - Eagle Aruba Resort/0000792_aruba-eagle-aruba-resort_550.webp",
+      "assets/images/listing/Aruba - Eagle Aruba Resort/0000793_aruba-eagle-aruba-resort_550.webp",
+      "assets/images/listing/Aruba - Eagle Aruba Resort/0000794_aruba-eagle-aruba-resort_550.webp"
+    ],
+    "precio": 2298.00,
+    "rating": "4.8 (15)",
+    "duracion": "4 Noches",
+    "tipo": "Internacional / Año Nuevo",
+    "grupo": "General",
+    "idioma": "Español",
+    "descripcion": [
+      "Aruba con todo listo para que solo disfrutes.",
+      "Ubicado a pocos pasos de Eagle Beach, una de las playas más hermosas del Caribe. Disfruta de aguas turquesas, actividades acuáticas, restaurantes y lo mejor de Aruba muy cerca de ti.",
+      "Fechas de viaje 30 de diciembre – 03 de enero, 2027 5 días · 4 noches"
+    ],
+    "noches": "4 Noches",
+    "saliendo": "Saliendo de Lima",
+    "paquete": "descuentos",
+    "incluye": [
+      'Boleto aéreo Lima/Aruba/Limacon LATAM Airlines - Permite bolso o mochila + carry on (12kg)',
+      'Traslados incluidosAeropuerto – hotel – aeropuerto (Servicio compartido)',
+      '4 noches de alojamientoEagle Aruba Resort - Habitación Premium',
+      'Sistema de alimentaciónPensión Completa (Desayuno, almuerzo y cena incluidos, sin bebidas)',
+      'Seguro de viajes',
+    ],
+    "translations": {
+      "en": {
+        "titulo": "Aruba - Eagle Aruba Resort",
+        "lugar": "Oranjestad, Aruba",
+        "descripcion": [
+          "Aruba with everything ready for you to just enjoy.",
+          "Located just steps from Eagle Beach, one of the most beautiful beaches in the Caribbean. Enjoy turquoise waters, water activities, restaurants, and the best of Aruba very close to you.",
+          "Travel dates December 30 – January 3, 2027 5 days · 4 nights"
+        ],
+        "noches": "4 Nights",
+        "saliendo": "Departing from Lima",
+        "tipo": "International / New Year",
+        "grupo": "General",
+        "idioma": "Spanish",
+        "incluye": [
+          "Air ticket Lima/Aruba/Lima with LATAM Airlines - Allows bag or backpack + carry on (12kg)",
+          "Transfers included Airport – hotel – airport (Shared service)",
+          "4 nights accommodation Eagle Aruba Resort - Premium Room",
+          "Meal plan Full Board (Breakfast, lunch, and dinner included, without drinks)",
+          "Travel insurance"
+        ]
+      },
+      "pt": {
+        "titulo": "Aruba - Eagle Aruba Resort",
+        "lugar": "Oranjestad, Aruba",
+        "descripcion": [
+          "Aruba com tudo pronto para você apenas aproveitar.",
+          "Localizado a poucos passos da Eagle Beach, uma das praias mais bonitas do Caribe. Aproveite as águas turquesa, atividades aquáticas, restaurantes e o melhor de Aruba muito perto de você.",
+          "Datas de viagem 30 de dezembro – 03 de janeiro, 2027 5 dias · 4 noites"
+        ],
+        "noches": "4 Noites",
+        "saliendo": "Saindo de Lima",
+        "tipo": "Internacional / Ano Novo",
+        "grupo": "Geral",
+        "idioma": "Espanhol",
+        "incluye": [
+          "Passagem aérea Lima/Aruba/Lima com LATAM Airlines - Permite bagagem despachada ou mochila + bagagem de mão (12kg)",
+          "Traslados incluídos Aeroporto – hotel – aeroporto (Serviço compartilhado)",
+          "4 noites de acomodação Eagle Aruba Resort - Quarto Premium",
+          "Plano de refeições Pensão Completa (Café da manhã, almoço e jantar incluídos, sem bebidas)",
+          "Seguro de viagem"
         ]
       }
     }
