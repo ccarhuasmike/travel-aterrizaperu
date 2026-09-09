@@ -12,7 +12,7 @@
             </div>
 
             <div class="lg:col-span-4 md:col-span-5 md:text-center md:order-2 order-1">
-                <a href="#!" data-type="youtube" data-id="S_CGed6E610"
+                <a href="#video-san-andres" (click)="openVideo($event)"
                     class="lightbox lg:size-24 size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white hover:bg-primary text-primary hover:text-white duration-500 ease-in-out mx-auto">
                     <i class="ri-play-fill inline-flex items-center justify-center text-3xl"></i>
                 </a>
@@ -21,6 +21,25 @@
     </div><!--end container-->
 </section><!--end section-->
 <!-- Hero End -->
+
+@if (videoOpen()) {
+<div class="fixed inset-0 flex items-center justify-center p-4" role="dialog"
+    style="z-index: 9999; background-color: rgba(15, 23, 42, 0.88); backdrop-filter: blur(3px);"
+    aria-modal="true" aria-label="Video San Andrés" (click)="closeVideo()">
+    <button type="button"
+        class="absolute right-8 top-8 z-10 flex size-10 items-center justify-center text-4xl text-white hover:text-primary"
+        style="right: 2rem; top: 2rem;"
+        aria-label="Cerrar video" title="Cerrar video" (click)="closeVideo()">&times;</button>
+    <div class="relative flex w-full items-center justify-center bg-black md:w-1/2"
+        style="aspect-ratio: 16 / 9; max-height: 70vh;"
+        (click)="$event.stopPropagation()">
+        <video class="h-full w-full rounded-md object-contain shadow-2xl" controls autoplay playsinline>
+            <source src="assets/videos/san-andres.mp4" type="video/mp4">
+            Tu navegador no admite la reproducción de video.
+        </video>
+    </div>
+</div>
+}
 
 
 <!-- <div class="container relative -mt-16 z-1">

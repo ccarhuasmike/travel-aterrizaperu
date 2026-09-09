@@ -1,0 +1,203 @@
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: TinySliderDirective is not used within the template of Home[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/home/home.ts:31:24:
+[37m      31 │   imports: [RouterLink, [32mTinySliderDirective[37m],
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m

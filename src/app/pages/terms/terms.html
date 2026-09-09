@@ -1,0 +1,41 @@
+<!-- Start Terms & Conditions -->
+<section class="relative md:py-24 py-16">
+    <div class="container relative">
+        <div class="md:flex justify-center">
+            <div class="md:w-3/4">
+                <div class="p-6 bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 rounded-md">
+                    <h3 class="text-2xl font-semibold mb-8">{{ sections()[0].title }}</h3>
+
+                    @for (section of sections(); track section.title; let first = $first) {
+                    @if (!first) {
+                    <h5 class="text-xl font-semibold mb-4 mt-8">{{ section.title }}</h5>
+                    }
+
+                    @for (paragraph of section.paragraphs ?? []; track paragraph) {
+                    <p class="text-slate-400 mt-3">{{ paragraph }}</p>
+                    }
+
+                    @if (section.items?.length) {
+                    <ul class="list-none text-slate-400 mt-3">
+                        @for (item of section.items; track item) {
+                        <li class="flex mt-2">
+                            <i class="ri-arrow-right-s-line text-primary text-lg align-middle me-2"></i>
+                            <span>{{ item }}</span>
+                        </li>
+                        }
+                    </ul>
+                    }
+                    }
+
+                    <div class="mt-8">
+                        <a href="#"
+                            class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-primary hover:bg-primary-600 border-primary hover:border-primary-600 text-white rounded-md">{{ i18n.t('terms.accept') }}</a>
+                        <a href="#"
+                            class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-transparent hover:bg-primary border-primary text-primary hover:text-white rounded-md ms-2">{{ i18n.t('terms.decline') }}</a>
+                    </div>
+                </div>
+            </div><!--end -->
+        </div><!--end grid-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- End Terms & Conditions -->

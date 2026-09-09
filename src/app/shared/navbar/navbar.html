@@ -76,7 +76,7 @@
         <ul class="buy-button list-none mb-0">        
             <li class="inline-block relative ps-0.5">
                 <div class="language-switcher" role="group" aria-label="Seleccionar idioma">
-                    <i class="ri-global-line" aria-hidden="true"></i>
+                    <i class="ri-global-line" style="color: black;" aria-hidden="true"></i>
                     <button type="button" class="language-option" [class.is-active]="i18n.language() === 'es'"
                         [attr.aria-pressed]="i18n.language() === 'es'" aria-label="Español" (click)="selectLanguage('es')"><img src="https://flagcdn.com/w40/pe.png" alt=""></button>
                     <button type="button" class="language-option" [class.is-active]="i18n.language() === 'en'"
@@ -149,8 +149,8 @@
                         <li><a href="#!" class="sub-menu-item">Contacto</a></li>
                     </ul>
                 </li> -->
-
-                <li><a href="#!" class="sub-menu-item">{{ i18n.t('nav.contact') }}</a></li>
+                 
+                <li><a [routerLink]="['/contact']" class="sub-menu-item">{{ i18n.t('nav.contact') }}</a></li>
             </ul><!--end navigation menu-->
         </div><!--end navigation-->
     </div><!--end container-->

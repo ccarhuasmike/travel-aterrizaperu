@@ -1,4 +1,4 @@
-import { Component, computed, inject } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TinySliderDirective } from '../../shared/tiny-slider.directive';
 import { localizeTour, TOURS } from '../../shared/tours';
@@ -33,6 +33,17 @@ interface Blog {
 })
 export class Home {
   protected readonly i18n = inject(TranslationService);
+  protected readonly videoOpen = signal(false);
+
+  protected openVideo(event: Event): void {
+    event.preventDefault();
+    this.videoOpen.set(true);
+  }
+
+  protected closeVideo(): void {
+    this.videoOpen.set(false);
+  }
+
   protected readonly destinosSliderOptions = {
     controls: true,
     mouseDrag: true,
