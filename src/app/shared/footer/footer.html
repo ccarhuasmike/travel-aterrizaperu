@@ -80,7 +80,8 @@
                                     <i class="ri-file-list-filltext-lg text-white me-2"></i>
                                     <div class="">
                                         <a routerLink="/terms"
-                                            class="text-slate-300 hover:text-slate-400 duration-500 ease-in-out">Términos y Condiciones</a>
+                                            class="text-slate-300 hover:text-slate-400 duration-500 ease-in-out">Términos
+                                            y Condiciones</a>
                                     </div>
                                 </div>
 
@@ -140,13 +141,30 @@
         </div><!--end grid-->
     </div><!--end container-->
 
-    <div class="py-7.5 px-0 border-t border-white-800 dark:border-white-700">
-        <div class="container relative text-centerter">
-            <div class="grid grid-cols-1">
-                <div class="text-center">
-                    <p class="mb-0">© {{ currentYear }} Aterriza Perú.</p>
+    <div class="py-7.5 px-0 border-t border-white-800 dark:border-white-700" style="background: white; color: black;">
+        <div class="container relative">
+            <div class="w-full flex flex-row items-center justify-between gap-4">
+                <!-- Texto de Copyright (Ocupa el espacio restante a la izquierda) -->
+                <div class="grow">
+                    <p class="mb-0 whitespace-nowrap">© {{ currentYear }} Aterriza Perú.</p>
                 </div>
-            </div><!--end grid-->
+
+                <!-- Contenedor para las dos imágenes juntas a la derecha -->
+                <div class="flex items-center space-x-4 shrink-0">
+                    <a href="https://www.gob.pe/mincetur" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center transition-transform hover:scale-105"
+                        title="Agencia Autorizada MINCETUR">
+                        <img src="assets/images/agencia-registrada.png" style="height: 56PX;"
+                            alt="MINCETUR - Agencia Autorizada" class="h-10 w-auto object-contain">
+                    </a>
+
+                    <a routerLink="/terms" class="inline-flex items-center transition-transform hover:scale-105"
+                        title="Libro de Reclamaciones Virtual">
+                        <img src="assets/images/libro_de_reclamaciones.jpg" style="height: 56PX;"
+                            alt="Libro de Reclamaciones" class="h-10 w-auto object-contain">
+                    </a>
+                </div>
+            </div>
         </div><!--end container-->
     </div>
 </footer><!--end footer-->

@@ -23,7 +23,7 @@ export class Paquete {
 
   constructor() {
     this.route.paramMap.subscribe((params) => {
-      debugger;
+      
       this.packageTours.set(getPaqueteById(params.get('id') ?? ''));
     });
     console.log(this.tours());

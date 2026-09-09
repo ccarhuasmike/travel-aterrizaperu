@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 165 44" width="165" height="44">
+  <rect width="165" height="44" rx="6" fill="#FFFFFF"/>
+  <rect x="1" y="1" width="163" height="42" rx="5" fill="none" stroke="#CBD5E1" stroke-width="1"/>
+  <!-- Book Icon -->
+  <g transform="translate(10, 8)">
+    <path d="M 3 5 C 7 3, 13 3, 15 6 C 17 3, 23 3, 27 5 L 27 23 C 23 21, 17 21, 15 23 C 13 21, 7 21, 3 23 Z" fill="#F8FAFC" stroke="#0F172A" stroke-width="1.8" stroke-linejoin="round"/>
+    <path d="M 15 6 L 15 23" stroke="#0F172A" stroke-width="1.8"/>
+    <!-- Pencil / Pen -->
+    <path d="M 21 2 L 25 6 L 15 16 L 11 16 L 11 12 Z" fill="#C5221F" stroke="#B91C1C" stroke-width="0.8"/>
+  </g>
+  <text x="43" y="17" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="800" font-size="8.5" fill="#0F172A">LIBRO DE</text>
+  <text x="43" y="27" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="800" font-size="8.5" fill="#C5221F">RECLAMACIONES</text>
+  <text x="43" y="36" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="600" font-size="6.5" fill="#64748B">VIRTUAL</text>
+</svg>
